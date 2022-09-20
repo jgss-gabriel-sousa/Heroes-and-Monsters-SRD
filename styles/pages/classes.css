@@ -1,0 +1,47 @@
+header h1 {
+    margin: 0;
+}
+
+h4 {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+div {
+    width: 100%;
+}
+
+#main-interface {
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+main {
+    justify-content: center;
+}
+
+aside {
+    height: max-content;
+    position: sticky;
+}
+
+#first-section {
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    #first-section {
+        flex-direction: column-reverse;
+    }
+}
+
+.name-gen {
+    margin-bottom: 0.5rem;
+}
+.name-gen h4 {
+    margin: 0;
+}
+.name-gen button {
+    margin: 0;
+    margin-right: 10px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+	
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/scrollbar.css" rel="stylesheet">
+    <link href="/styles/pages/classes.css" rel="stylesheet">
+
+    <script src="/scripts/script.js" type="module" defer></script>
+    <script src="/scripts/funcs.js" type="module" defer></script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>H&M - Raça - Aasimar</title>
+</head>
+<body>
+    <header>
+        <h1>Aasimar</h1>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="/index.html">Voltar</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#caracteristicas-raciais">Características Raciais</a></li>
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#talentos">Talentos</a></li>
+            </ul>
+        </aside>
+        <div id="main-interface">
+            <div id="first-section">
+                <section id="caracteristicas-raciais">
+                    <h2><b>Características Raciais</b></h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Carisma ou Sabedoria</h4>
+                    <h4><b>Perícias:</b>            +2 em Diplomacia e Percepção</h4>
+                    <h4><b>Resistências:</b>        Necrótico e Radiante</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <h4><b>Visão no Escuro:</b>     12 Metros</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e Celestial</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Bom</h4>
+                    <h4><b>Personalidade Comum:</b> Honrado</h4>
+                    <h4><b>Peso:</b>                100 Kg (+- 18 Kg)</h4>
+                    <h4><b>Altura:</b>              1,94 m (+- 7 cm) </h4>
+                    <h4><b>Nomes Masculinos:</b>    <span id="m-names">Aritian, Beltin, Cernan, Cronwier, Eran, Ilamin</span></h4>
+                    <h4><b>Nomes Femininos:</b>     <span id="f-names">Arken, Arsinoe, Davina, Drinma, Imesah, Masozi</span></h4>
+                    <h4><b>Sobrenomes:</b>          <span id="surnames">Hulwarvam, Pavibon, Varomran, Kolsimle, Krolgibar, Popram</span></h4>
+                    <div class="d-flex name-gen" style="align-items: center;">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"></h4>
+                    </div>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  18 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   100 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  140 Anos</h4></li>
+                    </ul>
+                </section>
+                <figure width="50%">
+                    <img class="png-img" src="/img/racas/aasimar.png">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            
+            <hr>
+
+            <section id="descricao">
+                <h2><b>Descrição</b></h2>
+                <p>Os Aasimar trazem em suas almas a luz dos céus. Eles são descendentes de Humanos com Celestiais. Os Aasimar nasceram para servir aos deuses e seus nascimentos são saudados como eventos abençoados. Eles são um povo de aparência sobrenatural, com características luminosas que revelam sua herança celestial.</p>
+                <p>Um Aasimar, exceto aquele que se voltou para o mal, tem uma ligação com um ser angelical. Esse ser, geralmente um Anjo Deva, fornece orientação ao Aasimar, essa conexão é feita em sonhos. A orientação não é um comando direto ou uma simples palavra falada. Em vez disso, o Aasimar recebe visões, profecias e sentimentos.</p>
+            </section>
+
+            <hr>
+
+            <section id="talentos">
+                <h2><b>Talentos</b></h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                        <th>Requisitos</th>
+                    </tr>
+                    <tr>
+                        <td>Asas de Anjo</td>
+                        <td>Você ganha asas e deslocamento de voo, que terá valor igual ao deslocamento andando.</td>
+                        <td>Nível 10<br>Talento Racial “Sangue Angelical”</td>
+                    </tr>
+                    <tr>
+                        <td>Auréola</td>
+                        <td>Você ganha uma auréola que representa seu espírito bondoso, ela ilumina até 3 m e garante Vantagem em testes de Diplomacia com criaturas bondosas e Intimidação com criaturas malignas.</td>
+                        <td>Alinhamento Bondoso<br>Nível 5</td>
+                    </tr>
+                    <tr>
+                        <td>Punição</td>
+                        <td>Após o uso da habilidade de classe "Punição Divina", você pode empurrar o alvo por 4 m. Caso o alvo atinja uma outra criatura na trajetória, ambos sofrem 1d4 de dano de Impacto.</td>
+                        <td>Nível 2 de Paladino</td>
+                    </tr>
+                    <tr>
+                        <td>Cruzado Celestial</td>
+                        <td>+2 no dano contra criaturas que estejam fora do plano de origem delas.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mãos Curadoras</td>
+                        <td>Uma vez a cada descanso longo, com uma ação você pode tocar uma criatura aliada e curar em 2d6.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sangue Angelical</td>
+                        <td>Você tem Vantagem em testes de salvamento provocados por criaturas malignas e testes contra a morte.</td>
+                        <td></td>
+                    </tr>
+                  </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
