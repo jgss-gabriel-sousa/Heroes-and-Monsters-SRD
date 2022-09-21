@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+	
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/scrollbar.css" rel="stylesheet">
+    <link href="/styles/pages/classes.css" rel="stylesheet">
+
+    <script src="/scripts/script.js" type="module" defer></script>
+    <script src="/scripts/funcs.js" type="module" defer></script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>H&M - Raça - Amazona</title>
+</head>
+<body>
+    <header>
+        <h1>Amazona</h1>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li class="home-aside"><a href="#">Amazona</a></li>
+                <li>&nbsp;</li>
+                <li><a href="/index.html">Voltar</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#caracteristicas-raciais">Características Raciais</a></li>
+                <li><a href="#descricao">Descrição</a></li>
+                <li><a href="#talentos-raciais">Talentos Raciais</a></li>
+            </ul>
+        </aside>
+        <div id="main-interface">
+            <div id="first-section">
+                <section id="caracteristicas-raciais">
+                    <h2><b>Características Raciais</b></h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +1 em Força, Vitalidade e Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em Atletismo e Acrobacia</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e Silvestre</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Bom</h4>
+                    <h4><b>Personalidade Comum:</b> Bondosa, Orgulhosa, Atlética e Caçadora</h4>
+                    <h4><b>Peso:</b>                122 Kg (+- 42 Kg)</h4>
+                    <h4><b>Altura:</b>              2,10 m (+- 30 cm) </h4>
+                    <h4><b>Nomes:</b>    <span id="names">Aello, Ainia, Bremusa, Diana, Doris, Euryleia, Iphito, Tecmessa</span></h4>
+                    <div class="d-flex name-gen" style="align-items: center;">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"></h4>
+                    </div>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  15 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   160 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  200 Anos</h4></li>
+                    </ul>
+                </section>
+                <figure width="50%">
+                    <img class="png-img" src="/img/racas/amazona.png">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+            <hr>
+
+            <section id="descricao">
+                <h2><b>Descrição</b></h2>
+                <p>As amazonas são uma raça de humanoides muito semelhantes aos humanos, mas formada inteiramente por mulheres muito fortes e esbeltas, um membro de qualquer raça as acha estonteantes. Suas cores de pele são tão variadas quanto as dos humanos, variando de pele incrivelmente escura a quase transparente, e seu cabelo geralmente tende a ser branco, preto ou cinza.</p>
+                <p>As amazonas não se reproduzem, elas fazem uma cerimônia especial anual, onde oram para seus deuses. Na manhã seguinte a cerimônia, uma bebê amazona será encontrada em alguma árvore ou arbusto nas redondezas, em um berço feito de trepadeiras douradas.</p>
+                <p>Existe um mito entre as amazonas, que aquelas irmãs de temperamento sombrio foram encontradas pela primeira vez em manhãs chuvosas ou nubladas.</p>
+                <p>Normalmente, uma amazona terá duas ou mais mães voluntárias, mas na verdade são criadas por toda a tribo em conjunto.</p>
+            </section>
+
+            <hr>
+
+            <section id="talentos-raciais">
+                <h2><b>Talentos Raciais</b></h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Elegância Robusta</td>
+                        <td>+2 em Diplomacia e Intimidação</td>
+                    </tr>
+                    <tr>
+                        <td>Nascida da Terra</td>
+                        <td>+1 Ponto de Vida a cada avanço de nível</td>
+                    </tr>
+                    <tr>
+                        <td>Treinamento Atlético</td>
+                        <td>+2 em Atletismo e Acrobacia</td>
+                    </tr>
+                    <tr>
+                        <td>Treinamento de Armas das Amazonas</td>
+                        <td>Você tem treinamento com Arco Curto, Arco Longo, Glaive e Escudo Leve</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
