@@ -27,12 +27,15 @@ aside {
 
 #first-section {
     display: inline-flex;
-    align-items: center;
+}
+#caracteristicas-raciais {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
     #first-section {
         flex-direction: column-reverse;
+        align-items: center;
     }
 }
 
@@ -45,4 +48,18 @@ aside {
 .name-gen button {
     margin: 0;
     margin-right: 10px;
+}
+
+.home-aside{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#talentos ul{
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+#talentos li{
+    white-space: wrap;
 }

@@ -45,7 +45,6 @@ a, a:hover, a:focus, a:active {
 li {
     font-size: 14px;
     text-align: justify;
-    white-space: nowrap;
 }
 
 ul {
@@ -61,22 +60,25 @@ button {
 
 aside {
     background-color: #181818;
-    color: #f06048;
+    color: #dc3545;
+    font-family: system-ui;
+    padding: 10px;
 }
 aside li{
     font-size: 12px;
+    white-space: nowrap;
 }
 
 header,aside {
     top: 0;
     transition: top 0.3s;
     text-align: center;
-    padding: 20px;
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 header {
     background-color: #181818;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 header,aside h1{
     margin-bottom: 0px;
@@ -102,17 +104,13 @@ a:hover {
 
 section {
     padding: 20px;
-    margin: 10px;
+    width: 100%;
     background-color: #dddddd;
     border: 1px solid #777;
     border-collapse: collapse;
 }
 section h1 {
     text-align: center;
-}
-
-figure {
-    width: 50%;
 }
 
 img {
@@ -140,7 +138,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #cbcbcb;;
 }
 
 tr:nth-child(1) {
@@ -149,7 +147,7 @@ tr:nth-child(1) {
 
 td:nth-child(1) {
     background-color: #222;
-    color: #dddddd;
+    color: #cbcbcb;
     font-weight: bold;
     text-align: center;
 }
@@ -184,9 +182,9 @@ td:last-child {
     content: '';
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 2px;
     border-radius: 4px;
-    background-color: #18272F;
+    background-color: #dc3545;
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -238,6 +236,11 @@ td:last-child {
 
 .text-indent {
     text-indent: 20px;
+}
+
+footer p{
+    text-indent: 0px;
+    color: #cbcbcb
 }
 
 .wrapper {
