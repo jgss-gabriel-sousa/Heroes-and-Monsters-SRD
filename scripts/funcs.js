@@ -31,7 +31,7 @@ function footerContent(){
             </ul>
         </div>
         <div class="container d-flex flex-column align-items-center py-1 mb-5" id="contact">
-            <p>Copyright © <span class="animated-link" onclick="openNewTab('https://jgss-gabriel-sousa.github.io/')">Gabriel Sousa</span></p>
+            <p>Copyright © <a href="https://jgss-gabriel-sousa.github.io/"><span class="animated-link">Gabriel Sousa</span></a></p>
             <a class="py-3" href="/index.html"><img class="icon" src="/logo.png" style="width:42px;height:42px;"></a>
         </div>
     `;
