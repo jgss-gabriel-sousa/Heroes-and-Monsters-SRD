@@ -10,7 +10,7 @@ function footerContent(){
     const body = document.querySelector("body");
     const footer = document.createElement("footer");
     footer.innerHTML = `
-        <div class="container d-flex justify-content-center py-5">
+        <div class="container d-flex justify-content-center py-5 pb-3">
             <ul class="wrapper">
                 <li class="icon email" onclick="openNewTab('mailto:jgss.gabriel.sousa@gmail.com')">
                     <span class="tooltip">E-mail</span>
