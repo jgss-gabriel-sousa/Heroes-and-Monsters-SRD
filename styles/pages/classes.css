@@ -20,11 +20,6 @@ main {
     justify-content: center;
 }
 
-aside {
-    height: max-content;
-    position: sticky;
-}
-
 #first-section {
     display: inline-flex;
 }
@@ -41,6 +36,7 @@ aside {
 
 .name-gen {
     margin-bottom: 0.5rem;
+    align-items: center;
 }
 .name-gen h4 {
     margin: 0;
@@ -56,10 +52,12 @@ aside {
     font-weight: bold;
 }
 
-#talentos ul{
+#talentos-raciais ul{
     list-style-type: disc;
     margin-left: 1rem;
+    text-align: left;
 }
-#talentos li{
-    white-space: wrap;
+#talentos-raciais li{
+    font-size: 12px;
+    margin-bottom: 1rem;
 }

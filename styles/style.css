@@ -2,12 +2,13 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #433d33;
+    background-color: #f3edd8;
+    color: #100000;
 }
 
 h1 {
-    font-size: 26px;
-    color: #d81800;
+    font-size: 24px;
+    color: #F84031;
     text-shadow: 1px 1px 1px #100000;
     margin-bottom: 1rem;
     text-align: center;
@@ -15,13 +16,13 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     line-height: 2;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
 }
 
@@ -42,11 +43,6 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-li {
-    font-size: 14px;
-    text-align: justify;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -59,14 +55,18 @@ button {
 }
 
 aside {
-    background-color: #181818;
-    color: #dc3545;
-    font-family: system-ui;
+    background-color: #192026;
+    color: #F84031;
+    font-family: monospace;
     padding: 10px;
+    text-shadow: 1px 1px 1px #100000;
+    height: max-content;
+    position: sticky;
 }
 aside li{
     font-size: 12px;
     white-space: nowrap;
+    text-align: left;
 }
 
 header,aside {
@@ -74,9 +74,10 @@ header,aside {
     transition: top 0.3s;
     text-align: center;
     border-collapse: collapse;
+    font-weight: bold;
 }
 header {
-    background-color: #181818;
+    background-color: #192026;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -118,14 +119,16 @@ img {
 }
 
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color: #f8f9fa80;
+    font-size: 12px;
 }
 
 th {
     text-align: center;
     color: #dddddd;
+    font-size: 14px;
 }
 
 td {
@@ -138,18 +141,26 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #cbcbcb;;
+    background-color: #cbcbcb;
 }
 
 tr:nth-child(1) {
-    background-color: #222;
+    background-color: #192026;
+    border: 1px solid #41464b;
+}
+
+tr:nth-child(1) > th:nth-child(1){
+    border: 1px solid #41464b;
 }
 
 td:nth-child(1) {
-    background-color: #222;
-    color: #cbcbcb;
+    background-color: #192026;
+    color: #dddddd;
     font-weight: bold;
     text-align: center;
+    font-size: 14px;
+    border: 1px solid #41464b;
+    max-width: max-content;
 }
 
 td:last-child {
@@ -240,7 +251,6 @@ td:last-child {
 
 footer p{
     text-indent: 0px;
-    color: #cbcbcb
 }
 
 .wrapper {
