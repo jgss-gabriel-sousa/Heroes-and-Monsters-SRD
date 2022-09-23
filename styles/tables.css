@@ -1,0 +1,82 @@
+table {
+    width: 100%;
+}
+
+/*##############################################################################################*/
+
+.talent-table table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    background-color: #f8f9fa80;
+    font-size: 12px;
+}
+
+.talent-table th {
+    text-align: center;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+.talent-table td {
+    text-align: left;
+}
+
+.talent-table td, .talent-table th {
+    border: 1px solid #41464b;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.talent-table tr:nth-child(even) {
+    background-color: #cbcbcb;
+}
+
+.talent-table tr:nth-child(1) {
+    background-color: #192026;
+}
+
+.talent-table td:nth-child(1) {
+    background-color: #192026;
+    color: #dddddd;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    max-width: max-content;
+}
+
+.talent-table td:last-child {
+    text-align: center;
+}
+
+/*##############################################################################################*/
+
+.ability-table {
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #cbcbcb;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.ability-table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 10px;
+    column-span: 2;
+}
+.ability-table td {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 5px 10px;
+}
+.ability-table td:nth-child(1) {
+    font-weight: bold;
+    text-align: end;
+    vertical-align: top;
+    padding: 5px 0px 5px 10px;
+}
+.ability-table p:nth-last-child(1) {
+    margin-bottom: 5px;
+}

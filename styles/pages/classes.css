@@ -3,7 +3,6 @@ header h1 {
 }
 
 h4 {
-    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -14,6 +13,8 @@ div {
 #main-interface {
     margin: 20px;
     flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
 }
 
 main {
@@ -25,6 +26,9 @@ main {
 }
 #caracteristicas-raciais {
     width: 100%;
+}
+#habilidades-raciais p {
+    line-height: 1.5;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -48,10 +52,19 @@ main {
 
 .home-aside{
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
+aside {
+    display: none;
+}
 
+@media only screen and (max-width: 600px) {
+    #talentos-raciais {
+        overflow-x: scroll;
+        margin-bottom: 40px;
+    }
+}
 #talentos-raciais ul{
     list-style-type: disc;
     margin-left: 1rem;

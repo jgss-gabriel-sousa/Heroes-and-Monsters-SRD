@@ -13,9 +13,11 @@
 	
     <link href="/styles/style.css" rel="stylesheet">
     <link href="/styles/scrollbar.css" rel="stylesheet">
+    <link href="/styles/footer.css" rel="stylesheet">
+    <link href="/styles/tables.css" rel="stylesheet">
     <link href="/styles/pages/classes.css" rel="stylesheet">
 
-    <script src="/scripts/script.js" type="module" defer></script>
+    <script src="/scripts/races.js" type="module" defer></script>
     <script src="/scripts/funcs.js" type="module" defer></script>
     
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -38,9 +40,9 @@
             </ul>
         </aside>
         <div id="main-interface">
-            <div id="first-section">
+            <section id="first-section">
                 <section id="caracteristicas-raciais">
-                    <h2><b>Características Raciais</b></h2>
+                    <h2>Características Raciais</h2>
                     <br>
                     <h4><b>Atributos:</b>           +1 em Força, Vitalidade e Carisma</h4>
                     <h4><b>Perícias:</b>            +2 em Atletismo e Acrobacia</h4>
@@ -65,13 +67,11 @@
                         <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
                     </div>
                 </section>
-                <figure width="50%">
+                <figure>
                     <img class="png-img" src="/img/racas/amazona.png">
                     <figcaption></figcaption>
                 </figure>
-            </div>
-
-            <hr>
+            </section>
 
             <section id="descricao">
                 <h2><b>Descrição</b></h2>
@@ -81,39 +81,28 @@
                 <p>Normalmente, uma amazona terá duas ou mais mães voluntárias, mas na verdade são criadas por toda a tribo em conjunto.</p>
             </section>
 
-            <hr>
-
             <section id="habilidades-raciais">
                 <h2><b>Habilidades</b></h2>
-                <table>
+                <br>
+                
+                <table class="ability-table">
                     <tr>
-                        <th></th>
-                        <th>Descrição</th>
+                        <th colspan="2">Estrutura Poderosa</th>
                     </tr>
                     <tr>
-                        <td>Elegância Robusta</td>
-                        <td>+2 em Diplomacia e Intimidação</td>
+                        <td>Descrição: </td>
+                        <td>Seu povo enfatiza o auto-aperfeiçoamento e seu corpo naturalmente apto faz com que você seja significativamente mais forte do que a maioria das raças do seu tamanho.</td>
                     </tr>
                     <tr>
-                        <td>Nascida da Terra</td>
-                        <td>+1 Ponto de Vida a cada avanço de nível</td>
-                    </tr>
-                    <tr>
-                        <td>Treinamento Atlético</td>
-                        <td>+2 em Atletismo e Acrobacia</td>
-                    </tr>
-                    <tr>
-                        <td>Treinamento de Armas das Amazonas</td>
-                        <td>Você ganha treinamento com Arco Curto, Arco Longo, Glaive e Escudo Leve</td>
+                        <td>Efeito: </td>
+                        <td>Você conta como uma criatura de Tamanho Grande ao determinar sua capacidade de carga e o peso que pode empurrar, arrastar ou levantar.</td>
                     </tr>
                 </table>
             </section>
 
-            <hr>
-
             <section id="talentos-raciais">
                 <h2><b>Talentos Raciais</b></h2>
-                <table>
+                <table class="talent-table">
                     <tr>
                         <th></th>
                         <th>Descrição</th>

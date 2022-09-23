@@ -44,7 +44,7 @@ function nameGen(){
         }
         else{
             document.getElementById("nameGenerated").innerHTML = '(Feminino) <span id="nameGenValue"></span>';
-            const names = nameParser(document.getElementById("m-names").innerText);
+            const names = nameParser(document.getElementById("f-names").innerText);
             firstName = names[rand(0,names.length)];
         }
 
