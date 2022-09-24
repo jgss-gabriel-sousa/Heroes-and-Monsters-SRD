@@ -8,7 +8,7 @@ table ul {
 }
 
 .overflow-section table {
-    min-width: 300px
+    min-width: 500px
 }
 
 @media only screen and (max-width: 600px) {
@@ -65,12 +65,6 @@ table ul {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-    .talent-table {
-        overflow-x: scroll;
-        margin-bottom: 40px;
-    }
-}
 .talent-table ul{
     list-style-type: disc;
     margin-left: 1rem;
@@ -78,7 +72,7 @@ table ul {
 }
 .talent-table li{
     font-size: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /*##############################################################################################*/
@@ -117,13 +111,6 @@ table ul {
 }
 .ability-table p:nth-last-child(1) {
     margin-bottom: 5px;
-}
-
-@media only screen and (max-width: 600px) {
-    .ability-table {
-        overflow-x: scroll;
-        margin-bottom: 40px;
-    }
 }
 
 /*##############################################################################################*/
