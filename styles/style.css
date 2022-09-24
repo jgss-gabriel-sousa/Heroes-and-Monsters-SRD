@@ -40,10 +40,10 @@ p {
     text-indent: 40px;
     line-height: 2;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 a, a:hover, a:focus, a:active {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -104,7 +104,6 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 20px;
     flex-direction: column;
 }
 
@@ -181,6 +180,10 @@ img {
 
 .text-indent {
     text-indent: 20px;
+}
+
+.no-indent {
+    text-indent: 0;
 }
 
 .hidden {

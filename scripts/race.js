@@ -1,11 +1,14 @@
-import { rand } from "/scripts/funcs.js"
+import { rand, selectText } from "/scripts/funcs.js"
 
 document.querySelector(".name-gen button").addEventListener("click", nameGen);
-document.querySelector("#talentos-raciais").addEventListener("click", (event) => {
+document.querySelector("#talentos-raciais table").addEventListener("click", (event) => {
     navigator.clipboard.writeText(event.target.innerText);
+    selectText(event.target);
 });
-document.querySelector("#nameGenValue").addEventListener("click", (event) => {
+document.querySelector("#nameGenerated").addEventListener("click", (event) => {
     navigator.clipboard.writeText(event.target.innerText);
+    selectText(event.target);
+    console.log(event.target);
 });
 
 function nameGen(){  

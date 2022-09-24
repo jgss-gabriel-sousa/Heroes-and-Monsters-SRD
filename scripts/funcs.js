@@ -2,6 +2,53 @@ export function rand(min, max){
     return Math.floor(Math.random() * max) + min;
 }
 
+let selected = false;
+export function selectText(node){
+    if(selected){
+        selected = false;
+        window.getSelection().removeAllRanges();
+        return;
+    }else
+        selected = true;
+
+    if (document.body.createTextRange) {
+        const range = document.body.createTextRange();
+        range.moveToElementText(node);
+        range.select();
+    } else if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else {
+        console.warn("Could not select text in node: Unsupported browser.");
+    }
+}
+
+function accentsTidy(s){
+    var r = s.toLowerCase();
+    const non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
+    for (let i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
+    return r;
+}
+
+function setKeywordLinks(){
+    function stringParser(str){
+        //lowercase string, rmv accents and set "-" in all blank spaces
+        return accentsTidy(str.toLowerCase()).replace(/\s/g, "-");
+    }
+
+    const keys = document.querySelectorAll(".kw");
+    
+    for(let i = 0; i < keys.length; i++) {
+        const link = stringParser(keys[i].innerHTML);
+        const text = keys[i].innerHTML;
+
+        keys[i].innerHTML = `<a href="#${link}">${text}</a>`
+    }
+}setKeywordLinks();
+
 function footerContent(){
     const element = document.querySelector("#main-interface");
     const footer = document.createElement("footer");

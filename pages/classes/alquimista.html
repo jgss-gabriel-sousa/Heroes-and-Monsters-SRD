@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+	
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/scrollbar.css" rel="stylesheet">
+    <link href="/styles/footer.css" rel="stylesheet">
+    <link href="/styles/tables.css" rel="stylesheet">
+    <link href="/styles/pages/classes.css" rel="stylesheet">
+
+    <script src="/scripts/funcs.js" type="module" defer></script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>H&M - Classe - Alquimista</title>
+</head>
+<body>
+    <header>
+        <h1>Alquimista</h1>
+    </header>
+    <main>
+        <div id="main-interface">
+            <section id="first-section">
+                <section id="caracteristicas-raciais">
+                    <h2>Características Iniciais da Classe</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Inteligência e -2 em Força</h4>
+                    <h4><b>Perícias:</b>            +2 em três da lista: Arcanismo, Construir, Conhecimento, Investigação, Percepção e Sobrevivência</h4>
+                    <h4><b>Dado de Vida:</b>        d4</h4>
+                    <hr>
+                    <h4><b>Armas:</b>               Simples</h4>
+                    <h4><b>Armaduras:</b>           Simples</h4>
+                    <h4><b>Escudos:</b>             Simples</h4>
+                    <h4><b>Ferramentas:</b>         Ferramentas de Alquimia</h4>
+                    <hr>
+                    <h4><b>Equipamento Inicial: </b>Ácido, Bomba Cegante, Bomba de Fumaça, Ferramentas de Alquimia, Kit de Aventureiro, 2 Poções de Cura e Veneno</h4>
+                    <h4><b>Riqueza Inicial: </b>10d4 ou 25 Moedas de Ouro</h4>
+                </section>
+                <figure>
+                    <img class="png-img" src="/img/classes/alquimista.png">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section id="descricao">
+                <h2>Descrição</h2>
+                <p>Conhecidos por serem muito inteligentes os alquimistas elaboram Poções e Reagentes, capazes de executarem efeitos diversos, que variam desde Ácidos a Poções de Cura.</p>
+                <p>Alquimistas tem paixão ou alegria em aperfeiçoar bombas explosivas ou descobrir novos venenos e métodos estranhos para seu uso. Com essas características excêntricas, acabam se tornando um risco para a maioria das organizações civilizadas e instituições de ensino superior. Mas eles parecem se encaixar muito bem na maioria dos grupos de aventureiros.</p>
+            </section>
+
+            <section class="overflow-section" id="progressao">
+                <h2>Progressão</h2>
+
+                <table class="progress-table">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidades</th>
+                        <th id="itens-fabricaveis">Itens Fabricáveis</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <ul>
+                                <li><span class="kw">Bomba Simples</span></li>
+                                <li><span class="kw">Fabricar</span></li>
+                                <li><span class="kw">Fórmula Aprimorada</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Água Luminosa</li>
+                                <li>Repelente</li>
+                                <li>Pederneira</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td>
+                            <ul>
+                                <li>Bomba Cegante</li>
+                                <li>Bomba de Fumaça</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span class="kw">Granadeiro</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><span class="kw">Tônico Alquímico</span></td>
+                        <td>
+                            <ul>
+                                <li>Poção de Cura Menor</li>
+                                <li>Poção de Mana Menor</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <ul>
+                                <li><span class="kw">Bomba Simples II</span></li>
+                                <li><span class="kw">Descobertas Alquímicas</span></li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td>
+                            <ul>
+                                <li>Antídoto</li>
+                                <li>Óleo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span class="kw">Resistência Química</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td></td>
+                        <td>Pólvora</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><span class="kw">Bomba Simples III</span></td>
+                        <td>
+                            <ul>
+                                <li>Veneno</li>
+                                <li>Ácido</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span class="kw">Descobertas Alquímicas II</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td></td>
+                        <td>Mina Explosiva</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td></td>
+                        <td>Bomba</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td><span class="kw">Bomba Simples IV</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td></td>
+                        <td>Sonífero</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td><span class="kw">Descobertas Alquímicas III</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td></td>
+                        <td>Peróxido de Hidrogênio</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <ul>
+                                <li><span class="kw">Alquimia Instantânea</span></li>
+                                <li><span class="kw">Bomba Simples V</span></li>
+                            </ul>
+                        </td>
+                        <td>Veneno Forte</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+
+                <table class="class-ability-table" id="bomba-simples">
+                    <tr><th>Bomba Simples (1)</th></tr>
+                    <tr><td>
+                        <p>O Alquimista cria uma fórmula de uma bomba simples e rápida de fazer, construindo-as durante um descanso longo.</p>
+                        <p>O alvo da bomba deve realizar o teste de salvamento, se for bem sucedido, sofre metade do dano. A bomba também atinge qualquer criatura em um raio de 1 m, estes alvos secundários podem realizar o teste de salvamento, se falharem, sofrem metade do dano, em caso de sucesso não sofrem dano.</p>
+                        <p class="no-indent"><b>Limite: </b>O Alquimista pode fabricar um número de bombas igual ao seu nível a cada Descanso Longo</p>
+                        <p class="no-indent"><b>Alcance: </b>3 + seu modificador de Agilidade</p>
+                        <p class="no-indent"><b>Dano: </b>1d8 (A sua escolha, entre: Ácido, Fogo ou Gelo)</p>
+                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
+                        <p class="no-indent"><b>Teste de Salvamento: </b>10 + mod. de Inteligência do Alquimista, de Reflexos</p>
+                    </td></tr>
+                </table>
+                
+                <table class="class-ability-table" id="fabricar">
+                    <tr><th>Fabricar (1)</th></tr>
+                    <tr><td>
+                        <p>O Alquimista pode construir certos objetos alquímicos, utilizando as Ferramentas de Alquimia. Os itens possíveis de se fabricar dependem do seu nível de alquimista e estão informados na tabela de <span class="kw">Itens Fabricáveis</span>.</p>
+                        <p>Você pode fabricar até 3 itens em um mesmo dia, sem custos. Para fabricar mais, será necessário obter componentes e pagar metade do valor do item, para cada novo fabricado.</p>
+                        <p class="no-indent"><b>Tempo: </b>3 Horas para cada Item</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table" id="fabricar">
+                    <tr><th>Fórmula Aprimorada (1)</th></tr>
+                    <tr><td>
+                        <p>Você adiciona o seu modificador de Inteligência no dano de Venenos, Bombas (Incluindo a <span class="kw">Bomba Simples</span>) e Ácidos.</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table" id="granadeiro">
+                    <tr><th>Granadeiro (3)</th></tr>
+                    <tr><td>
+                        <p class="no-indent">Você pode lançar 2 Bombas ou Ácidos em uma única ação.</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table" id="tonico-alquimico">
+                    <tr><th>Tônico Alquímico (4)</th></tr>
+                    <tr><td>
+                        <p>Você prepara uma poção de adrenalina, que gera um superefeito positivo, garantindo +2 nas Rolagens de Ataque e Testes de Salvamento. Ao final de cada novo turno, você deve rolar 1d3, caso tire 1 o efeito acaba.</p>
+                        <p class="no-indent"><b>Limite: </b>1 vez a cada Descanso Longo</p>
+                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table" id="bomba-simples-ii">
+                    <tr><th>Bomba Simples II (5)</th></tr>
+                    <tr><td><p class="no-indent">Dano aumentado para 2d8.</p></td></tr>
+                </table>
+
+                <table class="class-ability-table" id="tonico-alquimico">
+                    <tr><th>Descobertas Alquímicas (5)</th></tr>
+                    <tr><td>
+                        <p>O alquimista faz uma descoberta alquímica incrível. Que garante bônus de acordo com a <span class="kw">Tabela de Descobertas Alquímicas</span>.</p>
+                        <p class="no-indent"><b>Limite: </b>1 vez a cada Descanso Longo</p>
+                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table" id="bomba-simples-iii">
+                    <tr><th>Bomba Simples III (10)</th></tr>
+                    <tr><td><p class="no-indent">Dano aumentado para 4d8.</p></td></tr>
+                </table>
+
+                <table class="class-ability-table" id="bomba-simples-iv">
+                    <tr><th>Bomba Simples IV (15)</th></tr>
+                    <tr><td><p class="no-indent">Dano aumentado para 6d8.</p></td></tr>
+                </table>
+
+                <table class="class-ability-table" id="bomba-simples-v">
+                    <tr><th>Bomba Simples V (20)</th></tr>
+                    <tr><td><p class="no-indent">Dano aumentado para 8d8.</p></td></tr>
+                </table>
+            </section>
+
+            <section class="overflow-section" id="tabela-de-descobertas-alquimicas">
+                <h2>Tabela de Descobertas Alquímicas</h2>
+
+                <table class="progress-table alchemic-table">
+                    <tr>
+                        <th>Descoberta</th>
+                        <th>Efeito</th>
+                        <th>Pré-requisito</th>
+                    </tr>
+                    <tr>
+                        <td>Bomba de Cura</td>
+                        <td>Quando criar uma Bomba Simples, você pode escolher fazer uma que cura o equivalente ao dano que a bomba causaria. Não é necessária rolagem de ataque contra aliados.</td>
+                        <td><ul>
+                            <li>Nível 11 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Bomba de Expurgar</td>
+                        <td>Quando criar uma Bomba Simples, você pode escolher fazer ela causar dano máximo a criaturas mortas-vivas.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="bomba-de-praga">Bomba de Praga</td>
+                        <td>Bombas de Fumaça causam 1d6 de dano de Veneno.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cura Aperfeiçoada</td>
+                        <td>Adiciona seu modificador de Inteligência nas poções de cura que você fabricar.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Explosão Colateral</td>
+                        <td>Suas Bomba Simples causam 1d4 de dano colateral a inimigos adjacentes ao alvo.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Grande Bomba de Praga</td>
+                        <td>Bombas de Fumaça causam 3d6 de dano de Veneno.</td>
+                        <td><ul>
+                            <li>Descoberta <span class="kw">Bomba de Praga</span></li>
+                            <li>Nível 11 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Grande Explosão Colateral</td>
+                        <td>Suas Bomba Simples causam 1d8 de dano colateral a inimigos adjacentes ao alvo.</td>
+                        <td><ul>
+                            <li>Nível 11 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Grande Mutagênico</td>
+                        <td><ul>
+                            <li>+6, +4 e +2 em: Força, Vitalidade ou Agilidade.</li>
+                            <li>-2 em Inteligência, Carisma e Sabedoria.</li>
+                        </ul></td>
+                        <td><ul>
+                            <li>Descoberta <span class="kw">Mutagênico</span></li>
+                            <li>Nível 17 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Invisibilidade</td>
+                        <td></td>
+                        <td><ul>
+                            <li>Nível 11 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td>Juventude Eterna</td>
+                        <td>Você para de Envelhecer e após descansos você recebe 1d10 de Vida Temporária.</td>
+                        <td><ul>
+                            <li>Nível 17 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td id="mutagenico">Mutagênico</td>
+                        <td>-2 de Inteligência, +4 de Força ou Agilidade.</td>
+                        <td><ul>
+                            <li>Nível 11 de Alquimista</li>
+                        </ul></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

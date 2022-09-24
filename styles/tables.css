@@ -2,6 +2,22 @@ table {
     width: 100%;
 }
 
+table ul {
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+.overflow-section table {
+    min-width: 300px
+}
+
+@media only screen and (max-width: 600px) {
+    .overflow-section{
+        overflow-x: scroll;
+        margin-bottom: 40px;
+    }
+}
+
 /*##############################################################################################*/
 
 .talent-table table {
@@ -20,12 +36,12 @@ table {
 
 .talent-table td {
     text-align: left;
+    font-size: 12px;
 }
 
 .talent-table td, .talent-table th {
     border: 1px solid #41464b;
     padding: 8px;
-    font-size: 12px;
 }
 
 .talent-table tr:nth-child(even) {
@@ -49,6 +65,22 @@ table {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .talent-table {
+        overflow-x: scroll;
+        margin-bottom: 40px;
+    }
+}
+.talent-table ul{
+    list-style-type: disc;
+    margin-left: 1rem;
+    text-align: left;
+}
+.talent-table li{
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
 /*##############################################################################################*/
 
 .ability-table {
@@ -65,18 +97,124 @@ table {
     padding: 10px;
     padding-bottom: 10px;
     column-span: 2;
+    border: 1px solid #41464b;
+    background-color: #192026;
+    color: #dddddd;
+}
+.ability-table tr {
+    border: 1px solid #41464b;
 }
 .ability-table td {
     text-align: justify;
     line-height: 1.5;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 .ability-table td:nth-child(1) {
     font-weight: bold;
     text-align: end;
     vertical-align: top;
-    padding: 5px 0px 5px 10px;
+    padding: 10px 0px 10px 10px;
 }
 .ability-table p:nth-last-child(1) {
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .ability-table {
+        overflow-x: scroll;
+        margin-bottom: 40px;
+    }
+}
+
+/*##############################################################################################*/
+
+.progress-table {
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #cbcbcb;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.progress-table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #41464b;
+}
+
+.progress-table tr:nth-child(1) {
+    background-color: #192026;
+    color: #dddddd;
+    white-space: nowrap;
+}
+
+.progress-table td {
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #41464b;
+}
+.progress-table tr:nth-child(even) {
+    background-color: #cbcbcb;
+}
+.progress-table td:nth-child(1) {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.progress-table p:nth-last-child(1) {
+    margin-bottom: 5px;
+}
+.progress-table {
+    min-width: 400px;
+}
+
+/*##############################################################################################*/
+
+.class-ability-table {
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.class-ability-table th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 10px;
+    column-span: 2;
+    border: 1px solid #41464b;
+    background-color: #192026;
+    color: #dddddd;
+}
+.class-ability-table p {
+    font-size: 12px;
+}
+.class-ability-table tr {
+    border: 1px solid #41464b;
+}
+.class-ability-table td {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+.class-ability-table p:nth-last-child(1) {
+    margin-bottom: 5px;
+}
+
+/*##############################################################################################*/
+
+.alchemic-table {
+    font-size: 12px;
+}
+
+.alchemic-table td:nth-child(2){
+    text-align: justify;
 }
