@@ -108,6 +108,7 @@ table ul {
     text-align: end;
     vertical-align: top;
     padding: 10px 0px 10px 10px;
+    width: 10%;
 }
 .ability-table p:nth-last-child(1) {
     margin-bottom: 5px;
