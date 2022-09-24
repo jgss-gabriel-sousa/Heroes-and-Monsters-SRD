@@ -1,4 +1,4 @@
-import { rand, selectText } from "./scripts/funcs.js"
+import { rand, selectText } from "./funcs.js"
 
 document.querySelector(".name-gen button").addEventListener("click", nameGen);
 document.querySelector("#talentos-raciais table").addEventListener("click", (event) => {
