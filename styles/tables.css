@@ -1,10 +1,29 @@
 table {
     width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
 }
-
 table ul {
     margin-bottom: 0;
     line-height: 2;
+    list-style-type: disc;
+    margin-left: 1rem;
+    text-align: left;
+}
+table li {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+table td, table p {
+    font-size: 12px;
+    text-align: justify;
+}
+table td {
+    padding: 5px;
+}
+table th {
+    font-size: 16px;
+    padding: 10px;
 }
 
 .overflow-section table {
@@ -21,39 +40,22 @@ table ul {
 /*##############################################################################################*/
 
 .talent-table table {
-    border-collapse: collapse;
-    width: 100%;
-    min-width: 500px;
     background-color: #f8f9fa80;
-    font-size: 12px;
 }
-
 .talent-table th {
     text-align: center;
     color: #dddddd;
-    font-size: 14px;
+    background-color: #192026;
 }
-
-.talent-table td {
-    text-align: left;
-    font-size: 12px;
-}
-
 .talent-table td, .talent-table th {
     border: 1px solid #41464b;
     padding: 8px;
 }
-
 .talent-table tr:nth-child(even) {
     background-color: #cbcbcb;
 }
-
-.talent-table tr:nth-child(1) {
-    background-color: #192026;
-}
-
-.talent-table td:nth-child(1) {
-    background-color: #192026;
+.talent-table td:first-child {
+    background-color: #111518e6;
     color: #dddddd;
     font-weight: bold;
     text-align: center;
@@ -61,37 +63,14 @@ table ul {
     max-width: max-content;
 }
 
-.talent-table td:last-child {
-    text-align: center;
-}
-
-.talent-table ul{
-    list-style-type: disc;
-    margin-left: 1rem;
-    text-align: left;
-}
-.talent-table li{
-    font-size: 12px;
-    margin-bottom: 0.5rem;
-}
-
 /*##############################################################################################*/
 
 .ability-table {
-    padding: 10px;
     background-color: #ededed;
-    border: 1px solid #cbcbcb;
-    margin: 10px 0px;
-    font-size: 14px;
+    margin-bottom: 20px;
 }
 .ability-table th {
     text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-    padding-bottom: 10px;
-    column-span: 2;
-    border: 1px solid #41464b;
     background-color: #192026;
     color: #dddddd;
 }
@@ -99,7 +78,6 @@ table ul {
     border: 1px solid #41464b;
 }
 .ability-table td {
-    text-align: justify;
     line-height: 1.5;
     padding: 10px 10px;
 }
@@ -125,21 +103,16 @@ table ul {
 }
 .progress-table th {
     text-align: center;
-    font-weight: bold;
-    font-size: 16px;
     padding: 10px;
     padding-bottom: 10px;
     border: 1px solid #41464b;
 }
-
 .progress-table tr:nth-child(1) {
     background-color: #192026;
     color: #dddddd;
     white-space: nowrap;
 }
-
 .progress-table td {
-    text-align: center;
     line-height: 1.5;
     padding: 5px 10px;
     vertical-align: middle;
@@ -151,9 +124,9 @@ table ul {
 .progress-table td:nth-child(1) {
     font-weight: bold;
     text-align: center;
-    padding: 5px;
     font-size: 16px;
-    vertical-align: middle;
+    background-color: #111518e6;
+    color: #dddddd;
 }
 .progress-table p:nth-last-child(1) {
     margin-bottom: 5px;
@@ -173,23 +146,16 @@ table ul {
 }
 .class-ability-table th {
     text-align: center;
-    font-weight: bold;
-    font-size: 18px;
     padding: 10px;
     padding-bottom: 10px;
-    column-span: 2;
     border: 1px solid #41464b;
     background-color: #192026;
     color: #dddddd;
-}
-.class-ability-table p {
-    font-size: 12px;
 }
 .class-ability-table tr {
     border: 1px solid #41464b;
 }
 .class-ability-table td {
-    text-align: justify;
     line-height: 1.5;
     padding: 20px;
 }
@@ -202,7 +168,8 @@ table ul {
 .alchemic-table {
     font-size: 12px;
 }
-
-.alchemic-table td:nth-child(2){
-    text-align: justify;
+.alchemic-table td:first-child {
+    background-color: #111518e6;
+    color: #dddddd;
+    font-size: 14px;
 }

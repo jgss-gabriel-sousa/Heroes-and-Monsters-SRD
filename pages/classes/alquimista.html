@@ -110,7 +110,7 @@
                     <tr>
                         <td>5</td>
                         <td>
-                            <ul>
+                            <ul class="no-list-style">
                                 <li><span class="kw">Bomba Simples II</span></li>
                                 <li><span class="kw">Descobertas Alquímicas</span></li>
                             </ul>
@@ -135,7 +135,11 @@
                     <tr>
                         <td>8</td>
                         <td></td>
-                        <td>Pólvora</td>
+                        <td>
+                            <ul>
+                                <li>Pólvora</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>9</td>
@@ -160,7 +164,11 @@
                     <tr>
                         <td>12</td>
                         <td></td>
-                        <td>Mina Explosiva</td>
+                        <td>
+                            <ul>
+                                <li>Mina Explosiva</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>13</td>
@@ -170,7 +178,11 @@
                     <tr>
                         <td>14</td>
                         <td></td>
-                        <td>Bomba</td>
+                        <td>
+                            <ul>
+                                <li>Bomba</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>15</td>
@@ -180,7 +192,11 @@
                     <tr>
                         <td>16</td>
                         <td></td>
-                        <td>Sonífero</td>
+                        <td>
+                            <ul>
+                                <li>Sonífero</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>17</td>
@@ -190,7 +206,11 @@
                     <tr>
                         <td>18</td>
                         <td></td>
-                        <td>Peróxido de Hidrogênio</td>
+                        <td>
+                            <ul>
+                                <li>Peróxido de Hidrogênio</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>19</td>
@@ -200,12 +220,16 @@
                     <tr>
                         <td>20</td>
                         <td>
-                            <ul>
+                            <ul class="no-list-style">
                                 <li><span class="kw">Alquimia Instantânea</span></li>
                                 <li><span class="kw">Bomba Simples V</span></li>
                             </ul>
                         </td>
-                        <td>Veneno Forte</td>
+                        <td>
+                            <ul>
+                                <li>Veneno Forte</li>
+                            </ul>
+                        </td>
                     </tr>
                 </table>
             </section>
@@ -235,7 +259,7 @@
                     </td></tr>
                 </table>
 
-                <table class="class-ability-table" id="fabricar">
+                <table class="class-ability-table" id="formula-aprimorada">
                     <tr><th>Fórmula Aprimorada (1)</th></tr>
                     <tr><td>
                         <p>Você adiciona o seu modificador de Inteligência no dano de Venenos, Bombas (Incluindo a <span class="kw">Bomba Simples</span>) e Ácidos.</p>
@@ -263,7 +287,7 @@
                     <tr><td><p class="no-indent">Dano aumentado para 2d8.</p></td></tr>
                 </table>
 
-                <table class="class-ability-table" id="tonico-alquimico">
+                <table class="class-ability-table" id="descobertas-alquimicas">
                     <tr><th>Descobertas Alquímicas (5)</th></tr>
                     <tr><td>
                         <p>O alquimista faz uma descoberta alquímica incrível. Que garante bônus de acordo com a <span class="kw">Tabela de Descobertas Alquímicas</span>.</p>
@@ -293,20 +317,20 @@
 
                 <table class="progress-table alchemic-table">
                     <tr>
-                        <th>Descoberta</th>
+                        <th>Descobertas</th>
                         <th>Efeito</th>
                         <th>Pré-requisito</th>
                     </tr>
                     <tr>
                         <td>Bomba de Cura</td>
-                        <td>Quando criar uma Bomba Simples, você pode escolher fazer uma que cura o equivalente ao dano que a bomba causaria. Não é necessária rolagem de ataque contra aliados.</td>
+                        <td>Quando criar uma Bomba Simples, você pode escolher fazer uma que cura o equivalente ao dano que a bomba causaria (Não é necessária rolagem de ataque contra aliados).</td>
                         <td><ul>
                             <li>Nível 11 de Alquimista</li>
                         </ul></td>
                     </tr>
                     <tr>
                         <td>Bomba de Expurgar</td>
-                        <td>Quando criar uma Bomba Simples, você pode escolher fazer ela causar dano máximo a criaturas mortas-vivas.</td>
+                        <td>Quando criar uma Bomba Simples, você pode escolher fazer ela causar dano dobrado a criaturas mortas-vivas.</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -316,12 +340,7 @@
                     </tr>
                     <tr>
                         <td>Cura Aperfeiçoada</td>
-                        <td>Adiciona seu modificador de Inteligência nas poções de cura que você fabricar.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Explosão Colateral</td>
-                        <td>Suas Bomba Simples causam 1d4 de dano colateral a inimigos adjacentes ao alvo.</td>
+                        <td>Você adiciona seu modificador de Inteligência nas Poções de Cura.</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -333,18 +352,8 @@
                         </ul></td>
                     </tr>
                     <tr>
-                        <td>Grande Explosão Colateral</td>
-                        <td>Suas Bomba Simples causam 1d8 de dano colateral a inimigos adjacentes ao alvo.</td>
-                        <td><ul>
-                            <li>Nível 11 de Alquimista</li>
-                        </ul></td>
-                    </tr>
-                    <tr>
                         <td>Grande Mutagênico</td>
-                        <td><ul>
-                            <li>+6, +4 e +2 em: Força, Vitalidade ou Agilidade.</li>
-                            <li>-2 em Inteligência, Carisma e Sabedoria.</li>
-                        </ul></td>
+                        <td>Bônus aumentado para +6.</td>
                         <td><ul>
                             <li>Descoberta <span class="kw">Mutagênico</span></li>
                             <li>Nível 17 de Alquimista</li>
@@ -352,21 +361,26 @@
                     </tr>
                     <tr>
                         <td>Invisibilidade</td>
-                        <td></td>
+                        <td>Com a habilidade Fabricar, você pode criar uma poção que tem o efeito de deixar invisível durante 1 minuto. Você pode possuir somente uma unidade desta poção de cada vez.</td>
                         <td><ul>
                             <li>Nível 11 de Alquimista</li>
                         </ul></td>
                     </tr>
                     <tr>
                         <td>Juventude Eterna</td>
-                        <td>Você para de Envelhecer e após descansos você recebe 1d10 de Vida Temporária.</td>
+                        <td>Você para de Envelhecer e após Descansos Longos recebe 1d10 de Vida Temporária (Não cumulativo).</td>
                         <td><ul>
                             <li>Nível 17 de Alquimista</li>
                         </ul></td>
                     </tr>
                     <tr>
                         <td id="mutagenico">Mutagênico</td>
-                        <td>-2 de Inteligência, +4 de Força ou Agilidade.</td>
+                        <td>
+                            <p>O Alquimista descobre como criar um mutagênico que ele pode absorver para aumentar temporáriamente sua capacidade física ao custo de suas faculdades mentais.</p>
+                            <p>Leva 1 hora para preparar uma dose de mutagênico, uma vez preparada, permanece potente até ser usada. Somente uma dose de mutagênico pode ser mantida por vez. Ao ser absorvido, o mutagênico faz com que o Alquimista fique mais volumoso e bestial.</p>
+                            <p>Durante os próximos 10 minutos, seu nível de Insanidade aumenta em +1 e você ganha os seguintes efeitos temporários em seus atributos:</p>
+                            <p class="no-indent">+4 em Força, Agilidade e Vitalidade.</p>
+                        </td>
                         <td><ul>
                             <li>Nível 11 de Alquimista</li>
                         </ul></td>
