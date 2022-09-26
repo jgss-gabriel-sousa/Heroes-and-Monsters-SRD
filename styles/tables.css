@@ -1,6 +1,5 @@
 table {
     width: 100%;
-    padding: 10px;
     border-collapse: collapse;
 }
 table ul {
@@ -26,8 +25,11 @@ table th {
     padding: 10px;
 }
 
-.overflow-section table {
-    min-width: 500px
+.overflow-section > table {
+    min-width: 500px;
+}
+.overflow-section {
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,9 +132,6 @@ table th {
 }
 .progress-table p:nth-last-child(1) {
     margin-bottom: 5px;
-}
-.progress-table {
-    min-width: 400px;
 }
 
 /*##############################################################################################*/

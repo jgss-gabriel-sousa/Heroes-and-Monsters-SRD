@@ -8,5 +8,23 @@ section {
 
 #main-interface {
     margin: 20px;
+    white-space: nowrap;
     flex-direction: row;
+}
+#main-interface li {
+    white-space: nowrap;
+}
+@media only screen and (max-width: 600px) {
+    #main-interface {
+        flex-direction: column;
+    }
+    #main-interface li {
+        font-size: 12px;
+    }
+    #main-interface h1 {
+        font-size: 22px;
+    }
+    #main-interface h2 {
+        font-size: 18px;
+    }
 }
