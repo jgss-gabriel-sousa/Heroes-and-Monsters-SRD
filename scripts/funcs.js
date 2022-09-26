@@ -50,7 +50,7 @@ function setKeywordLinks(){
 }setKeywordLinks();
 
 function footerContent(){
-    const element = document.querySelector("#main-interface");
+    const element = document.querySelector("body");
     const footer = document.createElement("footer");
     footer.innerHTML = `
         <div class="container d-flex justify-content-center py-5 pb-3">
@@ -74,7 +74,7 @@ function footerContent(){
             </ul>
         </div>
         <div class="container d-flex flex-column align-items-center py-1 mb-5" id="contact">
-            <p>Copyright © <a href="https://jgss-gabriel-sousa.github.io/"><span class="animated-link">Gabriel Sousa</span></a></p>
+            <p>Copyright © <a href="https://jgss-gabriel-sousa.github.io/"><span>Gabriel Sousa</span></a></p>
             <a class="py-3" href="/index.html"><img class="icon" src="/logo.png" style="width:42px;height:42px;"></a>
         </div>
     `;
