@@ -1,6 +1,11 @@
 import { rand, selectText } from "./funcs.js"
 
-document.querySelector(".name-gen button").addEventListener("click", nameGen);
+try{
+    document.querySelector(".name-gen button").addEventListener("click", nameGen);
+}catch(error){
+    console.warn(error);
+}
+
 /*
 document.querySelector("#talentos-raciais table").addEventListener("click", (event) => {
     navigator.clipboard.writeText(event.target.innerText);
