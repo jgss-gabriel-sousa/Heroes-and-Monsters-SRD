@@ -132,7 +132,7 @@ export const basic_feats = [
     [
         "Duro de Matar",
         "A cada Descanso Longo, na primeira vez que um dano deixe você com 0 ou menos pontos de vida, você fica com 1 de vida.",
-        ["<span class='kw'>Físico Preparado</span>"]
+        ["14 de Vitalidade"]
     ],
     [
         "Enfermeiro",
