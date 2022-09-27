@@ -26,17 +26,17 @@ export function selectText(node){
     }
 }
 
-function accentsTidy(s){
+export function accentsTidy(s){
     var r = s.toLowerCase();
     const non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
     for (let i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
     return r;
 }
 
-function setKeywordLinks(){
+export function setKeywordLinks(){
     function stringParser(str){
         //lowercase string, rmv accents and set "-" in all blank spaces
-        return accentsTidy(str.toLowerCase()).replace(/\s/g, "-");
+        return accentsTidy(str).replace(/\s/g, "-");
     }
 
     const keys = document.querySelectorAll(".kw");
@@ -80,3 +80,11 @@ function footerContent(){
     `;
     element.appendChild(footer);
 }footerContent();
+
+function headerGoHome(){
+    let goHome = `
+        <a class="py-3" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.png" style="width:42px;height:42px;"></a>
+    `;
+
+    document.querySelector("header").innerHTML = goHome + document.querySelector("header").innerHTML;
+}headerGoHome();
