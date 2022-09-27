@@ -1,3 +1,5 @@
+import { accentsTidy, setKeywordLinks } from "./funcs.js"
+
 import { basic_feats } from "./data/basic-feats.js"
 import { heroic_feats } from "./data/heroic-feats.js"
 import { epic_feats } from "./data/epic-feats.js"
@@ -19,7 +21,7 @@ function fillTables(){
             const element = basic_feats[i];
 
             basicFeatshtml += `
-                <tr>
+                <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
                     <td><ul>
@@ -52,7 +54,7 @@ function fillTables(){
             const element = heroic_feats[i];
 
             heroicFeatshtml += `
-                <tr>
+                <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
                     <td><ul>
@@ -85,7 +87,7 @@ function fillTables(){
             const element = epic_feats[i];
 
             epicFeatshtml += `
-                <tr>
+                <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
                     <td><ul>
@@ -110,3 +112,5 @@ function fillTables(){
         document.querySelector("#talentos-epicos table").innerHTML = epicFeatshtml;
     }
 }fillTables();
+
+setKeywordLinks();
