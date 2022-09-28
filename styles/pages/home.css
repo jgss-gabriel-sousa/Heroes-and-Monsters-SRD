@@ -3,20 +3,36 @@ p {
 }
 
 section {
-    width: 45%;
+    background-color: #dddddd;
+    padding: 20px;
+    border: 1px solid #41464b;
+    min-width: 250px;
 }
 
 #main-interface {
     margin: 20px;
-    white-space: nowrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px;
 }
 #main-interface li {
     white-space: nowrap;
 }
-@media only screen and (max-width: 600px) {
+
+#races-list, #classes-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-gap: 5px;
+    overflow-x: scroll;
+    font-size: 14px;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 700px) {
     #main-interface {
         flex-direction: column;
+        display: flex;
     }
     #main-interface li {
         font-size: 12px;

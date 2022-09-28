@@ -77,6 +77,7 @@ a:hover::before {
 ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 hr {
