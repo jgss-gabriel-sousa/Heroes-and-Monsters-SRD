@@ -2,6 +2,12 @@ p {
     text-indent: 0;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
 section {
     background-color: #dddddd;
     padding: 20px;
@@ -24,7 +30,6 @@ section {
     grid-template-columns: auto auto;
     grid-column-gap: 10px;
     grid-gap: 5px;
-    overflow-x: scroll;
     font-size: 14px;
     justify-content: space-evenly;
 }
@@ -42,5 +47,13 @@ section {
     }
     #main-interface h2 {
         font-size: 18px;
+    }
+    section {
+        min-width: auto;
+    }
+
+    
+    #races-list, #classes-list {
+        overflow-x: scroll;
     }
 }

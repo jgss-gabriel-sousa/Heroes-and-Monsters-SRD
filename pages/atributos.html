@@ -15,8 +15,8 @@
     <link href="../styles/scrollbar.css" rel="stylesheet">
     <link href="../styles/footer.css" rel="stylesheet">
     <link href="../styles/tables.css" rel="stylesheet">
+    <link href="../styles/pages/classes.css" rel="stylesheet">
 
-    <script src="../scripts/race.js" type="module" defer></script>
     <script src="../scripts/funcs.js" type="module" defer></script>
     
     <link rel="shortcut icon" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico" type="image/x-icon">
@@ -27,7 +27,35 @@
         <h1>Atributos</h1>
     </header>
     <main>
-        <section></section>
+        <div id="main-interface">
+            <section>
+                <p>Para definir as diferentes características de um personagem ou criatura, são utilizados os atributos. Cada atributo é um valor que computa certas características, sendo eles:</p>
+                <ul>
+                    <li><b>Força:</b>           Mede a força física e a capacidade de carga.</li>
+                    <li><b>Vitalidade:</b>      Mede a resistência e a sua saúde.</li>
+                    <li><b>Agilidade:</b>       A destreza, equilíbrio, coordenação e reflexos.</li>
+                    <li><b>Carisma:</b>         A lábia, personalidade, persuasão e sorte.</li>
+                    <li><b>Vontade:</b>         Resistência mental contra, medo, tortura ou insanidade. Além do ímpeto e a coragem.</li>
+                    <li><b>Sabedoria:</b>       Uma medida do bom senso e discernimento.</li>
+                    <li><b>Inteligência:</b>    Raciocínio dedutivo, conhecimento, memória, lógica e racionalidade.</li>
+                </ul>
+                <p class="no-indent">Um atributo pode chegar até um valor máximo de 30.</p>
+                <br>
+                <h2>Como Definir o Valor Inicial dos Atributos?</h2>
+                <p>Para definir os atributos iniciais de um Personagem, o jogador pode usar 2 métodos:</p>
+                <ul>
+                    <li>Role 3d6 para cada atributo.</li>
+                    <li>Use os valores predefinidos: 8, 8, 10, 10, 10, 12 e 14.</li>
+                </ul>
+                <p>Você pode distribuir a ordem dos valores da maneira que quiser, dê preferência nos pontos fortes e fracos do personagem que deseja montar.</p>
+                <br>
+                <h2>Modificadores</h2>
+                <p>Cada atributo possui um Modificador, que são os valores para a utilização nos testes, nas perícias ou em certas habilidades.</p>
+                <p>Quando um personagem for executar certas ações mais complexas, o mestre pode definir uma dificuldade para a realização, exigindo ao jogador um teste de um atributo relacionado, o jogador deve então rolar o d20 e somar o modificador do atributo indicado. Como por exemplo, em um teste de escalada o mestre pode definir como sendo um teste de Força, logo, o jogador deve rolar um d20 e somar seu modificador de força.</p>
+                <p>O valor do modificador escala em uma proporção de 2:1 com o valor do atributo. Para definir o valor é usada a seguinte formula: (Atributo - 10) / 2</p>
+                <p class="no-indent">Obs: Como regra geral, todos os valores que não são inteiros, sempre serão arredondados para baixo.</p>
+            </section>
+        </div>  
     </main>
 </body>
 </html>

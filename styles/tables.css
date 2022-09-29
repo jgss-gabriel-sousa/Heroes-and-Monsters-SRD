@@ -11,10 +11,10 @@ table ul {
 }
 table li {
     margin-bottom: 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
 }
 table td, table p {
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
 }
 table td {
@@ -26,16 +26,22 @@ table th {
 }
 
 .overflow-section > table {
-    min-width: 500px;
+    min-width: 600px;
 }
 .overflow-section {
     width: 100%;
 }
+.txt-center {
+    text-align: center;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .overflow-section{
         overflow-x: scroll;
         margin-bottom: 40px;
+    }
+    .overflow-section > table {
+        min-width: 700px;
     }
 }
 
@@ -164,11 +170,52 @@ table th {
 
 /*##############################################################################################*/
 
-.alchemic-table {
-    font-size: 12px;
-}
-.alchemic-table td:first-child {
-    background-color: #111518e6;
-    color: #dddddd;
+.class-ability-table2 {
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #cbcbcb;
+    margin: 10px 0px;
     font-size: 14px;
+}
+.class-ability-table2 th {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #41464b;
+}
+.class-ability-table2 tr:nth-child(1) {
+    background-color: #192026;
+    color: #dddddd;
+    white-space: nowrap;
+}
+.class-ability-table2 tr {
+    margin: 10px 10px;
+}
+.class-ability-table2 td {
+    line-height: 1.5;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #41464b;
+}
+.class-ability-table2 tr:nth-child(even) {
+    background-color: #cbcbcb;
+}
+.class-ability-table2 td:nth-child(-n+2) {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    background-color: #192026;
+    color: #dddddd;
+}
+.class-ability-table2 td:nth-child(2) {
+    background-color: #111518e3;
+    font-size: 16px;
+    min-width: 150px;
+}
+.class-ability-table2 td:last-child {
+    max-width: min-content;
+    text-align: center;
+}
+.class-ability-table2 p:nth-last-child(1) {
+    margin-bottom: 5px;
 }
