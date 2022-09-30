@@ -114,6 +114,7 @@ table th {
     padding: 10px;
     padding-bottom: 10px;
     border: 1px solid #41464b;
+    max-width: 0px;
 }
 .progress-table tr:nth-child(1) {
     background-color: #192026;
