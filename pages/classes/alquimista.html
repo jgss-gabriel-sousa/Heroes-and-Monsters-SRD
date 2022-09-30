@@ -233,82 +233,136 @@
                     </tr>
                 </table>
             </section>
-
-            <section id="habilidades">
+            
+            <section class="overflow-section" id="habilidades">
                 <h2>Habilidades</h2>
-
-                <table class="class-ability-table" id="bomba-simples">
-                    <tr><th>Bomba Simples (1)</th></tr>
-                    <tr><td>
-                        <p>O Alquimista cria uma fórmula de uma bomba simples e rápida de fazer, construindo-as durante um Descanso Longo.</p>
-                        <p>A bomba funciona como uma arma a distância. O alvo da bomba deve realizar o teste de salvamento, se for bem sucedido, sofre metade do dano. A bomba também atinge qualquer criatura em um raio de 1 m, estes alvos secundários podem realizar o teste de salvamento, se falharem, sofrem metade do dano, em caso de sucesso não sofrem dano.</p>
-                        <p class="no-indent"><b>Limite: </b>O Alquimista pode manter um número de bombas igual ao seu nível. Fabricando-as durante um Descanso Longo</p>
-                        <p class="no-indent"><b>Alcance: </b>3 + seu modificador de Agilidade</p>
-                        <p class="no-indent"><b>Dano: </b>1d8 (A sua escolha, entre: Ácido, Fogo ou Gelo)</p>
-                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
-                        <p class="no-indent"><b>Teste de Salvamento: </b>10 + mod. de Inteligência do Alquimista, de Reflexos</p>
-                    </td></tr>
-                </table>
                 
-                <table class="class-ability-table" id="fabricar">
-                    <tr><th>Fabricar (1)</th></tr>
-                    <tr><td>
-                        <p>O Alquimista pode construir certos objetos alquímicos, utilizando as Ferramentas de Alquimia. Os itens possíveis de se fabricar dependem do seu nível de alquimista e estão informados na tabela de <span class="kw">Itens Fabricáveis</span>.</p>
-                        <p>Você pode fabricar até 3 itens em um mesmo dia, sem custos. Para fabricar mais, será necessário obter componentes e pagar metade do valor do item, para cada novo fabricado.</p>
-                        <p class="no-indent"><b>Tempo: </b>3 Horas para cada Item</p>
-                    </td></tr>
-                </table>
+                <table class="class-ability-table2">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+                    
+                    <tr id="bomba-simples">
+                        <td rowspan="3">1</td>
+                        <td>Bomba Simples</td>
+                        <td>
+                            <p>O Alquimista cria uma fórmula de uma bomba simples e rápida de fazer, construindo-as durante um Descanso Longo.</p>
+                            <p>A bomba funciona como uma arma a distância. O alvo da bomba deve realizar o teste de salvamento, se for bem sucedido, sofre metade do dano.</p>
+                            <p>A bomba também atinge qualquer criatura em um raio de 1 m, estes alvos secundários podem realizar o teste de salvamento, se falharem, sofrem metade do dano, em caso de sucesso não sofrem dano.</p>
+                            <p class="no-indent"><b>Alcance: </b>3 + seu modificador de Agilidade</p>
+                            <p class="no-indent"><b>Dano: </b>1d8 (A sua escolha, entre: Ácido, Fogo ou Gelo)</p>
+                            <p class="no-indent"><b>Tempo: </b>1 Ação</p>
+                            <p class="no-indent"><b>Teste de Salvamento: </b>10 + mod. de Inteligência do Alquimista, de Reflexos</p>
+                        </td>
+                        <td>Pode manter um número de bombas igual ao seu nível</td>
+                    </tr>
 
-                <table class="class-ability-table" id="formula-aprimorada">
-                    <tr><th>Fórmula Aprimorada (1)</th></tr>
-                    <tr><td>
-                        <p>Você adiciona o seu modificador de Inteligência no dano de Venenos, Bombas (Incluindo a <span class="kw">Bomba Simples</span>) e Ácidos.</p>
-                    </td></tr>
-                </table>
+                    <tr id="fabricar">
+                        <td style="display: none;"></td>
+                        <td>Fabricar</td>
+                        <td>
+                            <p>O Alquimista pode construir certos objetos alquímicos, utilizando as Ferramentas de Alquimia. Os itens possíveis de se fabricar dependem do seu nível de alquimista e estão informados na tabela de <span class="kw">Itens Fabricáveis</span>.</p>
+                            <p>Você pode fabricar até 3 itens em um mesmo dia, sem custos. Para fabricar mais, será necessário obter componentes e pagar metade do valor do item, para cada novo fabricado.</p>
+                            <p class="no-indent"><b>Tempo: </b>3 Horas para cada Item</p>
+                        </td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="granadeiro">
-                    <tr><th>Granadeiro (3)</th></tr>
-                    <tr><td>
-                        <p class="no-indent">Você pode lançar 2 Bombas ou Ácidos em uma única ação.</p>
-                    </td></tr>
-                </table>
+                    <tr id="formula-aprimorada">
+                        <td style="display: none;"></td>
+                        <td>Fórmula Aprimorada</td>
+                        <td>
+                            <p>Você adiciona o seu modificador de Inteligência no dano de Venenos, Bombas (Incluindo a <span class="kw">Bomba Simples</span>) e Ácidos.</p>
+                        </td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="tonico-alquimico">
-                    <tr><th>Tônico Alquímico (4)</th></tr>
-                    <tr><td>
-                        <p>Você prepara uma poção de adrenalina, que gera um superefeito positivo, garantindo +2 nas Rolagens de Ataque e Testes de Salvamento. Ao final de cada novo turno, você deve rolar 1d3, caso tire 1 o efeito acaba.</p>
-                        <p class="no-indent"><b>Limite: </b>1 vez a cada Descanso Longo</p>
-                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
-                    </td></tr>
-                </table>
+                    <tr id="granadeiro">
+                        <td>3</td>
+                        <td>Granadeiro</td>
+                        <td>Você pode lançar 2 Bombas ou Ácidos em uma única ação.</td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="bomba-simples-ii">
-                    <tr><th>Bomba Simples II (5)</th></tr>
-                    <tr><td><p class="no-indent">Dano aumentado para 2d8.</p></td></tr>
-                </table>
+                    <tr id="tonico-alquimico">
+                        <td>4</td>
+                        <td>Tônico Alquímico</td>
+                        <td>
+                            <p>Você prepara uma poção de adrenalina, que gera um superefeito positivo. Com uma ação você bebe a poção em combate, garantindo +2 nas Rolagens de Ataque e Testes de Salvamento.</p>
+                            <p>Ao final de cada novo turno, você deve rolar 1d4, caso o resultado seja 1, o efeito acaba.</p>
+                        </td>
+                        <td>1 vez a cada Descanso Longo</td>
+                    </tr>
+                    
+                    <tr id="bomba-simples-ii">
+                        <td rowspan="2">5</td>
+                        <td>Bomba Simples II</td>
+                        <td>Dano aumentado para 2d8.</td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="descobertas-alquimicas">
-                    <tr><th>Descobertas Alquímicas (5)</th></tr>
-                    <tr><td>
-                        <p>O alquimista faz uma descoberta alquímica incrível. Que garante bônus de acordo com a <span class="kw">Tabela de Descobertas Alquímicas</span>.</p>
-                        <p class="no-indent"><b>Limite: </b>1 vez a cada Descanso Longo</p>
-                        <p class="no-indent"><b>Tempo: </b>1 Ação</p>
-                    </td></tr>
-                </table>
+                    <tr id="descoberta-alquimica">
+                        <td style="display: none;"></td>
+                        <td>Descoberta Alquímica</td>
+                        <td>
+                            <p>O alquimista faz uma descoberta alquímica incrível. Que garante bônus de acordo com a <span class="kw">Tabela de Descobertas Alquímicas</span>.</p>
+                        </td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="bomba-simples-iii">
-                    <tr><th>Bomba Simples III (10)</th></tr>
-                    <tr><td><p class="no-indent">Dano aumentado para 4d8.</p></td></tr>
-                </table>
+                    <tr id="resistencia-quimica">
+                        <td>7</td>
+                        <td>Resistência Química</td>
+                        <td>Você ganha Resistência a Veneno e Ácido.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="bomba-simples-iii">
+                        <td>10</td>
+                        <td>Bomba Simples III</td>
+                        <td>Dano aumentado para 4d8.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="descoberta-alquimica-ii">
+                        <td>11</td>
+                        <td>Descoberta Alquímica II</td>
+                        <td>Você faz mais uma Descoberta Alquímica.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="bomba-simples-iv">
+                        <td>15</td>
+                        <td>Bomba Simples IV</td>
+                        <td>Dano aumentado para 6d8.</td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="bomba-simples-iv">
-                    <tr><th>Bomba Simples IV (15)</th></tr>
-                    <tr><td><p class="no-indent">Dano aumentado para 6d8.</p></td></tr>
-                </table>
+                    <tr id="descoberta-alquimica-iii">
+                        <td>17</td>
+                        <td>Descoberta Alquímica III</td>
+                        <td>Você faz mais uma Descoberta Alquímica.</td>
+                        <td></td>
+                    </tr>
 
-                <table class="class-ability-table" id="bomba-simples-v">
-                    <tr><th>Bomba Simples V (20)</th></tr>
-                    <tr><td><p class="no-indent">Dano aumentado para 8d8.</p></td></tr>
+                    <tr id="alquimia-instantanea">
+                        <td rowspan="2">20</td>
+                        <td>Alquimia Instantânea</td>
+                        <td>
+                            <p>O Alquimista pode criar itens alquímicos com velocidade quase sobrenatural. Sendo possível criar um item alquímico em 1 turno, desde que seja bem-sucedido em um teste de Conhecimento com dificuldade igual a 5 + Nível do Item na tabela de itens fabricáveis. O limite dessa habilidade não afeta a habilidade <span class="kw">Fabricar</span>.</p>
+                        </td>
+                        <td>5 Itens a cada Descanso Longo</td>
+                    </tr>
+                    
+                    <tr id="bomba-simples-v">
+                        <td style="display: none;"></td>
+                        <td>Bomba Simples V</td>
+                        <td>Dano aumentado para 8d8.</td>
+                        <td></td>
+                    </tr>
                 </table>
             </section>
 
