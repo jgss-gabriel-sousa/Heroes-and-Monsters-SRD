@@ -83,7 +83,7 @@ function footerContent(){
 
 function headerGoHome(){
     let goHome = `
-        <a class="py-3" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.png" style="width:42px;height:42px;"></a>
+        <a class="py-3" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;"></a>
     `;
 
     document.querySelector("header").innerHTML = goHome + document.querySelector("header").innerHTML;
