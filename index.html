@@ -18,6 +18,7 @@
     <link href="styles/pages/home.css" rel="stylesheet">
 
     <script src="./scripts/funcs.js" type="module" defer></script>
+    <script src="./scripts/sidepanel.js" defer></script>
     
     <link rel="shortcut icon" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico" type="image/x-icon">
     <title>Heroes and Monsters</title>
@@ -27,7 +28,9 @@
         <h1>Heroes and Monsters SRD</h1>
     </header>
     <main>
-        <aside>
+        
+        <div id="mySidepanel" class="sidepanel">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <ul>
                     <a href="#jogador">Jogador</a>
@@ -45,7 +48,9 @@
                     <li><a href="#equipamentos-e-itens">Equipamentos e Itens</a></li>
                 </ul>
             </ul>
-        </aside>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        
         <div id="main-interface">
             <section>
                 <h1 id="jogador">Jogador</h1>
@@ -141,7 +146,7 @@
                     <hr>
                     <h2><a href="" id="compendio-de-magias">Compêndio de Magias</a></h2>
                     <hr>
-                    <h2><a href="" id="equipamentos-e-itens">Equipamentos e Itens</a></h2>
+                    <h2><a href="./pages/equipamentos.html" id="equipamentos-e-itens">Equipamentos e Itens</a></h2>
                     <hr>
                 </div>
             </section>

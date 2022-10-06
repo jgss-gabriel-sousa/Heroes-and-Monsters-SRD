@@ -20,6 +20,8 @@ section {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-gap: 20px;
+    width: 85%;
+    max-width: 1000px;
 }
 #main-interface li {
     white-space: nowrap;
@@ -32,6 +34,7 @@ section {
     grid-gap: 5px;
     font-size: 14px;
     justify-content: space-evenly;
+    justify-items: center;
 }
 
 @media only screen and (max-width: 750px) {
@@ -50,10 +53,5 @@ section {
     }
     section {
         min-width: auto;
-    }
-
-    
-    #races-list, #classes-list {
-        overflow-x: scroll;
     }
 }
