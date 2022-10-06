@@ -2,7 +2,7 @@
 @import "./scrollbar.css";
 @import "./sidepanel.css";
 @import "./footer.css";
-@import "./table.css";
+@import "./tables.css";
 
 body {
     height: 100%;
