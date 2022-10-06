@@ -13,6 +13,7 @@
     <link href="../../styles/pages/classes.css" rel="stylesheet">
 
     <script src="../../scripts/funcs.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <link rel="shortcut icon" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico" type="image/x-icon">
     <title>H&M - Classe - Arqueiro</title>
@@ -22,9 +23,19 @@
         <h1>Arqueiro</h1>
     </header>
     <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#descricao">Descrição</a>
+            <a href="#progressao">Progressão</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#caminho-de-arquearia">Caminhos de Arquearia</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
         <div id="main-interface">
             <section id="first-section">
-                <section id="caracteristicas-raciais">
+                <section id="caracteristicas">
                     <h2>Características</h2>
                     <br>
                     <h4><b>Atributos:</b>           +2 em Agilidade e -2 em Vitalidade</h4>

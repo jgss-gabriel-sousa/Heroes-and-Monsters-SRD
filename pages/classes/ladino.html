@@ -13,6 +13,7 @@
     <link href="../../styles/pages/classes.css" rel="stylesheet">
 
     <script src="../../scripts/funcs.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <link rel="shortcut icon" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico" type="image/x-icon">
     <title>H&M - Classe - Ladino</title>
@@ -22,9 +23,18 @@
         <h1>Ladino</h1>
     </header>
     <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#descricao">Descrição</a>
+            <a href="#progressao">Progressão</a>
+            <a href="#habilidades">Habilidades</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
         <div id="main-interface">
             <section id="first-section">
-                <section id="caracteristicas-raciais">
+                <section id="caracteristicas">
                     <h2>Características</h2>
                     <br>
                     <h4><b>Atributos:</b>           +2 em Agilidade e -2 em Força</h4>
@@ -290,137 +300,6 @@
                         <td>1 vez a cada Descanso Longo</td>
                     </tr>
 
-                </table>
-            </section>
-            <hr>
-
-            <section class="overflow-section" id="caminho-de-arquearia">
-                <h2>Caminhos de Arquearia</h2>
-                <table class="class-ability-table" id="caminho-de-arquearia">
-                    <tr><th>Franco-atirador</th></tr>
-                    <tr><td>
-                        <p>Um franco-atirador é um arqueiro cuja precisão é incomparável. Eles se posicionam bem, para focar e eliminar uma ameaça de cada vez.</p>
-                    </td></tr>
-                </table>
-
-                
-                <table class="class-ability-table" id="caminho-de-arquearia">
-                    <tr><th>Nômade</th></tr>
-                    <tr><td>
-                        <p>Os nômades são arqueiros que passam seus dias viajando e explorando enquanto aprendem novas habilidades ao longo do caminho. Esses indivíduos usam sua velocidade e adaptabilidade para ajudar seus aliados dentro e fora da batalha.</p>
-                    </td></tr>
-                </table>
-
-                <br>
-                <h3>Franco-atirador: </h3>
-                <table class="class-ability-table2">
-                    <tr>
-                        <th>Nível</th>
-                        <th>Habilidade</th>
-                        <th>Efeito</th>
-                        <th>Limite</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Marcado para Morrer</td>
-                        <td>
-                            <p>Com uma Ação Menor, você pode marcar uma criatura a até 12 metros de você, garantindo +2 de bônus nas Rolagens de Ataque contra esta criatura. Quando você atacar uma outra criatura o efeito é encerrado.</p>
-                        </td>
-                        <td>Número de vezes igual ao seu modificador Carisma (Mínimo de 1)</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Esquiva Sobrenatural</td>
-                        <td>
-                            <p>Como uma Reação, você reduz pela metade o dano sofrido de um ataque.</p>
-                        </td>
-                        <td>Número de vezes igual ao seu modificador Carisma (Mínimo de 1)</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Foco Aprimorado</td>
-                        <td>
-                            <p>Como uma Ação Menor, escolha um alvo para se focar, até o início do próximo turno, seus ataques a distância causam 1d8 de dano adicional contra ele.</p>
-                        </td>
-                        <td>Número de vezes igual ao seu modificador Carisma (Mínimo de 1)</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td>Perturbar</td>
-                        <td>
-                            <p>Antes que o resultado de um ataque do seu alvo marcado seja anunciado, como uma Reação, você pode impor Desvantagem nesta Rolagem de Ataque ou obter Vantagem em um Teste de Salvamento.</p>
-                        </td>
-                        <td>Número de vezes igual ao seu modificador Carisma (Mínimo de 1)</td>
-                    </tr>
-                </table>
-
-                <br>
-                <h3>Nômade: </h3>
-                <table class="class-ability-table2">
-                    <tr>
-                        <th>Nível</th>
-                        <th>Habilidade</th>
-                        <th>Efeito</th>
-                        <th>Limite</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Habilidade Pura</td>
-                        <td>
-                            <p>Antes que os resultados de um teste sejam anunciados, você pode adicionar 1d6 ao teste. Você pode usar essa habilidade somente uma vez por teste.</p>
-                        </td>
-                        <td>2 vezes a cada descanso</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">6</td>
-                        <td>Evadir</td>
-                        <td>
-                            <p>Sempre que um inimigo se mover a até 2 m de você, mas não engajar, você pode se mover por até 3 metros diretamente para longe dele, como uma Reação, esse movimento não provoca Ataques de Oportunidade.</p>
-                        </td>
-                        <td>2 vezes a cada descanso</td>
-                    </tr>
-                    <tr>
-                        <td style="display: none;"></td>
-                        <td>Habilidade Pura II</td>
-                        <td></td>
-                        <td>3 vezes a cada descanso</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="4">11</td>
-                        <td>Evadir II</td>
-                        <td>Você pode executar essa habilidade quando um inimigo se aproximar a até 4 m.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="display: none;"></td>
-                        <td>Habilidade Pura III</td>
-                        <td></td>
-                        <td>4 vezes a cada descanso</td>
-                    </tr>
-                    <tr>
-                        <td style="display: none;"></td>
-                        <td>Movimento Acelerado</td>
-                        <td>+2 no seu Deslocamento e +1 no seu Desengajar.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="display: none;"></td>
-                        <td>Viajante Experiente</td>
-                        <td>+2 em Duas Perícias.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">16</td>
-                        <td>Habilidade Pura IV</td>
-                        <td></td>
-                        <td>5 vezes a cada descanso</td>
-                    </tr>
-                    <tr>
-                        <td style="display: none;"></td>
-                        <td>Revigorar</td>
-                        <td>Você recupera todos os usos dos Truques de Tiro.</td>
-                        <td>1 vez a cada Descanso Longo</td>
-                    </tr>
                 </table>
             </section>
         </div>
