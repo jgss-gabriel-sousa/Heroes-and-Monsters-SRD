@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./scrollbar.css";
 @import "./sidepanel.css";
+@import "./footer.css";
+@import "./table.css";
 
 body {
     height: 100%;
