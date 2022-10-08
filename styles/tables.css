@@ -130,16 +130,19 @@ table th {
     padding: 5px 10px;
     vertical-align: middle;
     border: 1px solid #41464b;
+    text-align: center;
 }
 .progress-table tr:nth-child(even) {
     background-color: #cbcbcb;
 }
 .progress-table td:nth-child(1) {
     font-weight: bold;
-    text-align: center;
     font-size: 16px;
     background-color: #111518e6;
     color: #dddddd;
+}
+.progress-table td:nth-child(2) {
+    text-align: justify;
 }
 .progress-table p:nth-last-child(1) {
     margin-bottom: 5px;
