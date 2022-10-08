@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/funcs.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <link rel="shortcut icon" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico" type="image/x-icon">
+    <title>H&M - Classe - Necromante</title>
+</head>
+<body>
+    <header>
+        <h1>Necromante</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#descricao">Descrição</a>
+            <a href="#progressao">Progressão</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#especialidade-esoterica">Especialidades Esotéricas</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+        <div id="main-interface">
+            <section id="first-section">
+                <section id="caracteristicas">
+                    <h2>Características</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Inteligência e -2 em Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em <b>duas</b> da lista</h4>
+                    <h4><b>Lista de Perícias:</b>   Arcanismo, Concentração, Conhecimento, Investigação, Intimidação, Religião</h4>
+                    <h4><b>Dado de Vida:</b>        d4</h4>
+                    <hr>
+                    <h4><b>Atributo de Conjuração:</b>  Inteligência</h4>
+                    <h4><b>Registro de Magias:</b>      Grimório</h4>
+                    <h4><b>Mana Inicial:</b>            10</h4>
+                    <h4><b>Mana por Nível:</b>          3</h4>
+                    <h4><b>Novas Magias:</b>            3</h4>
+                    <hr>
+                    <h4><b>Armas:</b>               Simples e uma À Distância</h4>
+                    <h4><b>Armaduras:</b>           Leves</h4>
+                    <h4><b>Escudos:</b>             Nenhum</h4>
+                    <h4><b>Ferramentas:</b>         Nenhuma</h4>
+                    <hr>
+                    <h4><b>Equipamento Inicial: </b>Adaga, Kit de Conjurador, Item para guardar as almas (Cajado, Colar, Cristal, entre outros)</h4>
+                    <h4><b>Riqueza Inicial: </b>6d4 ou 15 Moedas de Ouro</h4>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/classes/necromante.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section id="descricao">
+                <h2>Descrição</h2>
+                <p>Enquanto uns usam a magia para fazer coisas insignificantes como conjurar fogo ou voar, o Necromante é um mestre sobre a própria morte. Eles estudam os segredos profundos e proibidos para ressuscitar os mortos.</p>
+                <p>Talvez eles busquem o poder que o domínio sobre a morte proporciona. Talvez sejam estudiosos sérios e desavergonhados, que rejeitam os limites mesquinhos mantidos por outros. </p>
+                <p>Cada inimigo que eles derrotam se torna um aliado impaciente e descartável, eles se tornam imunes às energias da morte e por fim, controlam a imortalidade e o poder dos mortos-vivos para si mesmos.</p>
+            </section>
+
+            <section class="overflow-section" id="progressao">
+                <h2>Progressão</h2>
+
+                <table class="progress-table">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidades</th>
+                        <th>Mana</th>
+                        <th>Magias</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li><span class="kw">Colheita de Almas</span></li>
+                                <li><span class="kw">Roubo de Vida</span></li>
+                            </ul>
+                        </td>
+                        <td>10</td>
+                        <td rowspan="2">3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><span class="kw">Mais Forte que a Morte</span></td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span class="kw">Especialidade Esotérica</span></td>
+                        <td>16</td>
+                        <td rowspan="2">6</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span class="kw">Roubo de Vida II</span></td>
+                        <td>22</td>
+                        <td rowspan="2">9</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Habilidade da <span class="kw">Especialidade Esotérica</span></td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td>
+                        <td>28</td>
+                        <td rowspan="2">12</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><span class="kw">Arma Necrótica</span></td>
+                        <td>31</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td></td>
+                        <td>34</td>
+                        <td rowspan="2">15</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li>Habilidade da <span class="kw">Especialidade Esotérica</span></li>
+                                <li><span class="kw">Mais Forte que a Morte II</span></li>
+                            </ul>
+                        </td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span class="kw">Macabro</span></td>
+                        <td>40</td>
+                        <td rowspan="2">18</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><span class="kw">Roubo de Vida III</span></td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td></td>
+                        <td>46</td>
+                        <td rowspan="2">21</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li><span class="kw">Desenterramento Ritualístico</span></li>
+                                <li>Habilidade da <span class="kw">Especialidade Esotérica</span></li>
+                            </ul>
+                        </td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td></td>
+                        <td>52</td>
+                        <td rowspan="2">24</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td><span class="kw">Arma Necrótica II</span></td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td></td>
+                        <td>58</td>
+                        <td rowspan="2">27</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td><span class="kw">Macabro II</span></td>
+                        <td>61</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td></td>
+                        <td>64</td>
+                        <td rowspan="2">30</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td><span class="kw">Multidão de Servos</span></td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="overflow-section" id="habilidades">
+                <h2>Habilidades</h2>
+                
+                <table class="class-ability-table2">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+                    
+                    <tr id="colheita-de-almas">
+                        <td rowspan="2">1</td>
+                        <td>Ataque Crítico</td>
+                        <td>
+                            <p>Com uma ação, você pode capturar parte da essência da alma de um corpo cuja morte ocorreu a no máximo 5 dias.</p>
+                            <p>Você pode coletar a essência de qualquer corpo em um raio de 2 m, recuperando 1d3 de Mana para cada corpo.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="roubo-de-vida">
+                        <td style="display: none;"></td>
+                        <td>Roubo de Vida</td>
+                        <td>
+                            <p>Você pode fazer um ataque de toque corpo a corpo contra uma criatura viva, esse ataque é feito usando o atributo de Agilidade e causa dano Necrótico igual a 1d8 + seu modificador de Vontade.</p>
+                            <p class="no-indent">Você ganha pontos de vida temporários iguais à quantidade de dano causado.</p>
+                        </td>
+                        <td>Número de vezes igual ao seu modificador de Vontade a cada Descanso Longo</td>
+                    </tr>
+                    
+                    <tr id="mais-forte-que-a-morte">
+                        <td>2</td>
+                        <td>Mais Forte que a Morte</td>
+                        <td>Você tem Vantagem em testes quando estiver Morrendo.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="especialidade-esoterica">
+                        <td>3</td>
+                        <td>Especialidade Esotérica</td>
+                        <td>Escolha um caminho oculto para se especializar em lidar com a morte. <b><span class="kw">Especialidades Esotéricas</span></b></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="roubo-de-vida-ii">
+                        <td>5</td>
+                        <td>Roubo de Vida II</td>
+                        <td>Dano ampliado para 2d8.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="arma-necrotica">
+                        <td>8</td>
+                        <td>Arma Necrótica</td>
+                        <td>
+                            <p>Com uma Ação Menor, você pode imbuir uma arma com energia negativa, fazendo com que seu próximo ataque bem sucedido com ela cause 2d6 de Dano Necrótico adicional.</p>
+                        </td>
+                        <td>Número de vezes igual ao seu modificador de Vontade a cada Descanso Longo</td>
+                    </tr>
+                    
+                    <tr id="mais-forte-que-a-morte-ii">
+                        <td>10</td>
+                        <td>Mais Forte que a Morte</td>
+                        <td>Você pode garantir o efeito para uma criatura aliada, que esteja a até 10 m.</td>
+                        <td>Uma vez por dia</td>
+                    </tr>
+                    
+                    <tr id="macabro">
+                        <td>11</td>
+                        <td>Macabro</td>
+                        <td>
+                            <p>Sua pele ficou pálida e seus olhos adquiriram uma tonalidade amarela, você recebe +4 em Intimidação, se torna Imune a Doenças e ganha Resistência a Dano Necrótico.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="roubo-de-vida-iii">
+                        <td>12</td>
+                        <td>Roubo de Vida III</td>
+                        <td>Dano ampliado para 3d8.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="desenterramento-ritualistico">
+                        <td>14</td>
+                        <td>Desenterramento Ritualístico</td>
+                        <td>
+                            <p>Você conjura a magia Animar Mortos como um ritual, com duração de 1 Hora e que não consome mana. Essa habilidade não pode ser usada para manter o controle da criatura, somente a conjuração da magia tem este efeito.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="arma-necrotica-ii">
+                        <td>16</td>
+                        <td>Arma Necrótica II</td>
+                        <td>Dano ampliado para 4d6.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="macabro-ii">
+                        <td>18</td>
+                        <td>Macabro II</td>
+                        <td>
+                            <p>Alguns necromantes alteram sua aparência, como por exemplo com pontos costurados no corpo. Você sempre aparenta estar doente e exausto por causa das constantes relações com a morte.</p>
+                            <p>Você tem Vantagem em todos os testes de Carisma com mortos-vivos e não envelhecerá mais, além de tornar-se Imune a dano Necrótico e de Veneno, além de Imune a condição Amedrontado.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="multidão-de-servos">
+                        <td>20</td>
+                        <td>Multidão de Servos</td>
+                        <td>
+                            <p>Com uma Ação, você aponta e ordena para um morto vivo a até 9 metros. Ele realizar um teste de Vontade com dificuldade 20.
+                            <p>Se o alvo obtiver sucesso, ele se torna Imune a esta habilidade pelas próximas 24 horas.</p>
+                            <p>Se o alvo falhar, ele deve obedece ao Necromante pelas próximas 24 horas, quando então será necessário o uso da habilidade novamente, para manter o controle da criatura.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+
+            <section class="overflow-section" id="especialidade-esoterica">
+                <h2 id="especialidades-esotericas">Especialidades Esotéricas</h2>
+                <table class="class-ability-table">
+                    <tr><th><span class="kw">Agente Funerário</span></th></tr>
+                    <tr><td>
+                        <p>Um agente funerário é especializado em ressuscitar os mortos. Seus lacaios são mais resistentes e lutam por mais tempo. Além de sempre ter um esqueleto ou zumbi ao seu lado para realizar tarefas. Um agente funerário não tem medo da morte, pois a morte luta por ele.</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table">
+                    <tr><th><span class="kw">Ceifeiro</span></th></tr>
+                    <tr><td>
+                        <p>Os ceifeiros brincam com a energia negativa de uma maneira que os outros fogem. Um ceifador nem sempre mostra suas intenções aos outros até que esteja pronto para eles brincar com seus mortos-vivos ou sentir a necrose de seus feitiços.</p>
+                        <p>Mesmo que ele possa controlar mortos-vivos, ele prefere abater os outros em seu caminho. Mortos-vivos são fracos para suas ações, o verdadeiro poder vem do aproveitamento de energia negativa para si mesmo, não de fazer fantoches.</p>
+                    </td></tr>
+                </table>
+
+                <table class="class-ability-table">
+                    <tr><th><span class="kw">Guardião</span></th></tr>
+                    <tr><td>
+                        <p>Necromantes deste ocultismo estudam a morte para mantê-la sob controle para o seu benefício. Os guardiões têm uma compreensão profunda e intrincada de por que as criaturas morrem e como retardar a morte ou pará-la completamente. Mas as coisas necessárias para obter tal conhecimento não são para os fracos de coração ou para os que não têm determinação.</p>
+                    </td></tr>
+                </table>
+
+                <br>
+                <h3 id="agente-funerario">Agente Funerário: </h3>
+                <table class="class-ability-table2">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th style="display: none;"></th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Resistência Profana</td>
+                        <td>Você tem Resistência a dano Necrótico e não pode ter seus pontos de vida máximos reduzidos.</td>
+                        <td style="display: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Animação Refinada</td>
+                        <td>Os mortos-vivos que você criar tem pontos de vida adicionais iguais ao seu nível de Necromante.</td>
+                        <td style="display: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Animação Refinada II</td>
+                        <td>Os mortos-vivos que você criar tem +2 de Defesa.</td>
+                        <td style="display: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Senhor dos Mortos-Vivos</td>
+                        <td>Seus mortos-vivos não possuem Vulnerabilidade a qualquer dano e a conjuração da magia Animar Mortos é feita em 1 Turno.</td>
+                        <td style="display: none;"></td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3 id="ceifeiro">Ceifeiro: </h3>
+                <table class="class-ability-table2">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Conhecimento para a Morte</td>
+                        <td>Escolha 3 magias causadoras de dano para aprender, elas podem ser da lista de magias de qualquer classe e de até 3º círculo.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Colheita de Almas Aprimorada</td>
+                        <td>Você recupera 1 Ponto de Vida em cada corpo que usar a Habilidade Colheita de Almas.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Conjuração Necrótica</td>
+                        <td>
+                            <p>Uma nuvem mortal acompanha os seus feitiços necromantes conjurados, corroendo a carne e os ossos de sua vítima. Suas magias da escola de Necromancia causam 1d8 de dano Necrótico adicional.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Ceifador</td>
+                        <td>
+                            <p>Contos de fadas descrevem um Ceifeiro que vem para levar as almas de pessoas prontas para morrer, mas a verdade é que o ceifeiro às visita para matar.</p>
+                            <p>Com uma ação, uma aura envolve você e suga a vida de qualquer coisa em um raio de 1 m. Uma criatura no alcance deve ser bem-sucedida em um teste de Vitalidade com dificuldade 20 ou perderá 20 pontos de vida. Você recupera pontos de vida iguais à metade dos pontos de vida que a criatura perdeu.</p>
+                        </td>
+                        <td>2 vezes a cada Descanso</td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3 id="guardiao">Guardião: </h3>
+                <table class="class-ability-table2">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vida sob Demanda</td>
+                        <td>
+                            <p>Com uma ação, você toca uma criatura e ela recupera pontos de vida em um valor igual ao seu nível de Necromante + seu modificador de Inteligência.</p>
+                        </td>
+                        <td>1 vez a cada descanso</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Intelecto Expandido</td>
+                        <td>Você aprende as magias: Estabilizar, Curar, Detectar Veneno e Doença, Restauração Menor.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Aura de Bem Estar</td>
+                        <td>
+                            <p>Se uma criatura aliada estiver abaixo da metade de seus pontos de vida máximos e começar seu turno a até 3 metros de você, ela ganha pontos de vida iguais ao seu nível de Necromante.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Negação</td>
+                        <td>
+                            <p>Você pode ignorar a inconveniência da morte. Se você ou uma criatura que possa tocar, cair a 0 pontos de vida, você pode usar sua Reação para fazer com que aquela criatura fique com 1 ponto de vida.</p>
+                        </td>
+                        <td>1 vez a cada Descanso</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
