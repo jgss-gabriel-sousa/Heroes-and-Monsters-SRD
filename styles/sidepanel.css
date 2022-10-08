@@ -1,18 +1,16 @@
-/* The sidepanel menu */
 .sidepanel {
-    height: max-content; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: max-content;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-/* The sidepanel links */
 .sidepanel a {
     padding: 4px 4px 4px 10px;
     text-decoration: none;
@@ -22,13 +20,15 @@
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+.sidepanel li {
+    text-indent: 1rem;
+}
+
 .sidepanel a:hover, .sidepanel a:active {
     color: #f1f1f1;
     text-decoration: none;
 }
 
-/* Positionrgb(10, 8, 8)yle the close button (top right corner) */
 .sidepanel .closebtn {
     position: absolute;
     top: 0;
@@ -36,8 +36,13 @@
     font-size: 36px;
     margin-left: 50px;
 }
+.go_home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+}
 
-/* Style the button that is used to open the sidepanel */
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -46,7 +51,7 @@
     padding: 10px 15px;
     border: none;
     position: fixed;
-    z-index: 2; /* Stay on top */
+    z-index: 2;
     left: 0;
     top: 0;
     border-radius: 0;
