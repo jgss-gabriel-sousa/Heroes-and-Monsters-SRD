@@ -1,9 +1,9 @@
-export function rand(min, max){
+function rand(min, max){
     return Math.floor(Math.random() * max) + min;
 }
 
 let selected = false;
-export function selectText(node){
+function selectText(node){
     if(selected){
         selected = false;
         window.getSelection().removeAllRanges();
@@ -26,14 +26,14 @@ export function selectText(node){
     }
 }
 
-export function accentsTidy(s){
+function accentsTidy(s){
     var r = s.toLowerCase();
     const non_asciis = {'a': '[àáâãäå]', 'ae': 'æ', 'c': 'ç', 'e': '[èéêë]', 'i': '[ìíîï]', 'n': 'ñ', 'o': '[òóôõö]', 'oe': 'œ', 'u': '[ùúûűü]', 'y': '[ýÿ]'};
     for (let i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
     return r;
 }
 
-export function setKeywordLinks(){
+function setKeywordLinks(){
     function stringParser(str){
         //lowercase string, rmv accents and set "-" in all blank spaces
         return accentsTidy(str).replace(/\s/g, "-");
@@ -45,7 +45,7 @@ export function setKeywordLinks(){
         const link = stringParser(keys[i].innerHTML);
         const text = keys[i].innerHTML;
 
-        keys[i].innerHTML = `<a href="#${link}">${text}</a>`
+        keys[i].innerHTML = `<a onclick="scrollToID('${link}')">${text}</a>`
     }
 }setKeywordLinks();
 
@@ -53,7 +53,7 @@ function footerContent(){
     const element = document.querySelector("body");
     const footer = document.createElement("footer");
     footer.innerHTML = `
-        <div class="container d-flex justify-content-center py-5 pb-3">
+        <div>
             <ul class="wrapper">
                 <a href="mailto:jgss.gabriel.sousa@gmail.com" target="_blank"><li class="icon email">
                     <span class="tooltip">E-mail</span>
@@ -73,7 +73,7 @@ function footerContent(){
                 </li></a>
             </ul>
         </div>
-        <div class="container d-flex flex-column align-items-center py-1 mb-5" id="contact">
+        <div id="contact">
             <p>Copyright © <a href="https://jgss-gabriel-sousa.github.io/"><span>Gabriel Sousa</span></a></p>
             <a class="py-3" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;"></a>
         </div>
@@ -88,3 +88,15 @@ function headerGoHome(){
 
     document.querySelector("header").innerHTML = goHome + document.querySelector("header").innerHTML;
 }headerGoHome();
+
+function setDarkModeOnStart(){
+    if(localStorage.getItem("HnM_theme") == "dark"){
+        document.querySelector("body").classList.add("dark-mode");
+        document.querySelector("#dark-mode i").classList.add("fa-toggle-off");
+        document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
+    }
+    else{
+        document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
+        document.querySelector("#dark-mode i").classList.add("fa-toggle-on");
+    }
+}setDarkModeOnStart();

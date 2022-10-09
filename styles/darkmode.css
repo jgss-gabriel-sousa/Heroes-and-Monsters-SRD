@@ -1,0 +1,29 @@
+.dark-mode{
+    --bg-table-grey: #333;
+    --bg-table-white: #444;
+    --bg-white: #444;
+    --text-white: #100000;
+    --text: #c2c2c2;
+    --border-dark: #555;
+}
+
+.dark-mode .wrapper .icon{
+    background-color: #222;
+}
+.dark-mode #mySidepanel{
+    border-bottom: 1px solid #777;
+    border-right: 1px solid #777;
+    border-width: 0px;
+}
+
+#dark-mode {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #9f9f9f;
+    top: 12px;
+    right: 65px;
+    font-size: 24px;
+    margin-left: 50px;
+}

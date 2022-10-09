@@ -20,10 +20,12 @@ table td, table p {
 }
 table td {
     padding: 5px;
+    border: 1px solid var(--border-dark);
 }
 table th {
     font-size: 16px;
     padding: 10px;
+    border: 1px solid var(--border-dark);
 }
 
 .overflow-section > table {
@@ -53,19 +55,19 @@ table th {
 }
 .talent-table th {
     text-align: center;
-    color: #dddddd;
-    background-color: #192026;
+    color: var(--text-table-white);
+    background-color: var(--bg-header);
 }
 .talent-table td, .talent-table th {
-    border: 1px solid #41464b;
+    
     padding: 8px;
 }
 .talent-table tr:nth-child(even) {
-    background-color: #cbcbcb;
+    background-color: var(--bg-table-grey);
 }
 .talent-table td:first-child {
     background-color: #111518e6;
-    color: #dddddd;
+    color: var(--text-table-white);
     font-weight: bold;
     text-align: center;
     font-size: 14px;
@@ -75,16 +77,13 @@ table th {
 /*##############################################################################################*/
 
 .ability-table {
-    background-color: #ededed;
+    background-color: var(--bg-table-white);
     margin-bottom: 20px;
 }
 .ability-table th {
     text-align: center;
-    background-color: #192026;
-    color: #dddddd;
-}
-.ability-table tr {
-    border: 1px solid #41464b;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
 }
 .ability-table td {
     line-height: 1.5;
@@ -105,8 +104,7 @@ table th {
 
 .progress-table {
     padding: 10px;
-    background-color: #ededed;
-    border: 1px solid #cbcbcb;
+    background-color: var(--bg-table-white);
     margin: 10px 0px;
     font-size: 14px;
 }
@@ -114,32 +112,30 @@ table th {
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
-    border: 1px solid #41464b;
     max-width: min-content;
 }
 .progress-table th:first-child {
     width: 75px;
 }
 .progress-table tr:nth-child(1) {
-    background-color: #192026;
-    color: #dddddd;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
     white-space: nowrap;
 }
 .progress-table td {
     line-height: 1.5;
     padding: 5px 10px;
     vertical-align: middle;
-    border: 1px solid #41464b;
     text-align: center;
 }
 .progress-table tr:nth-child(even) {
-    background-color: #cbcbcb;
+    background-color: var(--bg-table-grey);
 }
 .progress-table td:nth-child(1) {
     font-weight: bold;
     font-size: 16px;
     background-color: #111518e6;
-    color: #dddddd;
+    color: var(--text-table-white);
 }
 .progress-table td:nth-child(2) {
     text-align: justify;
@@ -152,8 +148,7 @@ table th {
 
 .class-ability-table {
     padding: 10px;
-    background-color: #ededed;
-    border: 1px solid #cbcbcb;
+    background-color: var(--bg-table-white);
     margin-bottom: 30px;
     font-size: 14px;
 }
@@ -161,12 +156,8 @@ table th {
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
-    border: 1px solid #41464b;
-    background-color: #192026;
-    color: #dddddd;
-}
-.class-ability-table tr {
-    border: 1px solid #41464b;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
 }
 .class-ability-table td {
     line-height: 1.5;
@@ -180,8 +171,7 @@ table th {
 
 .class-ability-table2 {
     padding: 10px;
-    background-color: #ededed;
-    border: 1px solid #cbcbcb;
+    background-color: var(--bg-table-white);
     margin: 10px 0px;
     font-size: 14px;
 }
@@ -189,11 +179,10 @@ table th {
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
-    border: 1px solid #41464b;
 }
 .class-ability-table2 tr:nth-child(1) {
-    background-color: #192026;
-    color: #dddddd;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
     white-space: nowrap;
 }
 .class-ability-table2 tr {
@@ -203,17 +192,16 @@ table th {
     line-height: 1.5;
     padding: 10px;
     vertical-align: middle;
-    border: 1px solid #41464b;
 }
 .class-ability-table2 tr:nth-child(even) {
-    background-color: #cbcbcb;
+    background-color: var(--bg-table-grey);
 }
 .class-ability-table2 td:nth-child(-n+2) {
     font-weight: bold;
     text-align: center;
     font-size: 18px;
-    background-color: #192026;
-    color: #dddddd;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
 }
 .class-ability-table2 td:nth-child(2) {
     background-color: #111518e3;

@@ -18,8 +18,12 @@
     color: #9f9f9f;
     display: block;
     transition: 0.3s;
+    user-select: none;
 }
 
+.sidepanel ul {
+    margin: 0;
+}
 .sidepanel li {
     text-indent: 1rem;
 }
@@ -61,4 +65,13 @@
 
 .openbtn:hover {
     background-color: #444;
+}
+
+.highlighted {
+    text-decoration: underline;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.highlighted-rmv {
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }

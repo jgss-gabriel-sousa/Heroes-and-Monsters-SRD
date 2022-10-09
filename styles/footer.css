@@ -1,9 +1,18 @@
-
 footer {
     width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 footer p{
     text-indent: 0px;
+    text-align: center;
 }
 
 .wrapper {

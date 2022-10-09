@@ -9,9 +9,9 @@ ul {
 }
 
 section {
-    background-color: #dddddd;
+    background-color: var(--bg-white);
     padding: 20px;
-    border: 1px solid #41464b;
+    border: 1px solid var(--border-dark);
     min-width: 250px;
 }
 
