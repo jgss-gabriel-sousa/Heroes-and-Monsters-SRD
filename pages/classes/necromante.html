@@ -26,15 +26,15 @@
             <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
             <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
 
-            <a href="#caracteristicas">Características</a>
-            <a href="#descricao">Descrição</a>
-            <a href="#progressao">Progressão</a>
-            <a href="#habilidades">Habilidades</a>
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('progressao')">Progressão</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
             <ul>
-                <a href="#especialidades-esotericas">Especialidades Esotéricas</a>
-                <li><a href="#agente-funerario">Agente Funerário</a></li>
-                <li><a href="#ceifeiro">Ceifeiro</a></li>
-                <li><a href="#guardiao">Guardião</a></li>
+                <a onclick="scrollToID('especialidades-esotericas')">Especialidades Esotéricas</a>
+                <li><a onclick="scrollToID('agente-funerario')">Agente Funerário</a></li>
+                <li><a onclick="scrollToID('ceifeiro')">Ceifeiro</a></li>
+                <li><a onclick="scrollToID('guardiao')">Guardião</a></li>
             </ul>
         </div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -340,30 +340,9 @@
 
             <section class="overflow-section" id="especialidade-esoterica">
                 <h2 id="especialidades-esotericas">Especialidades Esotéricas</h2>
-                <table class="class-ability-table">
-                    <tr><th><span class="kw">Agente Funerário</span></th></tr>
-                    <tr><td>
-                        <p>Um agente funerário é especializado em ressuscitar os mortos. Seus lacaios são mais resistentes e lutam por mais tempo. Além de sempre ter um esqueleto ou zumbi ao seu lado para realizar tarefas. Um agente funerário não tem medo da morte, pois a morte luta por ele.</p>
-                    </td></tr>
-                </table>
 
-                <table class="class-ability-table">
-                    <tr><th><span class="kw">Ceifeiro</span></th></tr>
-                    <tr><td>
-                        <p>Os ceifeiros brincam com a energia negativa de uma maneira que os outros fogem. Um ceifador nem sempre mostra suas intenções aos outros até que esteja pronto para eles brincar com seus mortos-vivos ou sentir a necrose de seus feitiços.</p>
-                        <p>Mesmo que ele possa controlar mortos-vivos, ele prefere abater os outros em seu caminho. Mortos-vivos são fracos para suas ações, o verdadeiro poder vem do aproveitamento de energia negativa para si mesmo, não de fazer fantoches.</p>
-                    </td></tr>
-                </table>
-
-                <table class="class-ability-table">
-                    <tr><th><span class="kw">Guardião</span></th></tr>
-                    <tr><td>
-                        <p>Necromantes deste ocultismo estudam a morte para mantê-la sob controle para o seu benefício. Os guardiões têm uma compreensão profunda e intrincada de por que as criaturas morrem e como retardar a morte ou pará-la completamente. Mas as coisas necessárias para obter tal conhecimento não são para os fracos de coração ou para os que não têm determinação.</p>
-                    </td></tr>
-                </table>
-
-                <br>
                 <h3 id="agente-funerario">Agente Funerário: </h3>
+                <p>Um agente funerário é especializado em ressuscitar os mortos. Seus lacaios são mais resistentes e lutam por mais tempo. Além de sempre ter um esqueleto ou zumbi ao seu lado para realizar tarefas. Um agente funerário não tem medo da morte, pois a morte luta por ele.</p>
                 <table class="class-ability-table2">
                     <tr>
                         <th>Nível</th>
@@ -399,6 +378,8 @@
 
                 <br>
                 <h3 id="ceifeiro">Ceifeiro: </h3>
+                <p>Os ceifeiros brincam com a energia negativa de uma maneira que os outros fogem. Um ceifador nem sempre mostra suas intenções aos outros até que esteja pronto para eles brincar com seus mortos-vivos ou sentir a necrose de seus feitiços.</p>
+                <p>Mesmo que ele possa controlar mortos-vivos, ele prefere abater os outros em seu caminho. Mortos-vivos são fracos para suas ações, o verdadeiro poder vem do aproveitamento de energia negativa para si mesmo, não de fazer fantoches.</p>
                 <table class="class-ability-table2">
                     <tr>
                         <th>Nível</th>
@@ -439,6 +420,7 @@
 
                 <br>
                 <h3 id="guardiao">Guardião: </h3>
+                <p>Necromantes deste ocultismo estudam a morte para mantê-la sob controle para o seu benefício. Os guardiões têm uma compreensão profunda e intrincada de por que as criaturas morrem e como retardar a morte ou pará-la completamente. Mas as coisas necessárias para obter tal conhecimento não são para os fracos de coração ou para os que não têm determinação.</p>
                 <table class="class-ability-table2">
                     <tr>
                         <th>Nível</th>
