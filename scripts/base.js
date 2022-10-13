@@ -59,14 +59,16 @@ function headerGoHome(){
 function setDarkModeOnStart(){
     if(localStorage.getItem("HnM_theme") == "dark"){
         document.querySelector("body").classList.add("dark-mode");
-        document.querySelector("#dark-mode i").classList.add("fa-toggle-off");
         document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-dark)";
+
+        if(document.querySelector("#dark-mode i"))  document.querySelector("#dark-mode i").classList.add("fa-toggle-off");
     }
     else{
         document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-light)";
-        document.querySelector("#dark-mode i").classList.add("fa-toggle-on");
+
+        if(document.querySelector("#dark-mode i"))  document.querySelector("#dark-mode i").classList.add("fa-toggle-on");
     }
 }setDarkModeOnStart();
 
