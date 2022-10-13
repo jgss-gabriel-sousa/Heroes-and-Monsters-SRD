@@ -1,4 +1,4 @@
-import { accentsTidy, setKeywordLinks } from "./funcs.js"
+import { accentsTidy } from "./funcs.js"
 
 import { basic_feats } from "./data/basic-feats.js"
 import { heroic_feats } from "./data/heroic-feats.js"
@@ -112,5 +112,3 @@ function fillTables(){
         document.querySelector("#talentos-epicos table").innerHTML = epicFeatshtml;
     }
 }fillTables();
-
-setKeywordLinks();

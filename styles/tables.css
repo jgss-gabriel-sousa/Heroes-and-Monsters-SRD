@@ -50,8 +50,8 @@ table th {
 
 /*##############################################################################################*/
 
-.talent-table table {
-    background-color: #f8f9fa80;
+.talent-table {
+    background-color: var(--bg-table-white);
 }
 .talent-table th {
     text-align: center;
