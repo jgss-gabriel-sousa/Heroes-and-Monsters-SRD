@@ -237,3 +237,7 @@ img {
     list-style-type: none;
     margin-left: 0;
 }
+
+.highlighted {
+    background-color: #c6342767!important;
+}

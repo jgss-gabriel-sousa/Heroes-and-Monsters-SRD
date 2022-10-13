@@ -70,12 +70,3 @@
 #openSidepanel:hover {
     background-color: #444;
 }
-
-.highlighted {
-    text-decoration: underline;
-    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.highlighted-rmv {
-    text-decoration: none;
-    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}

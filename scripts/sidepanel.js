@@ -22,16 +22,16 @@ function scrollToID(id){
         block: "center",
         inline: "end"
     });
-    
-    //parent.location.hash = id;
 
     window.history.pushState({page: "another"}, id, document.location.origin+document.location.pathname+"#"+id);
-/*
-    document.getElementById(id).classList.add("highlighted");
-    setTimeout(()=>{document.getElementById(id).classList.add("highlighted-rmv")}, 2000)
-    
-    setTimeout(()=>{document.getElementById(id).classList.remove("highlighted-rmv")}, 2500)
-    setTimeout(()=>{document.getElementById(id).classList.remove("highlighted")}, 2500)
+
+    console.log(elementHeight)
+    if(elementHeight < 200){
+
+        document.getElementById(id).classList.add("highlighted");
+        setTimeout(()=>{document.getElementById(id).classList.remove("highlighted")}, 2500)
+    }
+    /*
 */
 }
 
