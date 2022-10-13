@@ -12,7 +12,7 @@
     --text-red: #c63327;
 
     --text-white: #e6e6e6;
-    --text-table-white: #e6e6e6;
+    --text-table-white: #dddddd;
     --text: #100000;
 
     --border-dark: #41464b;
@@ -21,7 +21,7 @@
     --bg-black: #333;
     --bg-white: #dddddd;
     --bg-body-dark: #121212;
-    --bg-body-light: #dddddd;
+    --bg-body-light: #fbfbf8 ;
     --bg-table-white: #e6e6e6;    
     --bg-table-grey: #cbcbcb;    
 

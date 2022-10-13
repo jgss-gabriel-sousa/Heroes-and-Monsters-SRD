@@ -1,16 +1,21 @@
 .dark-mode{
-    --bg-table-grey: #333;
-    --bg-table-white: #444;
-    --bg-white: #444;
+    --bg-table-grey: #383838;
+    --bg-table-white: #282828;
+    --bg-white: #121212;
     --text-white: #100000;
     --text: #dfdfdf;
+    --text-red: #e93c2e;
     --text-table-white: #c2c2c2;
     --border-dark: #555;
 }
 
+.dark-mode hr{
+    background-color: #FFFFFF1A;
+    color: #FFFFFF1A;
+    border-color: #FFFFFF1A;
+}
+
 .dark-mode #mySidepanel{
-    border-bottom: 1px solid #777;
-    border-right: 1px solid #777;
     border-width: 0px;
 }
 

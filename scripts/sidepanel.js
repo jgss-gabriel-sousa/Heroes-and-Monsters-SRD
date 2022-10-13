@@ -3,11 +3,11 @@ function openNav() {
     document.getElementById("mySidepanel").style.height = "max-content";
     document.getElementById("mySidepanel").style.borderWidth = "1px";
     document.getElementById("main-interface").style.marginLeft = "300px";
-    document.querySelector(".openbtn").style.display = "none";
+    document.querySelector("#openSidepanel").style.display = "none";
 }
 
 function closeNav() {
-    document.querySelector(".openbtn").style.display = "inline-block";
+    document.querySelector("#openSidepanel").style.display = "inline-block";
     document.getElementById("mySidepanel").style.width = "0";
     document.getElementById("mySidepanel").style.height = "0";
     document.getElementById("mySidepanel").style.borderWidth = "0px";
@@ -15,6 +15,8 @@ function closeNav() {
 }
 
 function scrollToID(id){
+    const elementHeight = document.getElementById(id).getBoundingClientRect().height;
+
     document.getElementById(id).scrollIntoView({
         behavior: "smooth", 
         block: "center",
