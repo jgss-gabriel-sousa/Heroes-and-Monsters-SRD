@@ -24,7 +24,6 @@ footer p{
   
 .wrapper .icon {
     position: relative;
-    background: var(--bg-white);
     border: 1px solid #777;
     border-radius: 50%;
     padding: 15px;
