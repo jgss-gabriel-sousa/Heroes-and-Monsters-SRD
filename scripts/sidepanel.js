@@ -25,7 +25,6 @@ function scrollToID(id){
 
     window.history.pushState({page: "another"}, id, document.location.origin+document.location.pathname+"#"+id);
 
-    console.log(elementHeight)
     if(elementHeight < 200){
 
         document.getElementById(id).classList.add("highlighted");
