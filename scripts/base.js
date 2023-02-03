@@ -1,5 +1,13 @@
 import { accentsTidy } from "./funcs.js"
 
+function initFavicon(){
+    const favicon = document.createElement("link");
+    favicon.href = "https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/favicon.ico";
+    favicon.type = "image/x-icon";
+    favicon.rel = "shortcut icon";
+    document.getElementsByTagName("head")[0].appendChild(favicon);
+}initFavicon();
+
 function setKeywordLinks(){
     function stringParser(str){
         //lowercase string, rmv accents and set "-" in all blank spaces
