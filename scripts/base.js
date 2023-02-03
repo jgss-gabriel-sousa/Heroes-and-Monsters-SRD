@@ -64,21 +64,32 @@ function headerGoHome(){
     document.querySelector("header").innerHTML = goHome + document.querySelector("header").innerHTML;
 }headerGoHome();
 
-function setDarkModeOnStart(){
-    if(localStorage.getItem("HnM_theme") == "dark"){
+function setPageTheme(){
+    const PageThemeToggleBtn = document.querySelector("#dark-mode i");
+    const storedTheme = localStorage.getItem("HnM_theme");
+
+    function applyDarkTheme(){
         document.querySelector("body").classList.add("dark-mode");
         document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-dark)";
-
-        if(document.querySelector("#dark-mode i"))  document.querySelector("#dark-mode i").classList.add("fa-toggle-off");
+ 
+        PageThemeToggleBtn.classList.add("fa-toggle-off");
     }
-    else{
+
+    function applyLightTheme(){
         document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-light)";
-
-        if(document.querySelector("#dark-mode i"))  document.querySelector("#dark-mode i").classList.add("fa-toggle-on");
+        
+        PageThemeToggleBtn.classList.add("fa-toggle-on");
     }
-}setDarkModeOnStart();
+
+    if(storedTheme == "dark")       applyDarkTheme();
+    else if(storedTheme == "light") applyLightTheme();
+    else{
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+        systemTheme ? applyLightTheme() : applyDarkTheme();
+    }
+}setPageTheme();
 
 /*
 let selected = false;
