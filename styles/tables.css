@@ -73,26 +73,29 @@ table li {
 
 /*##############################################################################################*/
 
-.ability-table {
+.ability-table-racas {
     margin-bottom: 20px;
+    border: 1px solid var(--border-dark);
 }
-.ability-table th {
+.ability-table-racas th {
     text-align: center;
     background-color: var(--bg-header);
     color: var(--text-table-white);
 }
-.ability-table td {
+.ability-table-racas td {
     line-height: 1.5;
     padding: 10px 10px;
+    border: 0;
+    border-bottom: 1px solid var(--border-dark);
 }
-.ability-table td:nth-child(1) {
+.ability-table-racas td:nth-child(1) {
     font-weight: bold;
     text-align: end;
     vertical-align: top;
     padding: 10px 0px 10px 10px;
     width: 10%;
 }
-.ability-table p:nth-last-child(1) {
+.ability-table-racas p:nth-last-child(1) {
     margin-bottom: 5px;
 }
 
@@ -138,67 +141,67 @@ table li {
 
 /*##############################################################################################*/
 
-.class-ability-table {
+.class-ability-table-racas {
     padding: 10px;
     margin-bottom: 30px;
     font-size: 14px;
 }
-.class-ability-table th {
+.class-ability-table-racas th {
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
     background-color: var(--bg-header);
     color: var(--text-table-white);
 }
-.class-ability-table td {
+.class-ability-table-racas td {
     line-height: 1.5;
     padding: 20px;
 }
-.class-ability-table p:nth-last-child(1) {
+.class-ability-table-racas p:nth-last-child(1) {
     margin-bottom: 5px;
 }
 
 /*##############################################################################################*/
 
-.class-ability-table2 {
+.class-ability-table-classes {
     padding: 10px;
     margin: 10px 0px;
     font-size: 14px;
 }
-.class-ability-table2 th {
+.class-ability-table-classes th {
     text-align: center;
     padding: 10px;
     padding-bottom: 10px;
 }
-.class-ability-table2 tr:nth-child(1) {
+.class-ability-table-classes tr:nth-child(1) {
     background-color: var(--bg-header);
     color: var(--text-table-white);
     white-space: nowrap;
 }
-.class-ability-table2 tr {
+.class-ability-table-classes tr {
     margin: 10px;
 }
-.class-ability-table2 td {
+.class-ability-table-classes td {
     line-height: 1.5;
     padding: 10px;
     vertical-align: middle;
 }
-.class-ability-table2 td:nth-child(-n+2) {
+.class-ability-table-classes td:nth-child(-n+2) {
     font-weight: bold;
     text-align: center;
     font-size: 18px;
     background-color: var(--bg-header);
     color: var(--text-table-white);
 }
-.class-ability-table2 td:nth-child(2) {
+.class-ability-table-classes td:nth-child(2) {
     background-color: #111518e3;
     font-size: 16px;
     min-width: 150px;
 }
-.class-ability-table2 td:last-child {
+.class-ability-table-classes td:last-child {
     max-width: min-content;
     text-align: center;
 }
-.class-ability-table2 p:nth-last-child(1) {
+.class-ability-table-classes p:nth-last-child(1) {
     margin-bottom: 5px;
 }

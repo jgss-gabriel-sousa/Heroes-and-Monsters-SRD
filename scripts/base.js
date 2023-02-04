@@ -73,14 +73,16 @@ function setPageTheme(){
         document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-dark)";
  
-        PageThemeToggleBtn.classList.add("fa-toggle-off");
+        if(PageThemeToggleBtn)
+            PageThemeToggleBtn.classList.add("fa-toggle-off");
     }
 
     function applyLightTheme(){
         document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
         document.querySelector(":root").style.backgroundColor = "var(--bg-body-light)";
         
-        PageThemeToggleBtn.classList.add("fa-toggle-on");
+        if(PageThemeToggleBtn)
+            PageThemeToggleBtn.classList.add("fa-toggle-on");
     }
 
     if(storedTheme == "dark")       applyDarkTheme();

@@ -19,7 +19,7 @@ section {
     min-width: 250px;
 }
 
-#main-interface {
+.main-interface {
     margin: 20px;
     display: grid;
     grid-template-columns: 45% 45%;
@@ -27,7 +27,7 @@ section {
     width: 85%;
     max-width: 1000px;
 }
-#main-interface li {
+.main-interface li {
     white-space: nowrap;
 }
 
@@ -42,17 +42,17 @@ section {
 }
 
 @media only screen and (max-width: 750px) {
-    #main-interface {
+    .main-interface {
         flex-direction: column;
         display: flex;
     }
-    #main-interface li {
+    .main-interface li {
         font-size: 12px;
     }
-    #main-interface h1 {
+    .main-interface h1 {
         font-size: 22px;
     }
-    #main-interface h2 {
+    .main-interface h2 {
         font-size: 18px;
     }
     section {

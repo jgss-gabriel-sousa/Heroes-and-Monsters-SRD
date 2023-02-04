@@ -2,7 +2,7 @@ function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
     document.getElementById("mySidepanel").style.height = "max-content";
     document.getElementById("mySidepanel").style.borderWidth = "1px";
-    document.getElementById("main-interface").style.marginLeft = "300px";
+    document.querySelector(".main-interface").style.marginLeft = "300px";
     document.querySelector("#openSidepanel").style.display = "none";
 }
 
@@ -11,7 +11,7 @@ function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
     document.getElementById("mySidepanel").style.height = "0";
     document.getElementById("mySidepanel").style.borderWidth = "0px";
-    document.getElementById("main-interface").style.marginLeft = "0";
+    document.querySelector(".main-interface").style.marginLeft = "0";
 }
 
 function scrollToID(id){
@@ -30,8 +30,6 @@ function scrollToID(id){
         document.getElementById(id).classList.add("highlighted");
         setTimeout(()=>{document.getElementById(id).classList.remove("highlighted")}, 2500)
     }
-    /*
-*/
 }
 
 function darkMode(){

@@ -7,6 +7,7 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 60px;
     transition: 0.5s;
     border-bottom: 1px solid #777;
@@ -28,6 +29,7 @@
 }
 .sidepanel li {
     text-indent: 1rem;
+    margin: 0;
 }
 
 .sidepanel a:hover, .sidepanel a:active {

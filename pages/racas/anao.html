@@ -12,6 +12,7 @@
 
     <script src="../../scripts/race.js" type="module" defer></script>
     <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <title>H&M - Raça - Anão</title>
 </head>
@@ -20,10 +21,23 @@
         <h1>Anão</h1>
     </header>
     <main>
-        <div id="main-interface">
-            <section id="first-section">
-                <section id="caracteristicas-raciais">
-                    <h2>Características Raciais</h2>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('sub-racas')">Sub-raças</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
                     <br>
                     <h4><b>Atributos:</b>           +2 em Vitalidade, -2 em Carisma ou Agilidade</h4>
                     <h4><b>Perícias:</b>            +2 em Atletismo e Acrobacia</h4>
@@ -57,20 +71,20 @@
                 </figure>
             </section>
 
-            <section id="descricao">
-                <h2>Descrição</b></h2>
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
                 <p>Os Anões são uma raça de características robustas em relação ao porte físico, possuem baixa estatura e grande resistência. Sua sociedade possui grandes reinos, com grandes construções e minerações, junto com o trabalho com metais.</p>
                 <p>Na aparência os anões machos geralmente são carecas e deixam crescer pelos faciais longos, que servem para exibir status social. De forma incomum para humanoides, ambos os sexos naturalmente crescem bastantes pelos faciais, embora a maioria das anãs raspem a barba.</p>
                 <p>Algo de bastante importância na cultura dos anões é a sua lealdade e coragem, muitas vezes associada à sua religião, focada em deuses que representam estes fatores nos campos de batalhas.</p>
             </section>
 
-            <section id="sub-racas">
-                <h2>Sub-raças</b></h2>
+            <section>
+                <h2 id="sub-racas">Sub-raças</b></h2>
                 
 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
-                        <th colspan="2">Anão da Colina</th>
+                        <th colspan="2" id="anao-da-colina">Anão da Colina</th>
                     </tr>
                     <tr>
                         <td>Atributos: </td>
@@ -85,9 +99,9 @@
                     </tr>
                 </table>
 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
-                        <th colspan="2">Anão da Montanha</th>
+                        <th colspan="2" id="anao-da-montanha">Anão da Montanha</th>
                     </tr>
                     <tr>
                         <td>Atributos: </td>
@@ -103,10 +117,10 @@
                 </table>
             </section>
 
-            <section id="habilidades-raciais">
-                <h2>Habilidades</b></h2>
+            <section>
+                <h2 id="habilidades">Habilidades</b></h2>
                 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
                         <th colspan="2">Postura Inabalável</th>
                     </tr>
@@ -116,9 +130,9 @@
                     </tr>
                 </table>
 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
-                        <th colspan="2">Resiliência Dourada (Anão da Colina)</th>
+                        <th colspan="2">Resiliência Dourada (<span class="kw">Anão da Colina</span>)</th>
                     </tr>
                     <tr>
                         <td>Efeito: </td>
@@ -126,9 +140,9 @@
                     </tr>
                 </table>
 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
-                        <th colspan="2">Recuperação (Anão da Montanha)</th>
+                        <th colspan="2">Recuperação (<span class="kw">Anão da Montanha</span>)</th>
                     </tr>
                     <tr>
                         <td>Efeito: </td>
@@ -137,8 +151,8 @@
                 </table>
             </section>
 
-            <section class="overflow-section" id="talentos-raciais">
-                <h2>Talentos Raciais</b></h2>
+            <section class="overflow-section">
+                <h2 id="talentos">Talentos Raciais</b></h2>
                 <table class="talent-table">
                     <tr>
                         <th></th>
@@ -170,7 +184,7 @@
                         <td>Grande Recuperação</td>
                         <td>Sua habilidade Recuperação cura em um valor igual ao Seu Nível + seu modificador de Vitalidade.</td>
                         <td><ul>
-                            <li>Subclasse Anão da Montanha</li>
+                            <li>Subclasse <span class="kw">Anão da Montanha</span></li>
                         </ul></td>
                     </tr>
                     <tr>

@@ -12,6 +12,7 @@
 
     <script src="../../scripts/race.js" type="module" defer></script>
     <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <title>H&M - Raça - Amazona</title>
 </head>
@@ -20,10 +21,22 @@
         <h1>Amazona</h1>
     </header>
     <main>
-        <div id="main-interface">
-            <section id="first-section">
-                <section id="caracteristicas-raciais">
-                    <h2>Características Raciais</h2>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
                     <br>
                     <h4><b>Atributos:</b>           +1 em Força, Vitalidade e Carisma</h4>
                     <h4><b>Perícias:</b>            +2 em Atletismo e Acrobacia</h4>
@@ -54,19 +67,19 @@
                 </figure>
             </section>
 
-            <section id="descricao">
-                <h2>Descrição</h2>
+            <section>
+                <h2 id="descricao">Descrição</h2>
                 <p>As amazonas são uma raça de humanoides muito semelhantes aos humanos, mas formada inteiramente por mulheres muito fortes e esbeltas, um membro de qualquer raça as acha estonteantes. Suas cores de pele são tão variadas quanto as dos humanos, variando de pele incrivelmente escura a quase transparente, e seu cabelo geralmente tende a ser branco, preto ou cinza.</p>
                 <p>As amazonas não se reproduzem, elas fazem uma cerimônia especial anual, onde oram para seus deuses. Na manhã seguinte a cerimônia, uma bebê amazona será encontrada em alguma árvore ou arbusto nas redondezas, em um berço feito de trepadeiras douradas.</p>
                 <p>Existe um mito entre as amazonas, que aquelas irmãs de temperamento sombrio foram encontradas pela primeira vez em manhãs chuvosas ou nubladas.</p>
                 <p>Normalmente, uma amazona terá duas ou mais mães voluntárias, mas na verdade são criadas por toda a tribo em conjunto.</p>
             </section>
 
-            <section id="habilidades-raciais">
-                <h2>Habilidades</h2>
+            <section class="habilidades-raciais">
+                <h2 id="habilidades">Habilidades</h2>
                 <br>
                 
-                <table class="ability-table">
+                <table class="ability-table-racas">
                     <tr>
                         <th colspan="2">Estrutura Poderosa</th>
                     </tr>
@@ -81,8 +94,8 @@
                 </table>
             </section>
 
-            <section class="overflow-section" id="talentos-raciais">
-                <h2>Talentos Raciais</b></h2>
+            <section class="overflow-section">
+                <h2 id="talentos">Talentos Raciais</b></h2>
                 <table class="talent-table">
                     <tr>
                         <th></th>

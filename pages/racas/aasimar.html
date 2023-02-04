@@ -12,6 +12,7 @@
 
     <script src="../../scripts/race.js" type="module" defer></script>
     <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <title>H&M - Raça - Aasimar</title>
 </head>
@@ -20,10 +21,21 @@
         <h1>Aasimar</h1>
     </header>
     <main>
-        <div id="main-interface">
-            <section id="first-section">
-                <section id="caracteristicas-raciais">
-                    <h2>Características Raciais</h2>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
                     <br>
                     <h4><b>Atributos:</b>           +2 em Carisma ou Sabedoria</h4>
                     <h4><b>Perícias:</b>            +2 em Diplomacia e Percepção</h4>
@@ -58,14 +70,14 @@
                 </figure>
             </section>
 
-            <section id="descricao">
-                <h2>Descrição</h2>
+            <section>
+                <h2 id="descricao">Descrição</h2>
                 <p>Os Aasimar trazem em suas almas a luz dos céus. Eles são descendentes de Humanos com Celestiais. Os Aasimar nasceram para servir aos deuses e seus nascimentos são saudados como eventos abençoados. Eles são um povo de aparência sobrenatural, com características luminosas que revelam sua herança celestial.</p>
                 <p>Um Aasimar, exceto aquele que se voltou para o mal, tem uma ligação com um ser angelical. Esse ser, geralmente um Anjo Deva, fornece orientação ao Aasimar, essa conexão é feita em sonhos. A orientação não é um comando direto ou uma simples palavra falada. Em vez disso, o Aasimar recebe visões, profecias e sentimentos.</p>
             </section>
 
             <section class="overflow-section" id="talentos-raciais">
-                <h2>Talentos Raciais</h2>
+                <h2 id="talentos">Talentos Raciais</h2>
                 <table class="talent-table">
                     <tr>
                         <th></th>
