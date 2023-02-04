@@ -8,18 +8,37 @@
     <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
 	
     <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/pages/classes.css" rel="stylesheet">
 
     <script src="../scripts/race.js" type="module" defer></script>
     <script src="../scripts/base.js" type="module" defer></script>
+    
+    <script src="../../scripts/sidepanel.js" defer></script>
     
     <title>Criação de Personagens</title>
 </head>
 <body>
     <header>
-        <h1>Criação de Personagens</h1>
+        <h1>Criação de Personagem</h1>
     </header>
     <main>
-        <section></section>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section>
+                <p>A criação de personagens é a base para qualquer jogo de RPG. É nela que você vai construir a personalidade, habilidades e história do seu personagem, transformando-o em alguém único e inesquecível. Para isso, é importante seguir alguns passos importantes.</p>
+                <p>Comece definindo a raça e a classe do seu personagem. As raças, como humanos, elfos, anões e outras, possuem características distintas que afetam sua aparência, habilidades e personalidade. Já a classe define suas habilidades em combate, magia ou outros aspectos do jogo. É importante equilibrar suas habilidades para que seu personagem seja equilibrado e tenha chances de sobrevivência em diversas situações.</p>
+                <img src="../img/geral/personagens.webp" alt="Personagens">
+                <p>Uma vez que suas habilidades foram definidas, é hora de criar sua personalidade. Quem é seu personagem? Qual sua história? O que o motiva? É importante ter uma história coerente para seu personagem, pois ela vai influenciar suas ações durante o jogo.</p>
+                <p>Por fim, escolha suas armas e equipamentos. É importante que eles estejam alinhados com sua história e personalidade, para que sejam coerentes com o personagem que você criou.</p>
+                <p>Lembre-se de que a criação de personagens é um processo dinâmico e pode mudar conforme o jogo avança. Então, não tenha medo de experimentar e deixar sua criatividade fluir! Com estes passos, você terá um personagem incrível e pronto para se juntar as aventuras.</p>
+            </section>
+        </div>
     </main>
 </body>
 </html>
