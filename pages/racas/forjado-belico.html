@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Forjado Bélico</title>
+</head>
+<body>
+    <header>
+        <h1>Forjado Bélico</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Força e Vitalidade, -2 em Agilidade e Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em Percepção e Conhecimento</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Neutro</h4>
+                    <h4><b>Personalidade Comum:</b> Confiável, Destemido, Frio, Impessoal, Determinado e Pragmático</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                130 Kg (+- 20 Kg)</h4>
+                    <h4><b>Altura:</b>              1,78 m (+- 30 cm) </h4>
+                    <h4><b>Idades: </b>Pode viver infinitamente</h4>
+                    <hr>
+                    <h4><b>Nomes:</b>    <span id="names">Counter, Smasher, Delver, Revenance, Axton, Sentry</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/forjado_belico.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Os Forjados Bélicos são constituídos de uma mistura de materiais orgânicos e inorgânicos, infundidos com fluídos químicos que servem como músculos, presos em vigas de aço, madeira escura ou pedra.</p>
+                <p>Os Forjados compartilham um design geral de rosto, com um queixo articulado e olhos de cristal embutidos embaixo de sobrancelhas reforçadas. Além desses elementos comuns no design dos Forjados, os materiais e formas específicos variam de acordo com o propósito pelo qual foram designados.</p>
+                <p>Como são seres fabricado os Forjados não são considerados humanoides, mas sim Constructos. Magias de cura não fazem efeito e a perícia Medicina não funciona com eles, mas a perícia Construir tem o efeito da medicina.</p>
+            </section>
+
+            <section>
+                <h2 id="peculiaridade">Peculiaridade</b></h2>
+                
+                <p>Como um Forjado Bélico, seu traço de personalidade da Peculiaridade é definido pela raça e não pelo seu antecedente.</p>
+                <br>
+
+                <table class="talent-table">
+                    <tr>
+                        <th>d8</th>
+                        <th>Peculiaridade</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Você analisa, em voz alta, qualquer ameaça em potencial que aparecer na sua frente.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Você eventualmente interpreta mal sugestões emocionais.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Você é um defensor feroz dos seus amigos</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Você tenta aplicar a disciplina dos tempos de guerra em toda situação.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Você não sabe como filtrar seus sentimentos e é propenso a explosões dramáticas de sentimentos.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Você é obcecado em imitar os atos dos humanoides, como as necessidades naturais, apesar de não tê-las.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Você é obcecado com sua aparência e constantemente se aprimora e refina.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Guerra é a única coisa que faz sentido pra você, e você está sempre à procura de uma luta.</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="habilidades-raciais">
+                <h2 id="habilidades">Habilidades</b></h2>
+                
+                <table class="ability-table-racas">
+                    <tr>
+                        <th colspan="2">Constructo</th>
+                    </tr>
+                    <tr>
+                        <td>Efeito: </td>
+                        <td>
+                            <p>Como um Forjado Bélico, você é imune a venenos, doenças e magias que causam sono. Você não precisa se alimentar, beber, dormir ou respirar. No entanto, você também não pode ser curado por magias de Cura ou afetado pela perícia Medicina. Em vez disso, a perícia Construir pode ser usada para reparar seu corpo.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="ability-table-racas">
+                    <tr>
+                        <th colspan="2">Descanso Sentinela</th>
+                    </tr>
+                    <tr>
+                        <td>Efeito: </td>
+                        <td>
+                            <p>Quando um Descanso Longo é realizado, é necessário passar pelo menos seis horas em um estado de repouso inativo e sem movimento, em vez de dormir. Durante esse estado, o personagem pode parecer inerte, mas não estará Inconsciente e será capaz de enxergar e ouvir normalmente.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Armadura Integrada</td>
+                        <td>
+                            <p>Seu corpo é a sua própria armadura, feita de aço. Você recebe um bônus fixo de 5 na sua Defesa, mas não pode usar armaduras convencionais, pois seu corpo já funciona como uma. No entanto, você pode usar um escudo normalmente, se desejar.</p>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Punhos de Ferro</td>
+                        <td>Seu dado de dano em Ataque Desarmado é 1d8.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistência à magia</td>
+                        <td>
+                            <p>Devido à sua natureza mecânica, você tem Vantagem em Testes de Salvamento contra magias e efeitos mágicos.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
