@@ -2,7 +2,7 @@ function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
     document.getElementById("mySidepanel").style.height = "max-content";
     document.getElementById("mySidepanel").style.borderWidth = "1px";
-    document.querySelector(".main-interface").style.marginLeft = "300px";
+    document.querySelector(".main-interface").style.marginLeft = "275px";
     document.querySelector("#openSidepanel").style.display = "none";
 }
 
