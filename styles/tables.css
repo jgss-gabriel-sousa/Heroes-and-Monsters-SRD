@@ -16,6 +16,7 @@ table tr:nth-child(even) {
 table td, table p {
     font-size: 14px;
     text-align: justify;
+    margin-top: 0;
 }
 table td {
     padding: 5px;
@@ -97,6 +98,26 @@ table li {
 }
 .ability-table-racas p:nth-last-child(1) {
     margin-bottom: 5px;
+    margin-top: 0;
+}
+
+
+.natural-weapons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.natural-weapons h1 {
+    text-align: center;
+    background-color: var(--bg-header);
+    color: var(--text-table-white);
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+.natural-weapons table {
+    max-width: 50%;
+    margin: 0;
 }
 
 /*##############################################################################################*/
