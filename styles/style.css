@@ -48,11 +48,12 @@ h4 {
     font-size: 14px;
     line-height: 2;
     text-align: justify;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.8em;
 }
 
 p {
     font-size: 14px;
-    text-indent: 40px;
     line-height: 2;
     text-align: justify;
     margin-bottom: 0.5rem;
