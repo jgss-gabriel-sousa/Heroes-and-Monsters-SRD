@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Gnomo</title>
+</head>
+<body>
+    <header>
+        <h1>Gnomo</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Força e Vitalidade, -2 em Agilidade e Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em Percepção e Conhecimento</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Neutro</h4>
+                    <h4><b>Personalidade Comum:</b> Confiável, Destemido, Frio, Impessoal, Determinado e Pragmático</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                130 Kg (+- 20 Kg)</h4>
+                    <h4><b>Altura:</b>              1,78 m (+- 30 cm) </h4>
+                    <h4><b>Idades: </b>Pode viver infinitamente</h4>
+                    <hr>
+                    <h4><b>Nomes:</b>    <span id="names">Counter, Smasher, Delver, Revenance, Axton, Sentry</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/gnomo.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Gnomos, ou o Povo Esquecido, como às vezes são chamados, são pequenos humanoides conhecidos por seu excêntrico senso de humor, curiosidade e destreza de engenharia. Os gnomos estão presentes em quase todas as cidades humanas e na maioria das vilas de paradas para caravanas, onde outras culturas e raças não humanas são pelo menos toleradas.</p>
+                <p>Os gnomos são naturalmente espirituosos e joviais, e preferem superar os obstáculos por meio da astúcia e da inovação, em vez do caminho óbvio. Sempre curiosos, os gnomos são atraídos para a aventura com mais frequência pelo desejo de ver o mundo, do que por ganância ou esperança de fama.</p>
+            </section>
+
+            <section class="habilidades-raciais">
+                <h2 id="habilidades">Habilidades</b></h2>
+                
+                <table class="ability-table-racas">
+                    <tr>
+                        <th colspan="2">Engenhoso</th>
+                    </tr>
+                    <tr>
+                        <td>Efeito: </td>
+                        <td>
+                            <p>Você tem treinamento com duas Ferramentas de Artesão. Além disso, gastando uma hora e 10 moedas de ouro em materiais, você cria uma engenhoca. A engenhoca tem 5 Pontos de Defesa e 1 de Ponto de Vida, e após 24 horas ela para de funcionar. No entanto, você pode gastar uma hora para fazer a manutenção. Você pode ter no máximo 3 engenhocas ativas ao mesmo tempo.</p>
+                            Ao criar um dispositivo, escolha uma das seguintes opções:
+                            <ul>
+                                <li><b>Autômato de Distracção:</b> Este brinquedo pode aparentar uma criatura específica e quando colocado no solo, o brinquedo se move 1 m em uma direção aleatória, a cada turno. Ele faz ruídos apropriados para a criatura que representa.</li>
+                                <li><b>Caixa de Melodias:</b> Quando aberta, esta caixa de música reproduz uma única música em um volume moderado. A caixa para de tocar quando chega ao fim da música ou quando é fechada.</li>
+                                <li><b>Comunicador de Longa Distância:</b> Esta engenhoca se assemelha a um pequeno dispositivo sem fio com uma antena. Quando ativado, você pode se comunicar com uma criatura que esteja a até 1 km de distância e que também esteja carregando um comunicador de longa distância. A comunicação é possível em ambos os sentidos e dura até 10 minutos. Após esse período, a engenhoca para de funcionar e deve ser refeita.</li>
+                                <li><b>Fazedor de Fogo:</b> O dispositivo produz uma chama em miniatura, que você pode usar para acender uma vela, tocha ou fogueira. Usar o dispositivo requer uma ação.</li>
+                                <li><b>Óculos de Detecção:</b> Um par de óculos especiais que permitem ver através de ilusões e detectar itens mágicos. Os óculos emitem um brilho sutil quando uma ilusão é detectada e também emitem um som suave quando um item mágico está presente na área.</li>
+                                <li><b>Relógio de Bolso:</b> O dispositivo emite um som sutil de tique-taque e marca o tempo de forma precisa. Uma vez criado, o relógio funciona indefinidamente, a menos que seja danificado ou destruído.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Astúcia Gnômica</td>
+                        <td>Vantagem em testes de salvamento relacionados a Agilidade.</td>
+                    </tr>
+                    <tr>
+                        <td>Charme Feérico</td>
+                        <td>+2 em Enganação.</td>
+                    </tr>
+                    <tr>
+                        <td>Herança Mágica da Proteção</td>
+                        <td>
+                            <p>Escolha um tipo de inimigo entre: Gnolls, Orcs, Gosmas, Plantas ou Mortos Vivos. No primeiro ataque que um inimigo do tipo escolhido fizer contra você, ele fará com Desvantagem e todos os Ataques de Oportunidade que fizer contra você, ele fará com Desvantagem.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trapaceiro Casual</td>
+                        <td>+2 em Enganação ou Ilusionismo</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
