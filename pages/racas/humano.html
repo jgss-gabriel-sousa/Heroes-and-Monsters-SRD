@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Humano</title>
+</head>
+<body>
+    <header>
+        <h1>Humano</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em uma a sua escolha</h4>
+                    <h4><b>Perícias:</b>            +2 em Diplomacia e outra a sua escolha</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e outro a sua escolha</h4>
+                    <h4><b>Alinhamento Comum:</b>   Neutro e Bom</h4>
+                    <h4><b>Personalidade Comum:</b> Versátil, Ambicioso, Curioso, Individualista, Passional, Altruísta </h4>
+                    <hr>
+                    <h4><b>Peso:</b>                80 Kg (+- 20 Kg)</h4>
+                    <h4><b>Altura:</b>              1,77 m (+- 10 cm) </h4>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  15 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   55 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  70 Anos</h4></li>
+                    </ul>
+                    <hr>
+                    <h4><b>Nomes Masculinos:</b>    <span id="m-names">Gauthier, Bryson, Rennie, Jean, Ivan, Ronnie</span></h4>
+                    <h4><b>Nomes Femininos:</b>     <span id="f-names">Dory, Laila, Vittoria, Evonna, Silvina, Clothilda</span></h4>
+                    <h4><b>Sobrenomes:</b>          <span id="surnames">Hawkfall, Alpendraft, Ashhelm, Rizecer, Gloz, Muntunu</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/humano.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Os humanos são a mais jovem das raças comuns, e talvez seja por causa de suas vidas mais curtas que eles se esforcem para alcançar o máximo que podem nos anos que têm. Ou talvez eles sintam que têm algo a provar às raças mais antigas, e é por esta razão que eles constroem seus poderosos impérios através da conquista e do comércio.</p>
+                <p>Os humanos são os mais adaptáveis, flexíveis e ambiciosos entre todas as raças comuns. Eles têm amplos e distintos gostos, moralidades e hábitos nas muitas diferentes regiões onde eles se instalaram. Um único humano pode ter uma vida relativamente curta, mas uma nação ou cultura humana preserva tradições com origens muito além do alcance da memória de qualquer um dos humanos.</p>
+                <p>Eles vivem plenamente o presente, tornando-os bem adaptados a uma vida de aventuras, mas também planejam o futuro, esforçando-se para deixar um legado duradouro. Individualmente e como grupo, os humanos são oportunistas adaptáveis, e permanecem alerta às dinâmicas mudanças políticas e sociais.</p>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Atleta de Elite</td>
+                        <td>+2 em Acrobacia e Atletismo.</td>
+                    </tr>
+                    <tr>
+                        <td>Determinação Humana</td>
+                        <td>Uma vez por dia você pode escolher fazer uma Rolagem de Ataque ou Teste de Salvamento com Vantagem.</td>
+                    </tr>
+                    <tr>
+                        <td>Prodígio</td>
+                        <td>+2 em uma Perícia e Treinamento com uma Ferramenta.</td>
+                    </tr>
+                    <tr>
+                        <td>Sábio do Conhecimento</td>
+                        <td>+2 em Conhecimento e Arcanismo.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
