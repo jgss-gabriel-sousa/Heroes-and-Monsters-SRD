@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Meio-Orc</title>
+</head>
+<body>
+    <header>
+        <h1>Meio-Orc</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Força e Vitalidade, -2 em Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em Intimidação e Resistência</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <h4><b>Visão no Escuro:</b>             12 Metros</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e Orc</h4>
+                    <h4><b>Alinhamento Comum:</b>   Caótico e Neutro</h4>
+                    <h4><b>Personalidade Comum:</b> Desinibido, Feroz, Impulsivo e Pavio Curto</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                86 Kg (+- 16 Kg)</h4>
+                    <h4><b>Altura:</b>              1,83 m (+- 12 cm) </h4>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  14 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   45 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  50 Anos</h4></li>
+                    </ul>
+                    <hr>
+                    <h4><b>Nomes Masculinos:</b>    <span id="m-names">Nildrek, Khogit, Hakdurm, Brandrok, Ostol, Algros</span></h4>
+                    <h4><b>Nomes Femininos:</b>     <span id="f-names">Etrel, Thox, Aisluma, Huotrama, Ton, Mesh</span></h4>
+                    <h4><b>Sobrenomes:</b>          <span id="surnames">Raylhay, Athral, Nobra, Rim, Roth, Miath</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/meio-orc.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Quer estejam unidos sob a liderança de um poderoso feiticeiro ou tendo lutado até uma paralisação após anos de conflito, orcs e tribos humanas às vezes formam alianças, juntando forças em uma horda maior para o terror das terras civilizadas próximas. Quando essas alianças são seladas por casamentos, nascem meio-orcs. Alguns meio-orcs se erguem para se tornarem chefes orgulhosos de tribos orcs, seu sangue humano dando a eles uma vantagem sobre seus rivais orcs de sangue puro.</p>
+                <p>Alguns se aventuram pelo mundo para provar seu valor entre os humanos e outras raças mais civilizadas. Muitos deles se tornam aventureiros, alcançando grandeza por seus feitos poderosos e notoriedade por seus costumes bárbaros e fúria selvagem.</p>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Ataque Selvagem</td>
+                        <td>Quando causar um Acerto Crítico, você causa 1d6 de dano adicional.</td>
+                    </tr>
+                    <tr>
+                        <td>Gosto de Sangue</td>
+                        <td>Quando causar um Acerto Crítico, você recupera um número de Pontos de Vida igual ao seu modificador de Vitalidade.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistência Implacável</td>
+                        <td>Uma vez por dia, na primeira vez que você cair a 0 ou menos Pontos de Vida, você fica com 1 Ponto de Vida.</td>
+                    </tr>
+                    <tr>
+                        <td>Vingança de Sangue</td>
+                        <td>Quando um aliado é deixado inconsciente você recebe Vantagem nas próximas 3 Rolagens de Ataque.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+                    
