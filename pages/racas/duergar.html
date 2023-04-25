@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Duergar</title>
+</head>
+<body>
+    <header>
+        <h1>Duergar</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Força e Sabedoria, -2 em Carisma</h4>
+                    <h4><b>Perícias:</b>            +2 em Atletismo e Resistência</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <h4><b>Visão no Escuro:</b>             24 Metros</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum, Subcomum e Anão</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Mau</h4>
+                    <h4><b>Personalidade Comum:</b> Desconfiado, Agressivo, Determinado, Avarento, Desonesto, Leal e Pessimista</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                86 Kg (+- 14 Kg)</h4>
+                    <h4><b>Altura:</b>              1,38 m (+- 8 cm) </h4>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  40 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   250 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  350 Anos</h4></li>
+                    </ul>
+                    <hr>
+                    <h4><b>Nomes Masculinos:</b>    <span id="m-names">Korgoth, Drogan, Drithgar, Brerwor, Frufvar, Bongardt, Bokgol, Tengar</span></h4>
+                    <h4><b>Nomes Femininos:</b>     <span id="f-names">Thora, Hilda, Menmara, Thruthis, Kruntha, Methlara, Diglara, Grithmara</span></h4>
+                    <h4><b>Sobrenomes:</b>          <span id="surnames">Olho&nbsp;de&nbsp;Carvão, Mão&nbsp;de&nbsp;Fogo, Dente&nbsp;de&nbsp;Rocha, Cabeça&nbsp;de&nbsp;Martelo, Mente&nbsp;de&nbsp;Ferro, Fornalha&nbsp;Ardente, Foice&nbsp;de&nbsp;Guerra, Mão&nbsp;de&nbsp;Pedra</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/duergar.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Duergars, também conhecidos como Anões Cinzentos, são uma raça de anões do subterrâneo. Eles vivem geralmente perto de vulcões e seu parentesco com outras raças anãs pode ser comparado ao dos Drow com os Elfos.</p>
+                <p>Os Duergars são uma raça cruel e amarga, pessimista em relação ao futuro e profundamente cínico em relação aos outros. Uma inversão sombria dos fortes laços familiares típicos de seus parentes anões, os duergar veem seus parentes e clãs como adversários, uma expectativa que se tornou uma profecia autorrealizável, já que todos os duergar passaram a acreditar nisso desde a infância.</p>
+            </section>
+
+            <section class="habilidades-raciais">
+                <h2 id="habilidades">Habilidades</b></h2>
+                
+                <table class="ability-table-racas">
+                    <tr>
+                        <th colspan="2">Resiliência Duergar</th>
+                    </tr>
+                    <tr>
+                        <td>Efeito: </td>
+                        <td>Vantagem em testes de salvamento contra as condições Encantado e Paralisado.</td>
+                    </tr>
+                </table>
+
+                <table class="ability-table-racas">
+                    <tr>
+                        <th colspan="2">Postura Inabalável</th>
+                    </tr>
+                    <tr>
+                        <td>Efeito: </td>
+                        <td>
+                            <p>Vantagem em testes contra condições que tentem te movimentar ou derrubar.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="overflow-section">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Conhecimento das Rochas</td>
+                        <td>Você tem Vantagem em testes de Conhecimento ou Sobrevivência quando relacionados a rochas, minérios, pedras preciosas, cavernas ou túneis subterrâneos.</td>
+                    </tr>
+                    <tr>
+                        <td>Cura de Ferimentos</td>
+                        <td>Uma vez por dia, você pode usar uma Ação Menor para recuperar uma quantidade de Pontos de Vida igual ao seu nível de personagem.</td>
+                    </tr>
+                    <tr>
+                        <td>Magia das Profundezas</td>
+                        <td>Você pode conjurar uma vez por dia, de forma inata, cada uma das magias: Aumentar ou Reduzir, Invisibilidade e Escuridão.</td>
+                    </tr>
+                    <tr>
+                        <td>Visão das Cavernas</td>
+                        <td>Vantagem em testes de Percepção na escuridão e Desvantagem quando sob a luz solar direta.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
