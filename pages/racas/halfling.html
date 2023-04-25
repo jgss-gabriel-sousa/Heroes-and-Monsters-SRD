@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Halfling</title>
+</head>
+<body>
+    <header>
+        <h1>Halfling</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Agilidade e Carisma, -2 em Força</h4>
+                    <h4><b>Perícias:</b>            +2 em Acrobacia e Coragem</h4>
+                    <h4><b>Tamanho:</b>             Pequeno (+2 em Furtividade, +1 de Defesa, -2 de Deslocamento, -2 Pontos de Vida)</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e Silvestre</h4>
+                    <h4><b>Alinhamento Comum:</b>   Leal e Bom</h4>
+                    <h4><b>Personalidade Comum:</b> Alegre, Corajoso e Determinado</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                42 Kg (+- 5 Kg)</h4>
+                    <h4><b>Altura:</b>              1,20 m (+- 5 cm) </h4>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  20 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   75 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  100 Anos</h4></li>
+                    </ul>
+                    <hr>
+                    <h4><b>Nomes:</b>    <span id="m-names">Quotran, Valpos, Nelos, Gotran, Garpos, Pimlan</span></h4>
+                    <h4><b>Nomes Femininos:</b>    <span id="f-names">Jayelle, Idanys, Shaesys, Arini, Verprys, Oranys</span></h4>
+                    <h4><b>Sobrenomes:</b>    <span id="surnames">Loomjert, Niddock, Rookniem, Zivess, Wongner, Nevignir</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/halfling.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Embora alguns halflings vivam seus dias em comunidades agrícolas remotas, outros formam bandos nômades que viajam constantemente, atraídos pela estrada e o amplo horizonte para descobrir as maravilhas de novas terras e povos. Mas mesmo esses andarilhos amam paz, comida, lar e casa, embora o lar possa ser uma carroça em uma estrada de terra ou uma jangada flutuando rio abaixo.</p>
+                <p>Halflings são pessoas afáveis e alegres, que valorizam os laços de família e amizade. São facilmente movidos a ter pena e ódio ao ver qualquer ser vivo sofrer. Eles são generosos, compartilhando alegremente o que têm, mesmo em tempos difíceis.</p>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Ataque de Risco</td>
+                        <td>+2 na rolagem de ataque e -2 na defesa, até o próximo turno.</td>
+                    </tr>
+                    <tr>
+                        <td>Ataque de Sorte</td>
+                        <td>Uma vez a cada descanso, quando errar um ataque de arma, você pode rolar novamente o ataque e ficar com o segundo resultado, mesmo que seja menor.</td>
+                    </tr>
+                    <tr>
+                        <td>Baleador</td>
+                        <td>+2 nas rolagens de ataque com a Funda.</td>
+                    </tr>
+                    <tr>
+                        <td>Combatente Cauteloso</td>
+                        <td>+2 na Defesa quando estiver em Postura Defensiva.</td>
+                    </tr>
+                    <tr>
+                        <td>Pés Ligeiros</td>
+                        <td>+4 de Deslocamento.</td>
+                    </tr>
+                    <tr>
+                        <td>Segunda Chance</td>
+                        <td>Uma vez por dia, quando uma criatura que você possa ver, lhe atingir, você pode fazer ela rolar novamente o ataque.</td>
+                    </tr>
+                    <tr>
+                        <td>Sorte</td>
+                        <td>Uma vez por dia, caso tire 1 no dado você pode rolar novamente e ficar com o segundo resultado.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
