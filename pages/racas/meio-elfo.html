@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/race.js" type="module" defer></script>
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Raça - Meio-Elfo</title>
+</head>
+<body>
+    <header>
+        <h1>Meio-Elfo</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('talentos')">Talentos Raciais</a>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section class="caracteristicas-raciais">
+                    <h2 id="caracteristicas">Características Raciais</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Carisma e Agilidade, -2 em Força</h4>
+                    <h4><b>Perícias:</b>            +2 em Diplomacia e Percepção</h4>
+                    <h4><b>Tamanho:</b>             Médio</h4>
+                    <h4><b>Visão no Escuro:</b>             12 Metros</h4>
+                    <hr>
+                    <h4><b>Idiomas:</b>             Comum e Élfico</h4>
+                    <h4><b>Alinhamento Comum:</b>   Caótico e Neutro</h4>
+                    <h4><b>Personalidade Comum:</b> Adaptável, Libertino, Prestativo e Confiável</h4>
+                    <hr>
+                    <h4><b>Peso:</b>                70 Kg (+- 10 Kg)</h4>
+                    <h4><b>Altura:</b>              1,77 m (+- 20 cm) </h4>
+                    <h4><b>Idades:</b></h4>
+                    <ul class="text-indent">
+                        <li><h4><b>Adulto:</b>  20 Anos</h4></li>
+                        <li><h4><b>Velho:</b>   125 Anos</h4></li>
+                        <li><h4><b>Ancião:</b>  150 Anos</h4></li>
+                    </ul>
+                    <hr>
+                    <h4><b>Nomes Masculinos:</b>    <span id="m-names">Kefni, Nezo, Ladislaus, Fardriel, Ysemword, Rilamir</span></h4>
+                    <h4><b>Nomes Femininos:</b>     <span id="f-names">Yuliana, Martina, Diandra, Branlurie, Amellarel, Grerissa</span></h4>
+                    <h4><b>Sobrenomes:</b>          <span id="surnames">Menitsk, Sascergos, Jadein, Faehorn, Magjeon, Naecaryn</span></h4>
+                    <div class="d-flex name-gen">
+                        <button>Gerar Nome</button>
+                        <h4 id="nameGenerated"><span id="nameGenValue"></span></h4>
+                    </div>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/racas/meio-elfo.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</b></h2>
+                <p>Caminhando em dois mundos, mas realmente não pertencendo a nenhum, os meio-elfos combinam o que alguns dizem ser as melhores qualidades de seus pais elfos e humanos: curiosidade, inventividade e ambição humana, temperada pelos sentidos refinados, amor pela natureza e gostos artísticos dos elfos</p>
+                <p>Alguns meio-elfos vivem entre humanos, separados por suas diferenças emocionais e físicas, vendo amigos e entes queridos envelhecerem enquanto o tempo mal os atinge. Outros vivem com os elfos, ficando inquietos à medida que atingem a idade adulta nos reinos élficos atemporais, enquanto seus colegas continuam a viver como crianças.</p>
+                <p>Muitos meio-elfos, incapazes de se encaixar em nenhuma das sociedades, escolhem vidas de peregrinação solitária ou se juntam a outros desajustados e rejeitados na vida futura.</p>
+            </section>
+
+            <section class="overflow-section" id="talentos-raciais">
+                <h2 id="talentos">Talentos Raciais</b></h2>
+                <table class="talent-table">
+                    <tr>
+                        <th></th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>Desprezados pelos Elfos</td>
+                        <td>+1 nas Rolagens de Ataque contra Drows, Eladrins e Elfos.</td>
+                    </tr>
+                    <tr>
+                        <td>Familiaridade com Armas Élficas</td>
+                        <td>Treinamento com Arco e Arco Longo.</td>
+                    </tr>
+                    <tr>
+                        <td>Herança</td>
+                        <td>Escolha um talento de Drow, Eladrin, Elfo ou Humano.</td>
+                    </tr>
+                    <tr>
+                        <td>Imunidades Feéricas</td>
+                        <td>Imunidade ao efeito de Sono provocados por magias e possui Vantagem em testes contra a condição Encantado.</td>
+                    </tr>
+                    <tr>
+                        <td>Precisão Élfica</td>
+                        <td>+1 nas rolagens de ataque com Armas à Distância.</td>
+                    </tr>
+                    <tr>
+                        <td>Sentidos Aguçados</td>
+                        <td>+2 em Percepção.</td>
+                    </tr>
+                    <tr>
+                        <td>Treinado por Drows</td>
+                        <td>Treinamento com Besta de Mão e Florete.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
