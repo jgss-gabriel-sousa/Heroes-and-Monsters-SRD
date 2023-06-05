@@ -1,0 +1,61 @@
+:root {
+    background-color: #121212;
+
+    --text-red-light: #be3126;
+    --text-red: #c63327;
+
+    --text-white: #e6e6e6;
+    --text-table-white: #dddddd;
+    --text: #100000;
+
+    --border-dark: #41464b;
+
+    --bg-header: #192026;
+    --bg-black: #333;
+    --bg-white: #dddddd;
+    --bg-grey: #cbcbcb;   
+    --bg-body-dark: #121212;
+    --bg-body-light: #fbfbf8;
+    --bg-table-white: #e6e6e6;    
+    --bg-table-grey: #cbcbcb;   
+    --bg-table-deep-blue: #111518e6; 
+
+    --bg-grey-light: #142136;
+    --bg-blue-dark: #142136;
+    --bg-indigo: #7577e1;
+
+    --shadow: #100000;
+}
+
+#dark-mode {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #9f9f9f;
+    top: 12px;
+    right: 65px;
+    font-size: 24px;
+    margin-left: 50px;
+}
+.dark-mode{
+    --bg-table-grey: #383838;
+    --bg-table-white: #282828;
+    --bg-white: #121212;
+    --bg-black: #dddddd;
+    --text-white: #100000;
+    --text: #dfdfdf;
+    --text-red: #cf2c1f;
+    --text-table-white: #c2c2c2;
+    --border-dark: #555;
+}
+
+.dark-mode hr{
+    background-color: #FFFFFF1A;
+    color: #FFFFFF1A;
+    border-color: #FFFFFF1A;
+}
+
+.dark-mode #mySidepanel{
+    border-width: 0px;
+}

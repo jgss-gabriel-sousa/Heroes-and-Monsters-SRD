@@ -3,8 +3,7 @@
 @import "./sidepanel.css";
 @import "./footer.css";
 @import "./tables.css";
-@import "./darkmode.css";
-@import "./colors/lightmode.css";
+@import "./colors.css";
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -54,9 +53,9 @@ h4 {
 
 p {
     font-size: 14px;
-    line-height: 2;
     text-align: justify;
     margin-bottom: 0.5rem;
+    line-height: 1.625;
 }
   
 a, a:hover, a:focus, a:active {
