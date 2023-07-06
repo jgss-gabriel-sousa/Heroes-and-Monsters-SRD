@@ -5,6 +5,8 @@
 @import "./tables.css";
 @import "./colors.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -12,7 +14,7 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Belanosima";
     background-color: var(--bg-body-dark);
     color: var(--text);
     margin: 0;
