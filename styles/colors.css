@@ -4,6 +4,8 @@
     --text-red-light: #be3126;
     --text-red: #c63327;
 
+    --text-bold: #990c00;
+
     --text-white: #e6e6e6;
     --text-table-white: #dddddd;
     --text: #100000;
@@ -48,6 +50,7 @@
     --text-red: #cf2c1f;
     --text-table-white: #c2c2c2;
     --border-dark: #555;
+    --text-bold: #ff7266;
 }
 
 .dark-mode hr{

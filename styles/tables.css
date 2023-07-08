@@ -159,6 +159,12 @@ table li {
 .progress-table p:nth-last-child(1) {
     margin-bottom: 5px;
 }
+.progress-table ul {
+    margin-top: 0;
+}
+.progress-table li {
+    margin: 0;
+}
 
 /*##############################################################################################*/
 
