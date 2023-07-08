@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../../styles/style.css" rel="stylesheet">
+    <link href="../../styles/pages/classes.css" rel="stylesheet">
+
+    <script src="../../scripts/base.js" type="module" defer></script>
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>H&M - Classe - Guerreiro</title>
+</head>
+<body>
+    <header>
+        <h1>Guerreiro</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+
+            <a onclick="scrollToID('caracteristicas')">Características</a>
+            <a onclick="scrollToID('descricao')">Descrição</a>
+            <a onclick="scrollToID('progressao')">Progressão</a>
+            <a onclick="scrollToID('habilidades')">Habilidades</a>
+            <ul>
+                <a onclick="scrollToID('arquetipo-marcial')">Arquétipos Marciais</a>
+                <li><a onclick="scrollToID('campeao')">Campeão</a></li>
+                <li><a onclick="scrollToID('cavaleiro')">Cavaleiro</a></li>
+                <li><a onclick="scrollToID('guerreiro-mistico')">Guerreiro Místico</a></li>
+                <li><a onclick="scrollToID('mestre-da-batalha')">Mestre da Batalha</a></li>
+                <ul><li><a onclick="scrollToID('manobras-de-superioridade')">&nbsp;&nbsp;&nbsp; Manobras de Superioridade</a></li></ul>
+            </ul>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section class="first-section">
+                <section>
+                    <h2 id="caracteristicas">Características</h2>
+                    <br>
+                    <h4><b>Atributos:</b>           +2 em Força e -2 em Inteligência</h4>
+                    <h4><b>Perícias:</b>            +2 em <b>duas</b> da lista</h4>
+                    <h4><b>Lista de Perícias:</b>   Atletismo, Investigação, Percepção, Reflexos, Resistência, Sobrevivência</h4>
+                    <h4><b>Dado de Vida:</b>        d10</h4>
+                    <hr>
+                    <h4><b>Armas:</b>               Simples, Marciais, Á Distância, Armas de Haste, Armas de Fogo, uma Exótica e uma de Esgrima</h4>
+                    <h4><b>Armaduras:</b>           Pesadas</h4>
+                    <h4><b>Escudos:</b>             Pesados</h4>
+                    <h4><b>Ferramentas:</b>         Nenhuma</h4>
+                    <hr>
+                    <h4><b>Equipamento Inicial: </b>Kit de Aventureiro e escolha uma opção da lista abaixo:
+                        <ul class="with-list-style">
+                            <li>Arma Marcial Pesada</li>
+                            <li>Arma Marcial Leve e Escudo Leve</li>
+                            <li>Duas Armas Simples e Escudo Pesado</li>
+                            <li>Arma Á Distância e 20 Munições</li>
+                        </ul>
+                    </h4>
+                    <h4><b>Riqueza Inicial: </b>16d4 ou 40 Moedas de Ouro</h4>
+                </section>
+                <figure>
+                    <img class="png-img" src="../../img/classes/guerreiro.webp">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 id="descricao">Descrição</h2>
+                <p>Guerreiros são especialistas em combate, possuindo treinamento em quase todos os estilos de luta. O guerreiro sabe manejar um machado, duelar com uma rapieira, empunhar uma espada curta, longa ou de grande porte, utilizar um arco e até mesmo prender inimigos com uma rede. Além disso, um guerreiro sabe como utilizar qualquer tipo de armadura ou escudo.</p>
+                <p>Cada guerreiro, além do conhecimento básico, se especializa em um estilo de combate específico. Alguns se concentram no manejo de armas grandes, enquanto outros dominam a arte de lutar com duas armas simultaneamente. Essas combinações de habilidades amplas tornam os guerreiros combatentes superiores nos campos de batalha e masmorras.</p>
+            </section>
+
+            <section class="overflow-section">
+                <h2 id="progressao">Progressão</h2>
+
+                <table class="progress-table">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidades</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li><span class="kw">Estilo de Combate</span></li>
+                                <li><span class="kw">Investida</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><span class="kw">Surto de Ação</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li><span class="kw">Arquétipo Marcial</span></li>
+                                <li>Habilidade do <span class="kw">Arquétipo Marcial</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span class="kw">Ataque Extra</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><span class="kw">Estilo de Combate II</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Habilidade do <span class="kw">Arquétipo Marcial</span></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><span class="kw">Inatingível</span></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li><span class="kw">Ataque Extra II</span></li>
+                                <li>Habilidade do <span class="kw">Arquétipo Marcial</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><span class="kw">Estilo de Combate III</span></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><span class="kw">Inatingível II</span></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <ul class="no-list-style">
+                                <li>Habilidade do <span class="kw">Arquétipo Marcial</span></li>
+                                <li><span class="kw">Surto de Ação II</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td><span class="kw">Inatingível III</span></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Habilidade do <span class="kw">Arquétipo Marcial</span></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="overflow-section">
+                <h2 id="habilidades">Habilidades</h2>
+                
+                <table class="class-ability-table-classes">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+
+                    <tr id="estilo-de-combate">
+                        <td rowspan="2">1</td>
+                        <td>Estilo de Combate</td>
+                        <td>
+                            <p class="no-indent">Escolha um Estilo de Combate para seguir:</p>
+                            <ul>
+                                <li><b>Combate às Cegas:</b> Você tem Visão às Cegas de 2 m.</li>
+                                <li><b>Combate com Armas Grandes:</b> Quando você rolar 1 ou 2 no dado de dano de uma Arma Corpo a Corpo de Duas Mãos. Você pode rolar novamente o dado e deve usar o novo valor rolado.</li>
+                                <li><b>Combate com Duas Armas:</b> +2 no dano quando em combate com Duas Armas.</li>
+                                <li><b>Defesa:</b> +1 na Defesa.</li>
+                                <li><b>Duelismo:</b> Ao empunhar uma arma em uma única mão, sem nenhuma outra arma na mão oposta, você recebe um bônus de +2 no dano.</li>
+                                <li><b>Luta Desarmada:</b> Seu dado de dano desarmado é 1d6. Se você não estiver empunhando nenhuma arma ou escudo ao fazer a jogada de ataque, o d6 se torna um d8. No início de seus turnos, você pode causar 1d4 de dano de Impacto a uma criatura Agarrada por você.</li>
+                                <li><b>Proteção:</b> Quando empunhando um Escudo e uma criatura inimiga que você possa ver atacar um aliado a 1 m de você, você pode usar sua Reação para impor Desvantagem na jogada de ataque.</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="investida">
+                        <td style="display: none;"></td>
+                        <td>Investida</td>
+                        <td>Como uma ação que dura um Turno, você pode escolher um alvo que esteja a uma distância mínima de 3 m e máxima igual ao seu deslocamento de corrida (dobro do deslocamento). Desde de que o alvo esteja em uma linha reta e e não haja obstáculos no caminho, você corre em direção a ele e o ataca com Vantagem, contudo, você sofre uma penalidade de -2 em sua Defesa até o início do seu próximo turno.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="surto-de-acao">
+                        <td>2</td>
+                        <td>Surto de Ação</td>
+                        <td>Você pode executar uma Ação adicional no turno.</td>
+                        <td>1 vez a cada Descanso</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Arquétipo Marcial</td>
+                        <td>Você escolhe um <span class="kw">Arquétipo Marcial</span> que define seu estilo e técnica de combate.</td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="ataque-extra">
+                        <td>5</td>
+                        <td>Ataque Extra</td>
+                        <td>Você executa 2 ataques na mesma ação de ataque.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="estilo-de-combate-ii">
+                        <td>6</td>
+                        <td>Estilo de Combate II</td>
+                        <td><p>Você pode escolher mais um <span class="kw">Estilo de Combate</span>.</p></td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="inatingivel">
+                        <td>8</td>
+                        <td>Inatingível</td>
+                        <td>Pode rolar novamente um Teste de Salvamento em que falhou.</td>
+                        <td>1 vez a cada Descanso Longo</td>
+                    </tr>
+
+                    <tr id="ataque-extra-ii">
+                        <td>10</td>
+                        <td>Ataque Extra II</td>
+                        <td>Você executa 3 ataques na mesma ação de ataque.</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="estilo-de-combate-iii">
+                        <td>12</td>
+                        <td>Estilo de Combate III</td>
+                        <td><p>Você pode escolher mais um <span class="kw">Estilo de Combate</span>.</p></td>
+                        <td></td>
+                    </tr>
+
+                    <tr id="inatingivel-ii">
+                        <td>13</td>
+                        <td>Inatingível II</td>
+                        <td>Pode rolar novamente um Teste de Salvamento em que falhou.</td>
+                        <td>2 vezes a cada Descanso Longo</td>
+                    </tr>
+
+                    <tr id="surto-de-acao-ii">
+                        <td>15</td>
+                        <td>Surto de Ação II</td>
+                        <td>Você pode executar uma Ação adicional no turno.</td>
+                        <td>2 vezes a cada Descanso</td>
+                    </tr>
+
+                    <tr id="inatingivel-iii">
+                        <td>17</td>
+                        <td>Inatingível III</td>
+                        <td>Pode rolar novamente um Teste de Salvamento em que falhou.</td>
+                        <td>3 vezes a cada Descanso Longo</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+
+            <section class="overflow-section">
+                <h2 id="arquetipo-marcial">Arquétipos Marciais</h2>
+
+                <h3 id="campeao">Campeão: </h3>
+                <p>O arquétipo do Campeão foca no desenvolvimento da pura força física, acompanhada por uma perfeição mortal. Aqueles que trilham o caminho desse arquétipo combinam treinamentos rigorosos com excelência física para desferir golpes devastadores.</p>
+                <table class="class-ability-table-classes">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ataque Preciso</td>
+                        <td><p>Jogadas de ataque com 19 e 20 são críticos.</p></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Atletismo Extraordinário</td>
+                        <td><p>Você adiciona um bônus igual a 1/4 de seu nível em qualquer teste de Agilidade, Força ou Vitalidade.</p></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Estilo de Luta Adicional II</td>
+                        <td><p>Você pode escolher mais um <span class="kw">Estilo de Combate</span>.</p></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Ataque Preciso II</td>
+                        <td><p>Jogadas de ataque com 18, 19 e 20 são críticos.</p></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Auge da Resiliência</td>
+                        <td>
+                            <p>Se no começo de seu turno você não estiver com mais que metade de seus Pontos de Vida, você recupera uma quantidade de Pontos de Vida igual a 5 + seu mod. de Vitalidade. Você não recebe esse benefício se estiver Inconsciente.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3 id="cavaleiro">Cavaleiro: </h3>
+                <p>Normalmente nascido entre a nobreza e criado na corte, um cavaleiro se sente igualmente em casa liderando um ataque de cavalaria ou trocando réplicas em um jantar oficial. Os cavaleiros aprendem a proteger aqueles que estão sob sua responsabilidade. Compelidos a corrigir erros ou buscar prestígio, muitos desses guerreiros deixam para trás vidas confortáveis para embarcar em aventuras gloriosas.</p>
+                <table class="class-ability-table-classes">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                        <th>Limite</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nascido para Cavalgar</td>
+                        <td>
+                            <p>Você tem Vantagem em Testes de Salvamento feitos para evitar cair de sua montaria. Se você cair de sua montaria e despencar de não mais do que 3 metros, poderá ficar de pé, se não estiver Incapacitado.</p>
+                            <p>Montar ou desmontar de uma criatura é o tempo de apenas uma ação.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Marca Resoluta</td>
+                        <td>
+                            <p>Quando você atinge uma criatura com um ataque de Arma Corpo a Corpo, você pode marcar a criatura até o final do seu próximo turno. Este efeito termina mais cedo se você ficar incapacitado ou morrer.</p>
+                            <p>Enquanto estiver Engajado com você, uma criatura marcada tem Desvantagem em qualquer jogada de ataque que não tenha você como alvo.</p>
+                            <p>Se uma criatura marcada causar dano a qualquer pessoa que não seja você, você pode fazer um Ataque Especial, este ataque precisa ser feito com uma Arma Corpo a Corpo contra a criatura marcada, e pode ser feito como uma Ação Menor em seu próximo turno. Você tem Vantagem nesse ataque e se acertar, causa dano extra igual à metade do seu nível de Guerreiro.</p>
+                            <p>Você não tem limite do número de criaturas que pode marcar, mas tem limite no número de vezes que pode fazer os ataques especiais.</p>
+                        </td>
+                        <td>Você pode fazer um número de ataques especiais igual ao seu mod. de Força a cada Descanso Longo</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Manobra de Proteção</td>
+                        <td>
+                            <p>Se você ou uma criatura que você possa ver a 1 m de você for atingida por um ataque, você pode rolar 1d8 como uma Reação, desde que você esteja empunhando uma Arma Corpo a Corpo ou um Escudo. O número rolado é adicionado a Defesa do aliado contra aquele ataque. Se o ataque ainda acertar, o alvo tem Resistência contra o dano do ataque.</p>
+                        </td>
+                        <td>Número de vezes igual ao seu mod. de Vitalidade a cada Descanso Longo</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Quebrar a Movimentação</td>
+                        <td>
+                            <p>Se você acertar uma criatura com um Ataque de Oportunidade, o Deslocamento do alvo é reduzido a 0 até o final do próximo turno do alvo.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Investida Feroz</td>
+                        <td>
+                            <p>Quando você utilizar a habilidade Investida e acertar o ataque, o alvo deve ter sucesso em um teste de Atletismo com dificuldade 10 + seu mod. de Força ou será derrubado.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Defensor Vigilante</td>
+                        <td>
+                            <p>Você não perde sua Reação ao executar Ataques de Oportunidade.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3 id="guerreiro-mistico">Guerreiro Místico: </h3>
+                <p>Os Guerreiros Místicos usam técnicas mágicas similares às praticadas pelos magos para obter uma proteção adicional ou causar dano a vários oponentes de uma vez, estendendo o alcance do guerreiro em combate.</p>
+                <table class="class-ability-table-classes">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3</td>
+                        <td>Conhecimento Arcano</td>
+                        <td>
+                            <p>Você aumenta sua capacidade marcial com a habilidade de lançar feitiços.</p>
+                            <p>Você aprende 2 novas magias da lista do <a href="/pages/classes/mago.html">Mago</a>, seu registro de magias é mental e sua mana é igual ao dobro do seu modificador de Inteligência.</p>
+                            <p>Você ignora metade da Falha Arcana.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: none;"></td>
+                        <td>Arma Vinculada</td>
+                        <td>
+                            <p>Você aprende um ritual para criar um vínculo mágico com uma arma. Esse ritual demora 1 hora ou pode ser realizada durante um descanso curto. A arma deve estar ao seu alcance ao decorrer do ritual e ao concluí-lo, você toca a arma e forja o elo.</p>
+                            <p>Uma vez que você tenha vinculado uma arma a você, você não pode ser desarmado dessa arma, a menos que você esteja Incapacitado. Se ela estiver no mesmo plano de existência, você pode invocar essa arma com uma ação menor, no seu turno, fazendo-a se teletransportar instantaneamente para a sua mão.</p>
+                            <p>Você pode ter até duas armas vinculadas, mas só pode invocar uma por vez com sua ação menor. Se você quiser criar um elo com uma terceira arma, você deve quebrar o vínculo com um das outras duas.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Magia de Guerra</td>
+                        <td>
+                            <p>Quando você usa sua ação para lançar uma magia de 1º círculo, você pode fazer um ataque com uma arma como uma ação menor.</p>
+                            <p>Você ignora qualquer Falha Arcana.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Golpe Místico</td>
+                        <td>
+                            <p>Quando você atingir uma criatura com um ataque com arma, aquela criatura terá Desvantagem no próximo Teste de Salvamento que ela fizer contra uma magia que você conjurar antes do final do seu próximo turno.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Investida Arcana</td>
+                        <td>
+                            <p>Você pode se teletransportar até 6 m para um espaço desocupado que você possa ver, quando você usar seu Surto de Ação. Você pode se teletransportar antes ou depois da ação adicional.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Magia de Guerra II</td>
+                        <td>
+                            <p>Quando você usar sua ação para conjurar uma magia, você pode realizar um ataque com arma, com uma ação menor.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3 id="mestre-da-batalha">Mestre da Batalha: </h3>
+                <p>Para um Mestre da Batalha, o combate é um campo acadêmico, às vezes incluindo assuntos além da batalha, como forjaria e caligrafia. Nem todo guerreiro absorve as lições de história, teoria e arte refletidas no arquétipo do Mestre da Batalha, mas aqueles que conseguem tornam-se guerreiros bem-supridos, possuindo grande perícia e conhecimento.</p>
+                <table class="class-ability-table-classes">
+                    <tr>
+                        <th>Nível</th>
+                        <th>Habilidade</th>
+                        <th>Efeito</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3</td>
+                        <td>Superioridade em Combate</td>
+                        <td>
+                            <p>Você inicialmente aprende três <span class="kw">Manobras de Superioridade</span>, à sua escolha. Essas manobras consomem um dado especial chamado Dado de Superioridade. Você só pode usar uma manobra por ataque. A cada vez que você aprende uma nova manobra, você pode substituir uma manobra conhecida por uma diferente.</p>
+                            <p><b>Dados de Superioridade:</b> Você tem 4 Dados de Superioridade, que são d8. Um Dado de Superioridade é gasto quando você usa uma Manobra de Superioridade. Você recupera os dados quando terminar um descanso.</p>
+                            <p><b>Teste de Salvamento:</b> Algumas das manobras exigem que o alvo realize um salvamento. A dificuldade é 8 + seu mod. de Força.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display: none;"></td>
+                        <td>Estudioso da Guerra</td>
+                        <td>
+                            <p>Você tem treinamento com uma Ferramenta de Artesão a sua escolha.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Conhecendo o Inimigo</td>
+                        <td>
+                            <p>Se você gastar, pelo menos, 1 minuto observando ou interagindo com uma criatura fora de combate, você pode aprender certas informações sobre as capacidades dela comparadas as suas.</p>
+                            <p>O Mestre conta a você se a criatura é igual, superior ou inferior a você a respeito de duas das seguintes características, à sua escolha:</p>
+                            <ul>
+                                <li>Valor de Força</li>
+                                <li>Valor de Vitalidade</li>
+                                <li>Valor de Agilidade</li>
+                                <li>Valor de Defesa</li>
+                                <li>% de Vida atual</li>
+                                <li>Nível de Classe (se possuir) ou Nível de Dificuldade</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Superioridade em Combate II</td>
+                        <td>
+                            <p>Você aprende três novas manobras e seu Dado de Superioridade se torna um d10.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Implacável</td>
+                        <td>
+                            <p>Quando você rolar Iniciativa e não tiver nenhum Dado de Superioridade restante, você recupera um Dado de Superioridade.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Superioridade em Combate III</td>
+                        <td>
+                            <p>Você aprende três novas manobras e seu Dado de Superioridade se torna um d12.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3 id="manobras-de-superioridade"><b>Manobras de Superioridade:</b></h3>
+                <ul class="with-list-style">
+                    <li>
+                        <p><b>Aparar: </b> Com uma Reação quando outra criatura causar dano a você com um ataque corpo-a-corpo, você reduz o dano pelo número rolado no dado de superioridade + seu modificador de Agilidade.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque Ameaçador: </b> Quando você atingir uma criatura com um ataque com arma, você pode tentar amedrontar o alvo. Você adiciona seu dado de superioridade ao dano do ataque e o alvo deve realizar um teste de salvamento de Coragem. Se falhar, ele ficará com medo de você até o final do seu próximo turno.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque de Desarme: </b> Quando você atingir uma criatura com um ataque com arma, você pode tentar desarmar o alvo. Você adiciona o dado de superioridade ao dano do ataque e o alvo deve realizar um teste de Atletismo. Se falhar, ele derruba o objeto que cai aos pés dele.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque de Encontrão: </b> Quando você atingir uma criatura com um ataque com arma, você pode tentar empurrar o alvo para trás. Você adiciona seu dado de superioridade ao dano do ataque e, se o alvo for Grande ou menor, ele deve realizar um teste de salvamento de Atletismo. Se falhar, você empurra o alvo para até 4 metros de você.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque de Precisão: </b> Escolha uma criatura a 1 metro de você como alvo. Você tem Vantagem na sua próxima jogada de ataque contra essa criatura. Se o ataque atingir, você adiciona seu dado de superioridade ao dano do ataque.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque Estendido: </b> Você pode aumentar o alcance do seu ataque em 1 metro. Se você atingir, você adiciona o seu dado de superioridade ao dano causado pelo ataque.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque Provocante: </b> Quando você atingir uma criatura com um ataque com arma, você pode tentar incitar o alvo a atacar você. Você adiciona seu dado de superioridade ao dano do ataque e o alvo deve realizar um teste de salvamento de Concentração. Se falhar, o alvo terá Desvantagem nas jogadas de ataque contra alvos diferentes de você, até o fim do seu próximo turno.</p>
+                    </li>
+                    <li>
+                        <p><b>Ataque Trespassante: </b> Quando você atingir uma criatura com um ataque corpo-a-corpo com arma, você pode gastar um dado de superioridade para tentar causar dano a outra criatura que esteja a até 1 m do alvo original e que esteja no seu alcance. Se com a jogada de ataque original for possível de atingir a segunda criatura, ela sofre dano igual ao número rolado no dado de superioridade. O dano é do mesmo tipo que o causado pelo ataque original.</p>
+                    </li>
+                    <li>
+                        <p><b>Contra-Atacar: </b> Quando uma criatura atacar você com um ataque corpo-a-corpo e errar, você pode usar sua Reação para realizar um ataque corpo-a-corpo com arma contra essa criatura. Se você atingir, você adiciona seu dado de superioridade ao dano do ataque.</p>
+                    </li>
+                    <li>
+                        <p><b>Derrubar: </b> Quando você atingir uma criatura com um ataque com arma, você pode tentar derrubar o alvo no chão. Você adiciona seu dado de superioridade ao dano do ataque e, se o alvo for Grande ou menor, ele deve realizar um teste de salvamento de Acrobacia. Se falhar, o alvo ficará caído no chão.</p>
+                    </li>
+                    <li>
+                        <p><b>Golpe Distrativo:</b> Quando você atingir uma criatura com um ataque com arma, você tenta distrair a criatura, abrindo uma brecha para um de seus aliados. Você adiciona seu dado de superioridade ao dano do ataque e a próxima jogada de ataque contra o alvo, feita por um aliado, tem Vantagem, se o ataque for realizado antes do começo do seu próximo turno.</p>
+                    </li>
+                    <li>
+                        <p><b>Golpe do Comandante:</b> Quando você realiza a ação de Ataque, no seu turno, você pode desistir de um dos seus ataques e usar uma ação menor para direcionar o ataque de um dos seus companheiros. Quando você faz isso, escolha uma criatura amigável que possa ver ou ouvir você. Essa criatura pode, imediatamente, usar sua Reação para realizar um ataque com arma, adicionando seu dado de superioridade ao dano do ataque.</p>
+                    </li>
+                    <li>
+                        <p><b>Inspirar:</b> No seu turno, você pode usar uma ação menor para reforçar a determinação dos seus companheiros. Quando o fizer, escolha uma criatura amigável que possa ver ou ouvir você. Essa criatura ganha uma quantidade de pontos de vida temporários igual a sua rolagem de dado de superioridade + seu modificador de Carisma.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
