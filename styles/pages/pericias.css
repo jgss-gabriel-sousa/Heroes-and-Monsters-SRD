@@ -1,0 +1,41 @@
+@import url("../colors.css");
+
+.pericias-table td {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.pericias-table td:last-child {
+    font-weight: normal;
+}
+
+#pericias-description {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#pericias-description h2 {
+    margin-bottom: 0;
+}
+#pericias-description h3 {
+    margin-top: 2rem;
+}
+#pericias-description p {
+    margin-top: 0.5rem;
+    text-indent: 2rem;
+}
+#pericias-description div {
+    width: 45%;
+    margin-top: 10px;
+    padding-top: 0;
+}
+#pericias-description td {
+    font-size: 12px;
+    text-align: center;
+}
+#pericias-description td p {
+    font-size: 12px;
+    text-align: justify;
+    margin: 0;
+}

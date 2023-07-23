@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/pages/classes.css" rel="stylesheet">
+    <link href="../styles/pages/pericias.css" rel="stylesheet">
+
+    <script src="../scripts/race.js" type="module" defer></script>
+    <script src="../scripts/base.js" type="module" defer></script>
+    
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>Perícias</title>
+</head>
+<body>
+    <header>
+        <h1>Perícias</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section>
+                <p>Para realizar certas ações, o jogador utilizará o valor das Perícias no teste, em vez de depender apenas do bônus do Atributo. As Perícias consistem em uma lista de ações específicas, cada uma associada com um modificador. Elas podem receber bônus específicos, os quais são somados ao valor base do modificador. Representando assim uma determinada aptidão do personagem</p>
+                <p>Na tabela abaixo estão apresentadas todas as perícias:</p>
+                <table class="pericias-table">
+                    <tr>
+                        <th>Atributo Relacionado</th>
+                        <th>Perícia</th>
+                    </tr>
+                    <tr>
+                        <td>Força</td>
+                        <td><span class="kw">Atletismo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Vitalidade</td>
+                        <td><span class="kw">Resistência</span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Agilidade</td>
+                        <td><span class="kw">Acrobacia</span></td>
+                    </tr>
+                    <tr><td><span class="kw">Furtividade</span></td></tr>
+                    <tr><td><span class="kw">Ladroagem</span></td></tr>
+                    <tr><td><span class="kw">Reflexos</span></td></tr>
+                    <tr>
+                        <td rowspan="3">Carisma</td>
+                        <td><span class="kw">Atuação</span></td>
+                    </tr>
+                    <tr><td><span class="kw">Diplomacia</span></td></tr>
+                    <tr><td><span class="kw">Enganação</span></td></tr>
+                    <tr>
+                        <td rowspan="3"><span class="kw">Vontade</span></td>
+                        <td><span class="kw">Concentração</span></td>
+                    </tr>
+                    <tr><td><span class="kw">Coragem</span></td></tr>
+                    <tr><td><span class="kw">Intimidação</span></td></tr>
+                    <tr>
+                        <td rowspan="5">Sabedoria</td>
+                        <td><span class="kw">Iniciativa</span></td>
+                    </tr>
+                    <tr><td><span class="kw">Lidar com Animais</span></td></tr>
+                    <tr><td><span class="kw">Medicina</span></td></tr>
+                    <tr><td><span class="kw">Percepção</span></td></tr>
+                    <tr><td><span class="kw">Sobrevivência</span></td></tr>
+                    <tr>
+                        <td rowspan="5">Inteligência</td>
+                        <td><span class="kw">Arcanismo</span></td>
+                    </tr>
+                    <tr><td><span class="kw">Conhecimento</span></td></tr>
+                    <tr><td><span class="kw">Construir</span></td></tr>
+                    <tr><td><span class="kw">Investigação</span></td></tr>
+                    <tr><td><span class="kw">Religião</span></td></tr>
+                </table>
+            </section>
+
+            <section id="pericias-description">
+                <div>
+                    <h2 id="atletismo">Atletismo</h2>
+                    <p>Atletismo define as atividades físicas que demandam força muscular, tais como escalada, escapar de agarrões, saltos e natação.</p>
+                    
+                    <h3>Escalada</h3>
+                    <p>Realize um teste de Atletismo para escalar um penhasco, alcançar a janela do segundo andar da torre de um mago ou sair de um poço após cair por um alçapão.</p>
+                    <table>
+                        <tr>
+                            <th>Superfície</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td><p>Escalada em parede ou uso de corda com nós de apoio.</p></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td><p>Superfície com saliências para segurar e apoiar-se.</p></td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td><p>Superfície com apoios inseguros, como rochas, árvores ou cordas sem nós.</p></td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td><p>Superfície com poucos apoios ou escorregadia.</p></td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td><p>Superfície suspensa no teto, exigindo sustentar-se apenas com as mãos.</p></td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+
+                    <h3>Natação</h3>
+                    <p>Realize um teste de Atletismo para nadar quando não possuir habilidade de deslocamento na água. Esse teste também é utilizado ao mergulhar ou navegar por obstáculos subaquáticos.</p>
+                    <table>
+                        <tr>
+                            <th>Nadar</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td>Água Calma</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Água Agitada</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Água Turbulenta</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Mergulho</th>
+                            <th>Dificuldade</th>
+                            <th>Dano ao Falhar</th>
+                        </tr>
+                        <tr>
+                            <td>2 m</td>
+                            <td>10</td>
+                            <td>d4</td>
+                        </tr>
+                        <tr>
+                            <td>4 m</td>
+                            <td>15</td>
+                            <td>d6</td>
+                        </tr>
+                        <tr>
+                            <td>8 m</td>
+                            <td>20</td>
+                            <td>2d6</td>
+                        </tr>
+                        <tr>
+                            <td>16 m</td>
+                            <td>25</td>
+                            <td>4d6</td>
+                        </tr>
+                        <tr>
+                            <td>24 m</td>
+                            <td>30</td>
+                            <td>8d6</td>
+                        </tr>
+                    </table>
+
+                    <h3>Salto</h3>
+                    <p>Realize um teste de Atletismo para saltar fossos, ultrapassar cercas baixas ou alcançar os galhos de uma árvore.</p>
+                    <table>
+                        <tr>
+                            <th>Salto em Altura</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td>Sem corrida inicial</td>
+                            <td>×2</td>
+                        </tr>
+                        <tr>
+                            <td>0,5 m</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1 m</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>1,5 m</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Salto em Distância</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td>Sem corrida inicial</td>
+                            <td>×2</td>
+                        </tr>
+                        <tr>
+                            <td>2 m</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>3 m</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4 m</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>5 m</td>
+                            <td>25</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 id="acrobacia">Acrobacia</h2>
+                    <p>A perícia de Acrobacia engloba habilidades que envolvem manobras acrobáticas, manter o equilíbrio em superfícies estreitas ou instáveis, escorregar para escapar de um agarrão ou minimizar danos ao cair.</p>
+                    <table>
+                        <tr>
+                            <th>Manobras</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td>Equilibrar em Local Instável</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Ignorar o dano de um queda de até 3 m</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Equilibrar em Superfície Estreita</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Ignorar o dano de um queda de até 6 m</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Equilibrar em Superfície Muito Estreita</td>
+                            <td>25</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 id="arcanismo">Arcanismo</h2>
+                    <p>Arcanismo é a perícia que define a capacidade de reunir conhecimento sobre assuntos relacionados à magia. Ela pode ser usada para recordar informações sobre magia, reconhecer pistas que envolvam magia, identificar criaturas como Constructos, Elementais ou Feéricos, reconhecer efeitos mágicos e perceber a presença mágica ao seu redor.</p>
+                </div>
+                <div>
+                    <h2 id="atuacao">Atuação</h2>
+                    <p>Atuação é a perícia que permite encantar e impressionar o público com o seu talento e habilidade artística. Em diversas situações, você pode influenciar a atitude do público por meio do seu desempenho. Esta perícia abrange várias formas de expressão artística, como canto, comédia, dança, oratória e tocar instrumentos musicais. Utilizando essas habilidades, você pode cativar a plateia, emocionar, entreter e persuadir aqueles que estão assistindo ou ouvindo sua performance.</p>
+                    <table>
+                        <tr>
+                            <th>Performace</th>
+                            <th>Dificuldade</th>
+                        </tr>
+                        <tr>
+                            <td>Rotineira<br>Onde pode ganhar 1d10 moedas de cobre / dia</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Aprazível<br>1d10 moedas de prata / dia</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Impressionante<br>3d10 moedas de prata / dia</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Memorável<br>1d6 moedas de ouro / dia</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Extraordinário<br>3d6 moedas de ouro / dia</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 id="concentracao">Concentração</h2>
+                    <p>Concentração é a perícia que mede a sua habilidade em direcionar e manter o foco da sua mente. Ela é testada quando você precisa se concentrar em uma magia ativa e sofre algum dano, sendo que a dificuldade do teste é igual a <b>10 + Círculo da Magia</b> ou <b>Metade do dano sofrido</b>, o que for maior. Em caso de falha a magia se encerra prematuramente.</p>
+                    <p>Além disso a Concentração também é uma perícia que pode ser empregada em certos testes de salvamento. Quanto maior for o seu valor nessa perícia, maior será a sua capacidade de manter a concentração mesmo sob pressão ou distrações.</p>
+                </div>
+                <div>
+                    <h2 id="conhecimento">Conhecimento</h2>
+                    <p>Conhecimento é a perícia que reflete o estudo abrangente do mundo, adquirido por meio de disciplinas acadêmicas ou estudos científicos. Essa perícia pode ser aplicada em diversos campos de estudo, tais como Antiguidade, Arquitetura, Engenharia, Geografia, História e Nobreza.</p>
+                    <p>Com o conhecimento adquirido nesses campos, você pode reconhecer e compreender a cultura e os feitos do passado, analisar e compreender estruturas arquitetônicas e engenharia, mapear e descrever regiões geográficas, interpretar eventos históricos e entender a sociedade nobre em sua complexidade.</p>
+                </div>
+                <div>
+                    <h2 id="construir">Construir</h2>
+                    <p>A perícia de Construir representa o seu conhecimento em diversas habilidades artesanais e ofícios, abrangendo uma ampla gama de atividades. Essas habilidades incluem alquimia, armeiria, cestaria, encadernação, fabricação de arcos, ferraria, caligrafia, carpintaria, lapidação de gemas, serralheria, pintura, cerâmica, escultura, construção naval, alvenaria, confecção de armadilhas, fabricação de armas e tecelagem.</p>
+                    <p>Essa perícia é essencial para personagens com habilidades de criação de objetos, como <a href="./classes/alquimista.html" target="_blank">Alquimistas</a> e <a href="./classes/especialista-em-armadilhas.html" target="_blank">Especialistas em Armadilhas</a>. Além disso personagens que são Constructos, como os <a href="./racas/forjado-belico.html" target="_blank">Forjados Bélicos</a>, usam a perícia de Construir para substituir a Medicina.</p>
+                </div>
+                <div>
+                    <h2 id="coragem">Coragem</h2>
+                    <p>É a representação da sua força de vontade na resistência aos efeitos que tentam afetar o seu corpo ou mente. É a sua determinação em enfrentar desafios que testam a sua coragem, como magias de controle mental ou tentativas de te amedrontar. Em tais situações, você precisará realizar testes de salvamento para superar esses efeitos e manter a sua integridade.</p>
+                </div>
+                <div>
+                    <h2 id="diplomacia">Diplomacia</h2>
+                    <p>Diplomacia é a perícia que engloba a capacidade de persuadir e influenciar os outros em diversas situações. Ela pode ser utilizada para convencer o camareiro a permitir que você veja o rei, negociar a paz entre tribos bárbaras em conflito ou persuadir os magos ogros que o capturaram a levá-lo de volta para seus amigos em vez de causar-lhe danos.</p>
+                    <p>A perícia abrange uma variedade de habilidades, incluindo etiqueta, graça social, tato, sutileza e habilidade com as palavras. Um personagem habilidoso em Diplomacia compreende as regras de conduta formais e informais, as expectativas sociais, as formas adequadas de tratamento, entre outros aspectos importantes. Essa habilidade permite ao personagem transmitir a impressão correta de si mesmo, negociar de forma eficaz e exercer influência sobre os outros.</p>
+                </div>
+                <div>
+                    <h2 id="Enganacao">Enganação</h2>
+                    <p>Enganação é a perícia que permite fazer com que o falso pareça verdadeiro, o ultrajante pareça plausível e o suspeito pareça comum. Por meio dessa habilidade, você é capaz de enganar, ludibriar e convencer os outros por meio de mentiras habilidosas.</p>
+                    <p>Quando você precisa falar rapidamente com um guarda, enganar um comerciante, apostar, utilizar um disfarce ou apresentar documentação falsa, entre outras situações, é necessário realizar um teste de enganação. A perícia de Enganação possibilita que você conte mentiras convincentes, manipule as percepções dos outros e influencie a forma como eles interpretam os acontecimentos.</p>
+                    <p>Ao ser bem-sucedido em um teste de Enganação, você é capaz de enganar e iludir com sucesso, mantendo o seu disfarce, persuadindo outros a acreditar em informações falsas ou induzindo-os a tomar ações baseadas em informações distorcidas. É uma perícia valiosa para personagens astutos e manipuladores que sabem como usar a persuasão e a artimanha para alcançar seus objetivos.</p>
+                </div>
+                <div>
+                    <h2 id="furtividade">Furtividade</h2>
+                    <p>Furtividade é a perícia utilizada para se esconder dos inimigos, passar despercebido pelos guardas, escapar sem ser notado e se aproximar das pessoas sem ser visto ou ouvido.</p>
+                    <p>Quando você está agindo furtivamente, pode se mover com metade do seu deslocamento normal e seu valor de teste é comparado com a Percepção Passiva das outras criaturas. Isso significa que você tem a habilidade de se movimentar de forma discreta, mantendo-se oculto e evitando chamar a atenção indesejada.</p>
+                    <p>Entretanto, é importante ressaltar que após realizar uma ação que possa revelar a sua posição, como fazer barulho ou se expor, é necessário refazer o teste de Furtividade para verificar se você ainda permanece oculto.</p>
+                    <p>A perícia de Furtividade é fundamental para personagens que desejam se infiltrar, surpreender seus adversários ou evitar confrontos desnecessários. Ao ser habilidoso nessa perícia, você pode se movimentar nas sombras, passando despercebido e garantindo uma vantagem estratégica sobre seus oponentes.</p>
+                </div>
+                <div>
+                    <h2 id="iniciativa">Iniciativa</h2>
+                    <p>Esta perícia determina o quão preparado você está para reagir em uma situação inesperada. Um teste de iniciativa sempre é realizado para determinar a ordem em que os personagens irão agir no combate, definindo quem será o primeiro a tomar ações.</p>
+                    <p>Ter uma alta pontuação em Iniciativa significa que você possui uma capacidade de resposta eficiente em momentos de combate ou outras situações de perigo iminente. Quanto melhor for o resultado do seu teste de iniciativa, maior será a sua chance de agir antes dos seus oponentes, permitindo que você tome ações estratégicas e ganhe vantagem na batalha.</p>
+                    <p>A Iniciativa torna-se crucial para personagens que desejam estar sempre um passo à frente, prontos para reagir instantaneamente diante de ameaças ou para iniciar um combate de forma assertiva. É uma habilidade valiosa para garantir uma posição de vantagem tática e maximizar suas chances de sucesso nas batalhas.</p>
+                </div>
+                <div>
+                    <h2 id="intimidacao">Intimidação</h2>
+                    <p>Intimidação é a perícia que permite amedrontar e ameaçar os outros com o objetivo de fazer um agressor recuar, assustar um oponente ou obter informações de um prisioneiro. Ela engloba o uso de ameaças verbais e linguagem corporal para impor medo e influenciar as ações e reações daqueles com quem se interage.</p>
+                    <p>Ao utilizar a perícia de Intimidação, um personagem habilidoso é capaz de transmitir uma aura de poder e domínio, fazendo com que os outros se sintam ameaçados e submissos. Essa habilidade pode ser valiosa em situações de confronto ou negociação, permitindo que o personagem alcance seus objetivos através da coerção e do temor que inspira nos outros. É importante lembrar que o uso da intimidação deve ser empregado com cautela, pois pode ter consequências sociais e éticas significativas.</p>
+                </div>
+                <div>
+                    <h2 id="investigacao">Investigação</h2>
+                    <p>Investigação é a perícia que permite detectar e descobrir detalhes ocultos, como portas secretas, armadilhas, câmaras escondidas e outros elementos que não são imediatamente visíveis ou óbvios. Com essa habilidade, você é capaz de examinar minuciosamente um ambiente, analisar pistas e indícios, e encontrar informações valiosas para avançar na sua busca ou missão.</p>
+                    <p>A perícia de Investigação envolve a capacidade de observar com atenção, deduzir conexões entre elementos aparentemente desconexos, identificar padrões e descobrir segredos ocultos. Ela é essencial para desvendar mistérios, desarmar armadilhas, encontrar rotas alternativas e revelar informações importantes que podem fazer a diferença entre o sucesso e o fracasso em uma aventura.</p>
+                </div>
+                <div>
+                    <h2 id="ladroagem">Ladroagem</h2>
+                    <p>Ladroagem representa a sua habilidade em realizar tarefas que exigem destreza, sangue-frio e precisão. Ela engloba habilidades como desarmar armadilhas, abrir fechaduras, furtar objetos dos bolsos de outras pessoas e até mesmo realizar truques de ilusionismo.</p>
+                    <p>Esta perícia requer habilidades manuais precisas, percepção aguçada e um talento para se mover silenciosamente e passar despercebido. Um personagem habilidoso em Ladroagem é capaz de desabilitar armadilhas complexas sem se machucar, abrir fechaduras desafiadoras sem deixar vestígios e realizar furtos habilidosos sem ser detectado. Além disso, também pode realizar truques de ilusionismo, surpreendendo e distraindo seus alvos com habilidades de manipulação e engano.</p>
+                </div>
+                <div>
+                    <h2 id="lidar-com-animais">Lidar com Animais</h2>
+                    <p>Lidar com Animais é a perícia que representa a sua habilidade em interagir e se comunicar com criaturas animais. Essa perícia pode ser utilizada para diversas situações, como conduzir cavalos puxando uma carroça durante um combate, ensinar truques a um cão ou até mesmo domar uma criatura mágica como um hipogrifo.</p>
+                    <p>Ao possuir habilidades em Lidar com Animais, você é capaz de entender o comportamento animal, estabelecer uma conexão e transmitir comandos de forma eficaz. Essa perícia envolve técnicas de treinamento, paciência, empatia e compreensão das necessidades e instintos dos animais. Dessa forma, você pode controlar e guiar animais durante situações desafiadoras, ensinar-lhes truques e até mesmo estabelecer vínculos de confiança com criaturas selvagens.</p>
+                </div>
+                <div>
+                    <h2 id="medicina">Medicina </h2>
+                    <p>Medicina é a perícia que permite tratar ferimentos, fornecer cuidados médicos e salvar vidas. Ela é usada para evitar que um amigo gravemente ferido morra e tratar ferimentos durante um descanso. Com habilidades em Medicina, você pode aplicar primeiros socorros, diagnosticar lesões e administrar medicamentos para acelerar a recuperação. Durante o descanso, você pode aplicar curativos, fazer pontos em ferimentos e oferecer suporte médico aos seus companheiros. É uma habilidade vital para preservar vidas e garantir a saúde do grupo em situações perigosas.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
