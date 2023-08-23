@@ -1,8 +1,8 @@
 import { accentsTidy } from "./funcs.js"
 
-import { basic_feats } from "./data/basic-feats.js"
-import { heroic_feats } from "./data/heroic-feats.js"
-import { epic_feats } from "./data/epic-feats.js"
+import { basic_feats } from "../data/feats/basic-feats.js"
+import { heroic_feats } from "../data/feats/heroic-feats.js"
+import { epic_feats } from "../data/feats/epic-feats.js"
 
 function fillTables(){
     const baseHTML = `
@@ -11,8 +11,7 @@ function fillTables(){
                 <th></th>
                 <th>Descrição</th>
                 <th>Pré-requisitos</th>
-            </tr>
-    `;
+            </tr>`;
 
     if(document.querySelector("#talentos-basicos") != null){
         let basicFeatshtml = baseHTML;
@@ -24,8 +23,7 @@ function fillTables(){
                 <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><ul>
-            `;
+                    <td><ul>`;
             
             for(let y = 0; y < element[2].length; y++){
                 const e = element[2][y];
@@ -33,15 +31,13 @@ function fillTables(){
                 if(e == "") continue;
 
                 basicFeatshtml += `
-                    <li>${e}</li>
-                `;
+                    <li>${e}</li>`;
             }  
         }
         basicFeatshtml += `
                 </ul></td>
             </tr>
-        </tbody>
-        `;
+        </tbody>`;
                     
         document.querySelector("#talentos-basicos table").innerHTML = basicFeatshtml;
     }
@@ -57,8 +53,7 @@ function fillTables(){
                 <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><ul>
-            `;
+                    <td><ul>`;
             
             for(let y = 0; y < element[2].length; y++){
                 const e = element[2][y];
@@ -66,15 +61,13 @@ function fillTables(){
                 if(e == "") continue;
 
                 heroicFeatshtml += `
-                    <li>${e}</li>
-                `;
+                    <li>${e}</li>`;
             }  
         }
         heroicFeatshtml += `
                 </ul></td>
             </tr>
-        </tbody>
-        `;
+        </tbody>`;
                     
         document.querySelector("#talentos-heroicos table").innerHTML = heroicFeatshtml;
     }
@@ -90,8 +83,7 @@ function fillTables(){
                 <tr id=${accentsTidy(element[0]).replace(/\s/g, "-")}>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
-                    <td><ul>
-            `;
+                    <td><ul>`;
             
             for(let y = 0; y < element[2].length; y++){
                 const e = element[2][y];
@@ -99,15 +91,13 @@ function fillTables(){
                 if(e == "") continue;
 
                 epicFeatshtml += `
-                    <li>${e}</li>
-                `;
+                    <li>${e}</li>`;
             }  
         }
         epicFeatshtml += `
                 </ul></td>
             </tr>
-        </tbody>
-        `;
+        </tbody>`;
                     
         document.querySelector("#talentos-epicos table").innerHTML = epicFeatshtml;
     }
