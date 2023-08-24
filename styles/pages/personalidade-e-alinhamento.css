@@ -1,0 +1,10 @@
+table td {
+    text-align: center;
+}
+table td:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+table li {
+    list-style-type: none;
+}

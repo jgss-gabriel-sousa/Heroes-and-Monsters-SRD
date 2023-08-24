@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/pages/classes.css" rel="stylesheet">
+    <link href="../styles/pages/personalidade-e-alinhamento.css" rel="stylesheet">
+
+    <script src="../scripts/race.js" type="module" defer></script>
+    <script src="../scripts/base.js" type="module" defer></script>
+    
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>Personalidade e Alinhamento</title>
+</head>
+<body>
+    <header>
+        <h1>Personalidade e Alinhamento</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <section>
+                <p>Você pode escolher qualquer personalidade para seu personagem, é recomendado que utilize somente palavras chaves, mas que descrevam bem suas características. O alinhamento define as tendências da sua personalidade em relação a moral e ética.</p>
+            
+                <table>
+                    <tr>
+                        <th>Alinhamento</th>
+                        <th>Descrição</th>
+                        <th>Traços de Personalidades</th>
+                    </tr>
+                    <tr>
+                        <td>Leal e Bom</td>
+                        <td>Bom Samaritano: Age tipicamente com compaixão e sempre com honra e senso de dever.</td>
+                        <td>
+                            <li>Altruísta</li>
+                            <li>Responsável</li>
+                            <li>Otimista</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neutro e Bom</td>
+                        <td>Defensor Benevolente: Bondoso e não se importa com os decretos de leis, regras comunitárias e tradições.</td>
+                        <td>
+                            <li>Empático</li>
+                            <li>Complacente</li>
+                            <li>Respeitoso</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caótico e Bom</td>
+                        <td>Rebelde Compassivo: Faz o que for necessário para mudar as coisas para melhor, desdenha as organizações burocráticas que impedem as melhorias sociais e valorizam demais a liberdade individual.</td>
+                        <td>
+                            <li>Idealista</li>
+                            <li>Espontâneo</li>
+                            <li>Solidário</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Leal e Neutro</td>
+                        <td>Autoridade Organizada: Acredita fortemente no espírito das leis como a honra, a ordem, as regras e as tradições, mas geralmente seguem um código pessoal em adição a, ou mesmo preferindo a, algum código determinado por uma autoridade benevolente.</td>
+                        <td>
+                            <li>Disciplinado</li>
+                            <li>Justo</li>
+                            <li>Confiável</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neutro Verdadeiro</td>
+                        <td>Equilibrado Racionalista: Não se sente fortemente inclinado a nenhum alinhamento e nem ativamente trabalha em prol do equilíbrio deles.</td>
+                        <td>
+                            <li>Analítico</li>
+                            <li>Adaptável</li>
+                            <li>Pragmático</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caótico e Neutro</td>
+                        <td>Espírito Livre: Individualista que segue apenas a sua própria vontade e geralmente não se importa com as regras e nem com as tradições.</td>
+                        <td>
+                            <li>Independente</li>
+                            <li>Explorador</li>
+                            <li>Descontraído</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Leal e Mau</td>
+                        <td>Ditador Implacável: Vê um sistema bem ordenado como sendo mais fácil de explorar do que de seguir.</td>
+                        <td>
+                            <li>Autoritário</li>
+                            <li>Ambicioso</li>
+                            <li>Inflexível</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neutro e Mau</td>
+                        <td>Mercenário Impessoal: É egoísta e não possui nenhuma ressalva em se voltar contra seus aliados.</td>
+                        <td>
+                            <li>Pragmático</li>
+                            <li>Oportuno</li>
+                            <li>Calculista</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caótico e Mau</td>
+                        <td>Destruidor Caótico: Não respeita regras, a vida de terceiros ou qualquer coisa além de seus próprios desejos.</td>
+                        <td>
+                            <li>Caótico</li>
+                            <li>Cruel</li>
+                            <li>Manipulador</li>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
