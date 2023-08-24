@@ -32,12 +32,9 @@ section {
 }
 
 #races-list, #classes-list {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 10px;
-    grid-gap: 5px;
-    font-size: 14px;
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     justify-items: center;
 }
 
