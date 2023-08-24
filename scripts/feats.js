@@ -1,8 +1,8 @@
 import { accentsTidy } from "./funcs.js"
 
-import { basic_feats } from "../data/feats/basic-feats.js"
-import { heroic_feats } from "../data/feats/heroic-feats.js"
-import { epic_feats } from "../data/feats/epic-feats.js"
+import { basic_feats } from "../data/feats/talentos-basicos.js"
+import { heroic_feats } from "../data/feats/talentos-heroicos.js"
+import { epic_feats } from "../data/feats/talentos-epicos.js"
 
 function fillTables(){
     const baseHTML = `
