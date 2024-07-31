@@ -43,9 +43,6 @@ section {
         flex-direction: column;
         display: flex;
     }
-    .main-interface li {
-        font-size: 12px;
-    }
     .main-interface h1 {
         font-size: 22px;
     }

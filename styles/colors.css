@@ -16,8 +16,7 @@
     --bg-black: #333;
     --bg-white: #dddddd;
     --bg-grey: #cbcbcb;   
-    --bg-body-dark: #121212;
-    --bg-body-light: #fbfbf8;
+    --bg-body: #fef1de;
     --bg-table-white: #e6e6e6;    
     --bg-table-grey: #cbcbcb;   
     --bg-table-deep-blue: #111518e6; 
@@ -41,6 +40,9 @@
     margin-left: 50px;
 }
 .dark-mode{
+    --text-red-light: #c73328;
+
+    --bg-body: #212121;
     --bg-table-grey: #383838;
     --bg-table-white: #282828;
     --bg-white: #121212;
@@ -48,15 +50,13 @@
     --text-white: #100000;
     --text: #dfdfdf;
     --text-red: #cf2c1f;
-    --text-table-white: #c2c2c2;
+    --text-table-white: #e05d52;
     --border-dark: #555;
     --text-bold: #ff7266;
 }
 
-.dark-mode hr{
-    background-color: #FFFFFF1A;
-    color: #FFFFFF1A;
-    border-color: #FFFFFF1A;
+.dark-mode hr {
+    color: #dddddd;
 }
 
 .dark-mode #mySidepanel{

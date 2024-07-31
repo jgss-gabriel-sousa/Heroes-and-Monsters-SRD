@@ -12,6 +12,8 @@
 
     <script src="../scripts/base.js" type="module" defer></script>
     
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
     <title>H&M - Atributos</title>
 </head>
 <body>
@@ -19,6 +21,13 @@
         <h1>Atributos</h1>
     </header>
     <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
         <div class="main-interface">
             <section>
                 <p>Para definir as diferentes características de um personagem ou criatura, são utilizados os atributos. Cada atributo é um valor que computa certas características, sendo eles:</p>
@@ -32,7 +41,7 @@
                     <li><b>Inteligência:</b>    Raciocínio dedutivo, conhecimento, memória, lógica e racionalidade.</li>
                 </ul>
                 <p class="no-indent">Um atributo pode chegar até um valor máximo de 30.</p>
-                <br>
+
                 <h2>Como Definir o Valor Inicial dos Atributos?</h2>
                 <p>Para definir os atributos iniciais de um Personagem, o jogador pode usar 2 métodos:</p>
                 <ul>
@@ -40,7 +49,7 @@
                     <li>Use os valores predefinidos: 8, 8, 10, 10, 10, 12 e 14.</li>
                 </ul>
                 <p>Você pode distribuir a ordem dos valores da maneira que quiser, dê preferência nos pontos fortes e fracos do personagem que deseja montar.</p>
-                <br>
+
                 <h2>Modificadores</h2>
                 <p>Cada atributo possui um Modificador, que são os valores para a utilização nos testes, nas perícias ou em certas habilidades.</p>
                 <p>Quando um personagem for executar certas ações mais complexas, o mestre pode definir uma dificuldade para a realização, exigindo ao jogador um teste de um atributo relacionado, o jogador deve então rolar o d20 e somar o modificador do atributo indicado. Como por exemplo, em um teste de escalada o mestre pode definir como sendo um teste de Força, logo, o jogador deve rolar um d20 e somar seu modificador de força.</p>
@@ -49,5 +58,8 @@
             </section>
         </div>  
     </main>
+    <div class="">
+
+    </div>
 </body>
 </html>

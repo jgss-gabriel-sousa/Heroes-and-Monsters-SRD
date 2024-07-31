@@ -35,7 +35,6 @@ function scrollToID(id){
 function darkMode(){
     if(document.querySelector("body").classList.contains("dark-mode")){
         document.querySelector("body").classList.remove("dark-mode");
-        document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
         document.querySelector("#dark-mode i").classList.remove("fa-toggle-off");
         document.querySelector("#dark-mode i").classList.add("fa-toggle-on");
         localStorage.setItem("HnM_theme", "light");
@@ -43,7 +42,6 @@ function darkMode(){
     }
     else{
         document.querySelector("body").classList.add("dark-mode");
-        document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
         document.querySelector("#dark-mode i").classList.add("fa-toggle-off");
         document.querySelector("#dark-mode i").classList.remove("fa-toggle-on");
         localStorage.setItem("HnM_theme", "dark");

@@ -37,8 +37,17 @@ function footerContent(){
 }footerContent();
 
 function headerGoHome(){
+    
+    function transformToIndexUrl(url) {
+        let urlObj = new URL(url);
+      
+        urlObj.pathname = '/index.html';
+
+        return urlObj.toString();
+    }
+
     let goHome = `
-        <a class="py-3" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;"></a>
+        <a class="py-3" href="${transformToIndexUrl(window.location.href)}"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;"></a>
     `;
 
     document.querySelector("header").innerHTML = goHome + document.querySelector("header").innerHTML;
@@ -50,17 +59,12 @@ function setPageTheme(){
 
     function applyDarkTheme(){
         document.querySelector("body").classList.add("dark-mode");
-        document.querySelector("body").style.backgroundColor = "var(--bg-body-dark)";
-        document.querySelector(":root").style.backgroundColor = "var(--bg-body-dark)";
  
         if(PageThemeToggleBtn)
             PageThemeToggleBtn.classList.add("fa-toggle-off");
     }
 
-    function applyLightTheme(){
-        document.querySelector("body").style.backgroundColor = "var(--bg-body-light)";
-        document.querySelector(":root").style.backgroundColor = "var(--bg-body-light)";
-        
+    function applyLightTheme(){        
         if(PageThemeToggleBtn)
             PageThemeToggleBtn.classList.add("fa-toggle-on");
     }

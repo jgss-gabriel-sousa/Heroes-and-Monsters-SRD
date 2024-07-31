@@ -27,8 +27,11 @@
 .sidepanel ul {
     margin: 0;
 }
+.sidepanel ul ul {
+    padding-left: 10px;
+}
 .sidepanel li {
-    text-indent: 1rem;
+    text-indent: 0.25rem;
     margin: 0;
 }
 
@@ -43,12 +46,17 @@
     right: 5%;
     font-size: 36px;
     margin-left: 50px;
+    padding: 10px;
 }
 .go_home {
     position: absolute;
     top: 0;
     left: 0;
     margin: 5px;
+}
+.sidepanel > a.go_home {
+    display: flex;
+    align-items: center;
 }
 
 #openSidepanel {
