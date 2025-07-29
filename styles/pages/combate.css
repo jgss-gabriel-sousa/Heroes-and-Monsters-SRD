@@ -1,0 +1,16 @@
+li {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: var(--text-bold);
+    margin: 0;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 2rem;
+}

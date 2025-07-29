@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/893953f084.js" crossorigin="anonymous"></script>
+	
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/pages/classes.css" rel="stylesheet">
+    <link href="../styles/pages/combate.css" rel="stylesheet">
+
+    <script src="../scripts/race.js" type="module" defer></script>
+    <script src="../scripts/base.js" type="module" defer></script>
+    
+    <script src="../../scripts/sidepanel.js" defer></script>
+    
+    <title>Combate</title>
+</head>
+<body>
+    <header>
+        <h1>Combate</h1>
+    </header>
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a id="closeSidepanel" onclick="closeNav()">&times;</a>
+            <a class="go_home" href="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/index.html"><img class="icon" src="https://jgss-gabriel-sousa.github.io/Heroes-and-Monsters-SRD/logo.webp" style="width:42px;height:42px;">Voltar</a>
+            <button id="dark-mode" onclick="darkMode()"><i class="fa-solid"></i></button>
+            
+            <ul>
+                <li><a onclick="scrollToID('Introdução')">Introdução</a>
+                    <ul>
+                        <li><a onclick="scrollToID('O-Papel-do-Combate')">O Papel do Combate</a></li>
+                        <li><a onclick="scrollToID('A-Estrutura-do-Combate')">A Estrutura do Combate</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="scrollToID('Iniciativa')">Iniciativa</a></li>
+                <li><a onclick="scrollToID('Iniciativa')">Iniciativa</a>
+                    <ul>
+                        <li><a onclick="scrollToID('Rolagem-e-Modificadores')">Rolagem e Modificadores</a></li>
+                        <li><a onclick="scrollToID('Ordem-de-Turnos')">Ordem de Turnos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button id="openSidepanel" onclick="openNav()">&#9776;</button>
+
+        <div class="main-interface">
+            <h2 id="Introdução">Introdução</h2>
+            <section>
+                <h3 id="O-Papel-do-Combate">O Papel do Combate</h3>
+                <p>O combate é um conflito entre os personagens dos jogadores e inimigos, que pode incluir monstros, vilões ou outros desafios. Esse conflito é resolvido através de um conjunto de mecânicas que determinam como os personagens podem fazer ações, atacar e defender-se. O combate é uma parte crucial da narrativa do jogo.</p>
+
+                <h3 id="A-Estrutura-do-Combate">A Estrutura do Combate</h3>
+                <p>Um combate é representado por um ciclo de rodadas, que são um conjunto dos turnos de todos os participantes do combate. A ordem dos turnos é definida no início do combate, na chamada iniciativa. E nos seus respectivos turnos, os combatentes podem executar suas ações.</p>
+                <p>Para garantir que o combate seja justo, existem regras básicas que devem ser seguidas. Estas regras definem como os turnos são organizados, como os ataques são realizados, como o dano é calculado e como os personagens podem agir. As regras básicas incluem:</p>
+                <ul>
+                    <li><b>Iniciativa: </b>A ordem em que os personagens e inimigos agem.</li>
+                    <li><b>Turnos: </b>Cada participante tem um turno para realizar suas ações.</li>
+                    <li><b>Ações: </b>Tipos de ações que podem ser realizadas, como atacar, lançar magias, usar itens, mover-se, etc.</li>
+                    <li><b>Testes de Ataque e Defesa: </b>Como determinar se um ataque acerta e quão bem um personagem pode se defender.</li>
+                    <li><b>Dano e Cura: </b>Como calcular o dano causado e como os personagens podem se curar.</li>
+                    <li><b>Condições e Efeitos: </b>Efeitos especiais que podem influenciar o combate, como envenenamento ou paralisia.</li>
+                </ul>
+            </section>
+            
+            <hr>
+
+            <h2 id="Iniciativa">Iniciativa</h2>
+            <section>
+                <p>A iniciativa determina a ordem dos turnos no combate, determinando quem age primeiro e quem precisa esperar. A rolagem de iniciativa é feita no início do combate, e todos os participantes (personagens e inimigos) fazem uma rolagem de iniciativa para determinar a sequência de ações.</p>
+                <p><b>Ajustes durante o Combate: </b>Em algumas situações, eventos durante o combate podem alterar a ordem de iniciativa. Por exemplo, uma magia que atordoa um personagem pode fazê-lo perder seu próximo turno.</p>
+                <p><b>Exceções e Circunstâncias Especiais: </b>Certas habilidades e magias podem permitir que um personagem atue fora da ordem normal de iniciativa. Por exemplo, uma habilidade que permite uma ação surpresa pode permitir que um personagem atue antes do início oficial dos turnos.</p>
+            </section>
+            
+            <hr>
+            
+            <h2 id="Estrutura-do-Turno">Estrutura do Turno</h2>
+            <section>
+                <p>Durante o seu turno, cada personagem pode realizar Ações, que são suas interações no combate. Compreender as diferentes ações disponíveis é essencial para definir e maximizar a estratégia do combate.</p>
+
+                <h3 id="Tipos-de-Ações">Tipos de Ações</h3>
+                <h4>Ação</h4>
+                <p>Uma Ação é o seu tipo principal de interação durante o turno do combate. Elas são completadas em um curto período de tempo e são autocontidas, seus efeitos são gerados dentro do período de execução dessa ação única.</p>
+
+                <h4>Atividade</h4>
+                <p>As atividades levam mais tempo do que uma ação e requerem um conjunto de várias ações para criar um efeito maior do que poderia ser feito com uma única ação.</p>
+
+                <h4>Reações</h4>
+                <p>Possuem um gatilho de acionamento que deve ser atendido para que você possa usar a reação em questão. Você pode usar a reação a qualquer momento em que as condições de seu acionamento sejam atendidas, seja no seu turno ou não.</p>
+
+                <h4>Ações Livres</h4>
+                <p>Não custam nenhuma de suas ações, pois são subentendidas como ações muito rápidas ou menos exigentes que podem ser realizadas simultaneamente com suas outras ações. Caso possuam uma condição de acionamento, seguem as mesmas regras que uma reação (exceto por não custar uma reação).</p>
+
+                <h4>Movimento</h4>
+                <p>Cada criatura possui um valor de Deslocamento que representa o quanto ela pode se movimentar em um mesmo turno. Existem criaturas que voam, assim como criaturas que escavam túneis, por isso existem diferentes tipos de movimento:</p>
+                <ul>
+                    <li><b>Andando: </b>Movimentação padrão sobre a terra.</li>
+                    <li><b>Pairando: </b>Movimentação sobre superfícies, seja terra ou água, mas sem tocá-las diretamente, evitando assim armadilhas de pressão, por exemplo. Criaturas com esse tipo de movimentação são normalmente criaturas não corpóreas, como os fantasmas.</li>
+                    <li><b>Escalando: </b>Esse tipo de movimentação é o que lhe permite mover-se para cima ou para baixo em inclinações e superfícies verticais, sem precisar fazer testes de Atletismo para Escalar.</li>
+                    <li><b>Escavando: </b>Esse tipo de movimento permite que a criatura crie escave através do solo. Em geral, escavar não deixa um túnel aberto, a menos que a habilidade especifique o contrário. A maioria das criaturas precisa prender a respiração enquanto escava e precisa ter o Sentido Sísmico para se movimentar com precisão.</li>
+                    <li><b>Nadando: </b>Movimentação de natação com pouco impedimento, sem necessidade de testes de Atletismo para nadar, você ainda pode precisar fazer testes de Atletismo para nadar em condições perigosas ou através de águas turbulentas. Ter uma Velocidade de natação não significa necessariamente que você pode respirar na água, então ainda pode ser necessário prender a respiração se estiver submerso para evitar o afogamento.</li>
+                    <li><b>Voando: </b>Com deslocamento de voo, você pode usar as ações Voar e Amortecer Queda, ou ainda a Manobra em Voo, com teste de Acrobacia. Condições de vento podem afetar o voo. Mover-se contra o vento segue as mesmas regras de se mover através de terreno difícil (ou terreno ainda mais difícil, se estiver voando para cima), enquanto mover-se a favor do vento permite percorrer 2 metros para cada 1 metro de movimento gasto (não cumulativo com o movimento para baixo).</li>
+                </ul>
+
+
+                <h3 id="Como-Usar-as-Ações">Como Usar as Ações</h3>
+                <p>Em cada turno um jogador pode executar 2 Ações (do tipo padrão), cada ação possui uma , além de uma Ação Menor e uma Reação durante a rodada</p>
+
+                <h3 id="Tipos-de-Ações">Tipos de Ações</h3>
+                <p></p>
+            </section>
+            
+            <hr>
+            
+            <h2 id="Tipos-de-Ataques">Tipos de Ataques</h2>
+            <section>
+                <h3 id="Corpo-a-Corpo">Corpo a Corpo</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3 id="À-Distância">À Distância</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Mágico</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Arma Improvisada</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <hr>
+            
+            <h2>Testes de Ataque e Defesa</h2>
+            <section>
+                <h3>Rolagem de Ataque</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Defesa</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Salvamentos</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <hr>
+            
+            <h2>Dano e Cura</h2>
+            <section>
+                <h3>Determinação do Dano</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Redução de Dano</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Cura e Regeneração</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Morte</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <hr>
+            
+            <h2>Efeitos de Combate</h2>
+            <section>
+                <h3>Condições</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Efeitos Temporários e de Área</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <hr>
+            
+            <h2>Ambientes de Combate</h2>
+            <section>
+                <h3>Terreno Aberto</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Ambientes Confinados</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Subaquático e Aéreo</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Obstáculos e Cobertura</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <hr>
+            
+            <h2>Táticas e Estratégias</h2>
+            <section>
+                <h3>Formaçãos</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Uso de Terreno</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Coordenação de Ataques</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Recuo e Fugas</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <h2>Inimigos e Seus Comportamentos</h2>
+            <section>
+                <h3>Tipos e Comportamentos</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Ajuste de Dificuldade</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <h2>Exemplos de Combate</h2>
+            <section>
+                <h3>Combate Simples</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Combate Complexo</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Combate Especial</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <h2>Regras Avançadas</h2>
+            <section>
+                <h3>Combate Montado</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Combate em Massa</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Combate com Veículos</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <h2>Encerramento do Combate</h2>
+            <section>
+                <h3>Determinação do Vencedor</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Resolução Pós-Combate</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+            
+            <h2>Criando um Combate</h2>
+            <section>
+                <h3>Escolhendo o Encontro</h3>
+                <p>Antes do combate é necessário a rolagem da perícia iniciativa, para definir a ordem de cada jogador no combate, iniciando com o valor mais alto e seguindo de forma decrescente.</p>
+
+                <h3>Definindo o Cenário</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Preparação dos Inimigos</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Iniciando e Gerenciando o Combate</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Adaptando-se e Encerrando o Combate</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+
+                <h3>Exemplos Práticos</h3>
+                <p>Caso um inimigo seja surpreendido ele fará a rolagem de iniciativa normalmente, mas não poderá atacar na primeira rodada.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
